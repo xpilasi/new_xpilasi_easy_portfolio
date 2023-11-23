@@ -42,7 +42,9 @@ module.exports = {
         titillumWebRegular: 'titillium_web_regular',
         titillumWebBold: 'titillium_web_bold',
         titillumWebBlack: 'titillium_web_black',
-        bogartRegular: 'bogart_regular'
+        bogartRegular: 'bogart_regular',
+        montRegular: 'mont_regular',
+        exo: 'exo',
       }
     },
   },

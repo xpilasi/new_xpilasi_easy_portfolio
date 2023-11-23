@@ -41,3 +41,11 @@ body {
   font-family: 'bogart_regular';
   src: url('../public/fonts/bogart/Bogart-Medium-trial.ttf');
 }
+@font-face {
+  font-family: 'mont_regular';
+  src: url('../public/fonts/mont_full/Mont-Regular.otf');
+}
+@font-face {
+  font-family: 'exo';
+  src: url('../public/fonts/exo/Exo2-VariableFont_wght.ttf');
+}
