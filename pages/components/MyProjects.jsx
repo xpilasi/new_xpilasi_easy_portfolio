@@ -8,8 +8,8 @@ const MyProjects = () => {
     <section>
       {/* My projects title */}
       <div>
-        <h3 className=' text-3xl py-1 pt-8'>My projects</h3>
-        <p className=' text-md py-5 leading-8 text-gray-800'> These are the projects I've developped since I started my journey. </p>
+        <h3 className=' text-3xl lg:text-6xl md:text-4xl  py-1 font-bogartRegular text-neon-pink mt-10  '>My projects</h3>
+        <p className=' text-md py-5 leading-8 '> These are the projects I've developped since I started my journey. </p>
       </div>
 
       {/* Projects */}

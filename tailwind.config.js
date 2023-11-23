@@ -9,15 +9,21 @@ module.exports = {
   theme: {
     extend: {
       backgroundColor:{
-        'dark-neon-bg': '#1F1D44',
+        'neon-grey':'#252525',
+        'dark-neon': '#1F1D44',
         'dark-neon-fade':'#453F9E',
-        'neon-text-blueberry':'#9C62E5'
+        'neon-blueberry':'#9C62E5',
+        'neon-pink':'#F353A9',
+        'neon-water':'#84F7D4',
+        'neon-orange':'#edca85',
       },
       gradientColorStops: {
         'dark-neon-bg': '#1F1D44', 
         'dark-neon-fade': '#453F9E',
-        'neon-text-blueberry':'#9C62E5',
-        'neon-text-pink':'#F353A9',
+        'neon-blueberry':'#9C62E5',
+        'neon-pink':'#F353A9',
+        'neon-orange':'#edca85',
+        'neon-water':'#84F7D4',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -27,7 +33,7 @@ module.exports = {
       },
       textColor:{
         'neon-text-water':'#84F7D4',
-        'neon-text-pink':'#F353A9',
+        'neon-pink':'#F353A9', 
         'neon-text-blueberry':'#9C62E5',
         'dark-neon-fade': '#453F9E',
       },
@@ -36,6 +42,7 @@ module.exports = {
         titillumWebRegular: 'titillium_web_regular',
         titillumWebBold: 'titillium_web_bold',
         titillumWebBlack: 'titillium_web_black',
+        bogartRegular: 'bogart_regular'
       }
     },
   },

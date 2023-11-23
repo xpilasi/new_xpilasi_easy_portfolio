@@ -37,3 +37,7 @@ body {
   font-family: 'titillium_web_bold';
   src: url('../public/fonts/TitilliumWeb-Bold.ttf');
 }
+@font-face {
+  font-family: 'bogart_regular';
+  src: url('../public/fonts/bogart/Bogart-Medium-trial.ttf');
+}

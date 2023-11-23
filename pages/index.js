@@ -12,6 +12,9 @@ export default function Home() {
 
   const [darkMode, setDarkMode] = useState(true);
   
+  const blueberryMain = "bg-white  font-titillumWebRegular bg-fixed px-10 md:px-20 lg:px-40 dark:bg-gradient-to-b dark:from-black dark:to-dark-neon-fade dark:text-white";
+  const blackMain = "bg-white  font-titillumWebRegular bg-fixed px-10 md:px-20 lg:px-40 dark:bg-neon-grey dark:text-white";
+  
 
   return (
     <div className={darkMode ? 'dark' : ''}>
@@ -23,7 +26,7 @@ export default function Home() {
         <link rel='icon' href='../public/favicon.icon' />
       
 
-    <main className="bg-white  font-titillumWebRegular bg-fixed px-10 md:px-20 lg:px-40 dark:bg-gradient-to-b dark:from-dark-neon-bg dark:to-dark-neon-fade dark:text-white"
+    <main className={blackMain}
 >
      <IntroXp
      darkMode = {darkMode}
