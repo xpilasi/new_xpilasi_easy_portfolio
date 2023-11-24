@@ -1,6 +1,7 @@
 import React from 'react'
 import Image  from 'next/image';
 import { gorillaWebImg, logoXpBlueBerry, logoXpWhite, profilePictureXp,web2,web3,web4 } from '../images';
+import Title from './Title';
 
 
 const MyProjects = () => {
@@ -8,7 +9,8 @@ const MyProjects = () => {
     <section>
       {/* My projects title */}
       <div>
-        <h3 className=' text-3xl lg:text-6xl md:text-4xl  py-1 font-bogartRegular text-neon-pink mt-10  '>My projects</h3>
+        <Title title = {'My projects' }></Title>
+        
         <p className=' text-lg py-5 leading-8 md:text-xl mb-10 font-extralight'> These are the projects I've developped since I started my journey. </p>
       </div>
 

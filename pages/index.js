@@ -4,6 +4,8 @@ import { useState } from 'react';
 import MyStory from './components/MyStory';
 import MyProjects from './components/MyProjects';
 import IntroXp from './components/IntroXp';
+import ContactForm from './components/ContactForm';
+
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -36,6 +38,8 @@ export default function Home() {
      <MyStory></MyStory>
 
      <MyProjects></MyProjects>
+     <ContactForm/>
+
      
      </main>
 

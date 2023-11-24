@@ -32,7 +32,7 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       textColor:{
-        'neon-text-water':'#84F7D4',
+        'neon-water':'#84F7D4',
         'neon-pink':'#F353A9', 
         'neon-text-blueberry':'#9C62E5',
         'dark-neon-fade': '#453F9E',
