@@ -3,7 +3,6 @@ import React from 'react'
 import logoXpWhite from '../../public/img/logo_xp_white.png'
 import logoXpBlueBerry from '../../public/img/logo_xp_blueberry.png'
 import profilePictureXp from '../../public/img/perfil.png'
-// import img from '../../public/img'
 import Image  from 'next/image';
 import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {AiFillLinkedin,AiFillGithub} from 'react-icons/ai';
@@ -24,7 +23,7 @@ const gradientBg = ' bg-gradient-to-r from-neon-blueberry  to-neon-pink';
 <nav className='py-10 mb-12 flex justify-between'>
        
        <div className=''>
-        <Image src={darkMode ? logoXpWhite : logoXpBlueBerry} width={100}></Image>
+        <Image src={darkMode ? logoXpWhite : logoXpBlueBerry} className='w-20 mt-1 lg:mb-1 '></Image>
        </div>
 
        
@@ -32,8 +31,8 @@ const gradientBg = ' bg-gradient-to-r from-neon-blueberry  to-neon-pink';
          <li><BsFillMoonStarsFill 
          
          onClick={()=>setDarkMode(!darkMode)}
-         className=' cursor-pointer text-dark-neon-fade dark:text-white text-3xl'/></li>
-         <li><a className={` ${gradientBg} text-white px-10 py-5 rounded-md ml-10 mr-20`} href='#'>RESUME</a></li>
+         className=' cursor-pointer text-dark-neon-fade dark:text-white text-3xl lg:text-4xl'/></li>
+         <li><a className={` ${gradientBg} text-white px-5 py-3 lg:px-10 lg:py-5 rounded-md ml-10 mr-10` } href='#'>RESUME</a></li>
          
        </ul>
      </nav>
