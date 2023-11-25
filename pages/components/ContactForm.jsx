@@ -1,34 +1,59 @@
 import React from 'react'
 import Title from './Title'
+import MiniSubTitle from './MiniSubTitle';
 
 
-const ContactForm = () => {
-  return (
+
+const ContactForm = ({darkMode}) => {
+
+    var formBg = 'bg-light-blueberry';
+
+    let inputStyle = 'py-5 my-2 rounded px-5 text-dark-neon-fade w-full lg:w-[32rem]';
+    let gradientBg = ' bg-gradient-to-r from-neon-blueberry  to-neon-pink'; 
+    let inputSendButtonStyle = ` ${gradientBg} py-5 my-3 rounded px-5 w-full  lg:w-[32rem] hover:bg-dark-neon-fade w-full lg:w-[32rem]';
+    // let gradientBg = ' bg-gradient-to-r from-neon-blueberry  to-`;
+    let  inputTextAreaStyle = 'my-2 h-60 rounded py-5 px-5 text-dark-neon-fade w-full  lg:w-[32rem] ';
+    
+    if(darkMode !== true){
+        inputStyle = `py-5 my-2 rounded px-5 text-dark-neon-fade w-full lg:w-[32rem] ${formBg}`
+        gradientBg = ' bg-gradient-to-r from-neon-blueberry  to-neon-pink'; 
+        inputSendButtonStyle = ` ${gradientBg} py-5 my-3 rounded px-5 w-full text-white lg:w-[32rem]`;
+        inputTextAreaStyle = `my-2 h-60 rounded py-5 px-5 text-dark-neon-fade w-full  lg:w-[32rem] ${formBg}`;
+    } 
+
+    
+  
+    return (
     <section>
+        <div className='text-center '>
 
-        {/* Title */}
+            {/* Title */}
         <div>
             <Title title = {'Contact Me'}></Title>
+            <MiniSubTitle miniSubTitle = {"Let's have a chat!"}/>
         </div>
+        
         {/* Contact Form */}
-        <div>
+        <div className='   justify-center my-10'>
 
 
             <form action="">
 
-            <input type="text" placeholder={'Name'}/>
+            <input className={inputStyle} type="text" placeholder={'Name'}/>
 
             <br />
-            <input type="email" placeholder={'Email'}/>
+            <input className={inputStyle} type="email" placeholder={'Email'}/>
             <br/>  
-            <input type="textarea" placeholder={'Message'}/>
+            <textarea className= {inputTextAreaStyle} type="textarea" placeholder={'Write yor message here'}/>
             <br />
-            <input type="submit" value={'SEND'} />
+            <input className={inputSendButtonStyle}type="submit" value={'SEND'} />
 
             </form>
 
         </div>
 
+        </div>
+        
         
 
 

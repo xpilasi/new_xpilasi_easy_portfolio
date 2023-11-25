@@ -1,6 +1,6 @@
 import React from 'react'
 import Image  from 'next/image';
-import { design } from '../images';
+import design  from  '../../public/img/code.png';
 import Title from './Title';
 import SubTitle from './SubTitle';
 

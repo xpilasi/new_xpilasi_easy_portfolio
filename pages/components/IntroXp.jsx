@@ -1,5 +1,9 @@
 import React from 'react'
-import { gorillaWebImg, logoXpBlueBerry, logoXpWhite, profilePictureXp } from '../images';
+
+import logoXpWhite from '../../public/img/logo_xp_white.png'
+import logoXpBlueBerry from '../../public/img/logo_xp_blueberry.png'
+import profilePictureXp from '../../public/img/perfil.png'
+// import img from '../../public/img'
 import Image  from 'next/image';
 import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {AiFillLinkedin,AiFillGithub} from 'react-icons/ai';
@@ -29,7 +33,7 @@ const gradientBg = ' bg-gradient-to-r from-neon-blueberry  to-neon-pink';
          
          onClick={()=>setDarkMode(!darkMode)}
          className=' cursor-pointer text-dark-neon-fade dark:text-white text-3xl'/></li>
-         <li><a className={` ${gradientBg} text-white px-4 py-2 rounded-md ml-10 mr-20`} href='#'>Resume</a></li>
+         <li><a className={` ${gradientBg} text-white px-10 py-5 rounded-md ml-10 mr-20`} href='#'>RESUME</a></li>
          
        </ul>
      </nav>

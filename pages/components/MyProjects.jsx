@@ -1,17 +1,23 @@
 import React from 'react'
 import Image  from 'next/image';
-import { gorillaWebImg, logoXpBlueBerry, logoXpWhite, profilePictureXp,web2,web3,web4 } from '../images';
+import gorillaWebImg from '../../public/img/gorillagrab1.png'
+import web2 from '../../public/img/web2.png'
+import web3 from '../../public/img/web3.png'
+import web4 from '../../public/img/web4.png'
+
 import Title from './Title';
+import MiniSubTitle from './MiniSubTitle';
+
 
 
 const MyProjects = () => {
   return (
-    <section>
+    <section className=''>
       {/* My projects title */}
-      <div>
-        <Title title = {'My projects' }></Title>
-        
-        <p className=' text-lg py-5 leading-8 md:text-xl mb-10 font-extralight'> These are the projects I've developped since I started my journey. </p>
+      <div >
+        <Title className = ' bg-white'title = {'My projects' }></Title>
+        <MiniSubTitle miniSubTitle = {'These are the projects Ive developped since I started my journey.'}/>
+           
       </div>
 
       {/* Projects */}
