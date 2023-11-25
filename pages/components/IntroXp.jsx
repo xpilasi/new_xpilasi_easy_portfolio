@@ -23,7 +23,7 @@ const gradientBg = ' bg-gradient-to-r from-neon-blueberry  to-neon-pink';
 <nav className='py-10 mb-12 flex justify-between'>
        
        <div className=''>
-        <Image src={darkMode ? logoXpWhite : logoXpBlueBerry} className='w-20 mt-1 lg:mb-1 '></Image>
+        <Image src={darkMode ? logoXpWhite : logoXpBlueBerry} className='w-20 mt-0 lg:mb-0 '></Image>
        </div>
 
        
@@ -32,23 +32,23 @@ const gradientBg = ' bg-gradient-to-r from-neon-blueberry  to-neon-pink';
          
          onClick={()=>setDarkMode(!darkMode)}
          className=' cursor-pointer text-dark-neon-fade dark:text-white text-3xl lg:text-4xl'/></li>
-         <li><a className={` ${gradientBg} text-white px-5 py-3 lg:px-10 lg:py-5 rounded-md ml-10 mr-10` } href='#'>RESUME</a></li>
+         <li><a className={` ${gradientBg} text-white px-4 py-2 lg:px-6 lg:py-3 rounded-md ml-10 mr-0` } href='#'>Resume</a></li>
          
        </ul>
      </nav>
 
   {/* Title + Social Media Icons  */}
-<div className=' py-20 my-20'>
+<div className=' py-10'>
 
 {/* Name and small bg */}
   <div className=' text-left'>
 
-  <div className=' text-left p-0 ml-0 '>
-    <h2 className={`text-5xl py-2 tracking-tighter font-bogartRegular ${gradientText}  md:text-8xl `}>Hi, I'm Xavi.</h2>
+  <div className=' text-left '>
+    <h2 className={`text-4xl py-2 tracking-tighter font-bogartRegular ${gradientText}  md:text-6xl `}>Hi, I'm Xavi.</h2>
     <br></br>
-    <h2 className={`text-5xl py-2 tracking-tighter font-bogartRegular ${gradientText}  md:text-8xl `}>A Flutter and React</h2>
+    <h2 className={`text-4xl py-2 tracking-tighter font-bogartRegular ${gradientText}  md:text-6xl `}>A Flutter and React</h2>
     <br></br>
-    <h2 className={`text-5xl py-2 tracking-tighter font-bogartRegular ${gradientText}  md:text-8xl `}>developer.</h2>
+    <h2 className={`text-4xl py-2 tracking-tighter font-bogartRegular ${gradientText}  md:text-6xl `}>developer.</h2>
   
   
     
@@ -58,7 +58,7 @@ const gradientBg = ' bg-gradient-to-r from-neon-blueberry  to-neon-pink';
 
   </div>
 {/* Icons Social Media */}
-<div className=' text-8xl flex justify-left gap-5 py-3 text-dark-neon-fade dark:text-white mt-10 sm:flex justify-center'>
+<div className=' text-6xl flex justify-left gap-5 py-3 text-dark-neon-fade dark:text-white mt-10 sm:flex justify-center'>
     <AiFillLinkedin/>
     <AiFillGithub/>
     
