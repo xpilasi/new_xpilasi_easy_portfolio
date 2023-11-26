@@ -24,7 +24,7 @@ const ContactForm = ({darkMode}) => {
     
   
     return (
-    <section>
+    <section className='section' >
         <div className='text-center '>
 
             {/* Title */}

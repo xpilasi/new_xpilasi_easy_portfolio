@@ -6,6 +6,8 @@ import MyProjects from './components/MyProjects';
 import IntroXp from './components/IntroXp';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
+import ScrollButton from './components/ScrollButton';
+
 
 
 
@@ -41,6 +43,7 @@ export default function Home() {
      <MyProjects/>
      <ContactForm darkMode={darkMode}/>
      <Footer/>
+     <ScrollButton />
 
      
      </main>

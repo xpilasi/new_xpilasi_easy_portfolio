@@ -3,9 +3,10 @@ import design  from  '../../public/img/code.png';
 import Title from './Title';
 import MiniSubTitle from './MiniSubTitle';
 import Highlight from './Highlight';
-//import coding from 'public/img/coding.jpg'
-import coding from 'public/img/programming-code-signs.png'
-import hat from 'public/img/graduation-hat.png'
+import coding from 'public/img/programming-code-signs.png';
+import code from 'public/img/coding.jpg';
+import hat from 'public/img/graduation-hat.png';
+import team from 'public/img/team.png';
 import TextHighlited from './TextHighlited';
 
 const MyStory = () => {
@@ -36,26 +37,26 @@ const MyStory = () => {
     
     
   return (
-    <section>
+    <section className='' >
       <div>
         <Title title ={myStoryTitle}></Title>
         <MiniSubTitle miniSubTitle={myStorySubtitle} />
       </div>
       
       {/* My story*/}
-      <div className={gradientNeon1}>
+      <div className='lg:flex'>
         {/* Card 1 */}
         
         <Highlight
             srcImage={hat} 
-            subTitle ={'BBA degree'}
+            subTitle ={'Background'}
             highlight={story1}
         />
         
         {/* Card 2 */}
         <Highlight 
-            srcImage={hat} 
-            subTitle ={'Team Player'}
+            srcImage={team} 
+            subTitle ={'Business Manager'}
             highlight={story2}
         />  
             
