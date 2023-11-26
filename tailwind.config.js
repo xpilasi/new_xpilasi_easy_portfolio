@@ -37,7 +37,7 @@ module.exports = {
       textColor:{
         'neon-water':'#84F7D4',
         'neon-pink':'#F353A9', 
-        'neon-text-blueberry':'#9C62E5',
+        'neon-blueberry':'#9C62E5',
         'dark-neon-fade': '#453F9E',
       },
       fontFamily:{

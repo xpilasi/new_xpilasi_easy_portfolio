@@ -4,10 +4,10 @@ import Image  from 'next/image';
 
 
 const Highlight = ({srcImage,subTitle,highlight}) => {
-    const highlightTextStyle = ' text-lg py-5 leading-6 md:text-xl mb-10 font-extralight';
+    const highlightTextStyle = ' text-lg mt-3 leading-6 md:text-xl mb-10 font-extralight';
     
   return (
-    <div className=' text-center  p-5 '>
+    <div className=' text-center px-5 py-1 bg-slate-700 mt-5 bg-opacity-20 rounded '>
         
      <Image className=' mx-auto w-200'src={srcImage} width={200} ></Image>
      <SubTitle subTitle = {subTitle}/>
