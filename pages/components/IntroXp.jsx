@@ -73,7 +73,7 @@ const gradientBg = ' bg-gradient-to-r from-neon-blueberry  to-neon-pink';
      <div className='py-10 mb-12'>
 
       {/* My picture */}
-     <div className=' bg-slate-500'>
+     <div className=' '>
      <div className=' relative mx-auto  rounded-full w-60 h-60 mt-10 overflow-hidden lg:w-90 lg:h-90 md:h-80 md:w-80'>
        <Image src={profilePictureXp} layout='fill' objectFit='cover'></Image>
        

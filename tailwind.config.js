@@ -18,6 +18,7 @@ module.exports = {
         'neon-orange':'#edca85',
         'almost-white':'#F8F8F8',
         'light-blueberry':'#EADDF9',
+        'light-water':'#E4FBF9',
       },
       gradientColorStops: {
         'dark-neon-bg': '#1F1D44', 
