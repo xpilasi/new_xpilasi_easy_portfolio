@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Title from './Title'
 import MiniSubTitle from './MiniSubTitle';
-
+import emailjs from 'emailjs-com';
+import Swal from 'sweetalert2';
 
 
 const ContactForm = ({darkMode}) => {
@@ -10,19 +11,55 @@ const ContactForm = ({darkMode}) => {
 
     let inputStyle = 'py-5 my-2 rounded px-5 text-dark-neon-fade w-full lg:w-[32rem]';
     let gradientBg = ' bg-gradient-to-r from-neon-blueberry  to-neon-pink'; 
-    let inputSendButtonStyle = ` ${gradientBg} py-5 my-3 rounded px-5 w-full  lg:w-[32rem] hover:bg-dark-neon-fade w-full lg:w-[32rem]';
-    // let gradientBg = ' bg-gradient-to-r from-neon-blueberry  to-`;
-    let  inputTextAreaStyle = 'my-2 h-60 rounded py-5 px-5 text-dark-neon-fade w-full  lg:w-[32rem] ';
+    let inputSendButtonStyle = ` ${gradientBg} py-5 my-3 rounded px-5 w-full  lg:w-[32rem]  w-full lg:w-[32rem] cursor-pointer hover:opacity-80`;
+    
+    let  inputTextAreaStyle = 'my-2 h-40 rounded py-5 px-5 text-dark-neon-fade w-full  lg:w-[32rem] ';
     
     if(darkMode !== true){
         inputStyle = `py-5 my-2 rounded px-5 text-dark-neon-fade w-full lg:w-[32rem] ${formBg}`
         gradientBg = ' bg-gradient-to-r from-neon-blueberry  to-neon-pink'; 
         inputSendButtonStyle = ` ${gradientBg} py-5 my-3 rounded px-5 w-full text-white lg:w-[32rem]`;
         inputTextAreaStyle = `my-2 h-60 rounded py-5 px-5 text-dark-neon-fade w-full  lg:w-[32rem] ${formBg}`;
-    } 
-
+    };
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        console.log('esta parte funciona 1');
+        // Recopila los datos del formulario
+        const name = event.target.name.value;
+        const email = event.target.email.value;
+        const message = event.target.message.value;
     
-  
+        // Configura el correo electrónico
+        const templateParams = {
+          from_name: name,
+          from_email: email,
+          message: message,
+        };
+        console.log('esta parte funciona 2');
+        // Envía el correo electrónico utilizando EmailJS
+        emailjs.send('service_a1uxw4b', 'template_bb4bjrw', templateParams, 'zdnPvqDa-hzgIjpHf')
+          .then((response) => {
+            console.log('Correo electrónico enviado correctamente', response.status, response.text);
+            Swal.fire({
+              //title:'Enviado',
+              text:'Thanks for your message!',
+              width: 200,
+              customClass: {
+                popup: 'my-popup-class',
+                confirmButton: 'my-confirm-button-class',
+              }
+            }
+             
+            );
+          })
+          .catch((error) => {
+            console.error('Error al enviar el correo electrónico', error);
+          });
+    
+        // Restablece el formulario
+        event.target.reset();
+      };
+
     return (
     <section className='section' >
         <div className='text-center '>
@@ -34,19 +71,20 @@ const ContactForm = ({darkMode}) => {
         </div>
         
         {/* Contact Form */}
-        <div className='   justify-center my-10'>
+        <div className='justify-center my-10'>
 
 
-            <form action="">
-
-            <input className={inputStyle} type="text" placeholder={'Name'}/>
-
+            <form onSubmit={handleSubmit}>
+              
+            <input className={inputStyle} type="text" placeholder={'Name'} name="name"/>
             <br />
-            <input className={inputStyle} type="email" placeholder={'Email'}/>
+            
+            <input className={inputStyle} type="email" placeholder={'Email'} name="email"/>
             <br/>  
-            <textarea className= {inputTextAreaStyle} type="textarea" placeholder={'Write yor message here'}/>
+            
+            <textarea className= {inputTextAreaStyle} type="textarea" placeholder={'Write yor message here'} name="message"/>
             <br />
-            <input className={inputSendButtonStyle}type="submit" value={'SEND'} />
+            <input className={inputSendButtonStyle}type="submit" value={'SEND'}  />
 
             </form>
 

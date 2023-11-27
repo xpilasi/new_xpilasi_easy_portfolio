@@ -7,7 +7,12 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
-
+.my-popup-class {
+  @apply bg-neon-grey bg-opacity-80  text-white font-exo ;
+}
+.my-confirm-button-class {
+  @apply bg-neon-pink text-white;
+}
 
 
 body {

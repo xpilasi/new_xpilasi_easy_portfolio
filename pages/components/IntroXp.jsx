@@ -10,7 +10,7 @@ import {AiFillLinkedin,AiFillGithub} from 'react-icons/ai';
 const IntroXp = ({darkMode,setDarkMode}) => {
 
 const gradientText = 'bg-gradient-to-r from-neon-orange  via-neon-blueberry to-neon-water   inline-block text-transparent bg-clip-text ';
-const gradientBg = ' bg-gradient-to-r from-neon-blueberry  to-neon-pink'; 
+const gradientBg = ' bg-gradient-to-r from-neon-blueberry  to-neon-pink hover:opacity-80'; 
     
   return (
     <section 
