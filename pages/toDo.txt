@@ -1,0 +1,5 @@
+-Que funcione botón Next
+-Que descargue Resume: aviso spanish o english
+-Lunita en Sol 
+-Que funcione el Form: que envíe un mail 
+-Que Aparezcaun mensaje de gracias por enviar el Form 

@@ -14,7 +14,7 @@ const gradientBg = ' bg-gradient-to-r from-neon-blueberry  to-neon-pink';
     
   return (
     <section 
-    className='md:min-h-screen '
+    className='md:min-h-screen section ' id='intro'
     >
       {/* First screen full */}
       <div className='min-h-screen'> 

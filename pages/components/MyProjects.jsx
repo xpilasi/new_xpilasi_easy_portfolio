@@ -12,7 +12,7 @@ import MiniSubTitle from './MiniSubTitle';
 
 const MyProjects = () => {
   return (
-    <section className='' >
+    <section className='section' id='myProjects' >
       {/* My projects title */}
       <div >
         <Title className = ' bg-white'title = {'My projects' }></Title>

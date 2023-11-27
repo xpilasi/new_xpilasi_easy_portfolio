@@ -37,7 +37,7 @@ const MyStory = () => {
     
     
   return (
-    <section className='' >
+    <section className='section active' id='myStory'>
       <div>
         <Title title ={myStoryTitle}></Title>
         <MiniSubTitle miniSubTitle={myStorySubtitle} />

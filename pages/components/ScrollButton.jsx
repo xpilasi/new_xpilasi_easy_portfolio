@@ -1,21 +1,35 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 
 const ScrollButton = () => {
+  const activeSectionRef = useRef(null);
+
   const scrollToNextSection = () => {
-    const currentSection = document.querySelector('.section:target') || document.querySelector('.section');
-    const nextSection = currentSection.nextElementSibling;
+    const sections = document.querySelectorAll('.section');
+    const currentIndex = Array.from(sections).findIndex((section) => section === activeSectionRef.current);
+    const nextIndex = (currentIndex + 1) % sections.length;
+    const nextSection = sections[nextIndex];
 
     if (nextSection) {
       nextSection.scrollIntoView({ behavior: 'smooth' });
+      activeSectionRef.current = nextSection;
     }
   };
 
+  useEffect(() => {
+    const activeSection = document.querySelector('.section.active');
+    activeSectionRef.current = activeSection;
+  }, []);
+  const gradientBg = ' bg-gradient-to-r from-neon-blueberry  to-neon-water';
+
   return (
     <button
-      className="fixed bottom-4 right-4 bg-neon-pink opacity-20 text-white px-4 py-2 rounded"
+      className={`fixed bottom-4 right-4 ${gradientBg} opacity-20 text-white px-4 py-2 rounded`}
       onClick={scrollToNextSection}
     >
-      Next
+      <FontAwesomeIcon icon={faAngleDown} />
+      
     </button>
   );
 };
