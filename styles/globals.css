@@ -13,6 +13,12 @@
 .my-confirm-button-class {
   @apply bg-neon-pink text-white;
 }
+.my-modal {
+  
+  background: adial-gradient(circle, var(--neon-orange), var(--neon-blueberry), var(--neon-water));
+
+  
+}
 
 
 body {

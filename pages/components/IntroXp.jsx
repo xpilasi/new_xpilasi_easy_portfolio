@@ -5,7 +5,10 @@ import logoXpBlueBerry from '../../public/img/logo_xp_blueberry.png'
 import profilePictureXp from '../../public/img/perfil.png'
 import Image  from 'next/image';
 import {BsFillMoonStarsFill} from 'react-icons/bs';
+import {IoMdSunny} from 'react-icons/io';
 import {AiFillLinkedin,AiFillGithub} from 'react-icons/ai';
+import SunMoonIcon from './SunMoonIcon';
+
 
 const IntroXp = ({darkMode,setDarkMode}) => {
 
@@ -28,10 +31,7 @@ const gradientBg = ' bg-gradient-to-r from-neon-blueberry  to-neon-pink hover:op
 
        
        <ul className=' flex items-center'>
-         <li><BsFillMoonStarsFill 
-         
-         onClick={()=>setDarkMode(!darkMode)}
-         className=' cursor-pointer text-dark-neon-fade dark:text-white text-3xl lg:text-4xl'/></li>
+         <li><SunMoonIcon darkMode={darkMode} setDarkMode={setDarkMode}/></li>
          <li><a className={` ${gradientBg} text-white px-4 py-2 lg:px-6 lg:py-3 rounded-md ml-10 mr-0` } href='#'>Resume</a></li>
          
        </ul>
