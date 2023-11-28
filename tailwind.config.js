@@ -21,7 +21,7 @@ module.exports = {
         'light-water':'#E4FBF9',
       },
       gradientColorStops: {
-        'dark-neon-bg': '#1F1D44', 
+        'dark-neon': '#1F1D44', 
         'dark-neon-fade': '#453F9E',
         'neon-blueberry':'#9C62E5',
         'neon-pink':'#F353A9',

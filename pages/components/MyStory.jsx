@@ -61,31 +61,45 @@ const MyStory = () => {
       </div>
       
       {/* My story*/}
-      <div className='mt-20 py-10 mb-12 justify-between lg:flex items-center gap-10 bg-slate-600 bg-opacity-5'>
+      <div className=''>
 
 
-        
-        <div>
-      <a onClick={() => handleImageClick({
+        {/*Icons  */}
+    <div className='mt-10 py-10 flex  gap-20 justify-between'>
+
+          
+    
+    <a onClick={() => handleImageClick({
         content: story1,
-        title: 'Degree'
+        title: '2010: Degree'
       }
         )}>
         <Image src={hat} width={150} />
       </a>
-      <a onClick={() => handleImageClick('Content for image 2')}>
+      {/* <div className="border-l-2 border-gray-300 h-1 w-10 my-auto"></div> */}
+      <a onClick={() => handleImageClick({
+        content: story2,
+        title: '2016: Business Manager'
+      }
+        )}>
         <Image src={team} width={150} />
       </a>
-      <a onClick={() => handleImageClick('Content for image 3')}>
+
+      <a onClick={() => handleImageClick({
+        content: story3,
+        title: '2020: Coding'
+      }
+        )}>
         <Image src={coding} width={150} />
       </a>
-
+      
       <MyModal
         isOpen={modalOpen}
         onRequestClose={() => setModalOpen(false)}
         content={modalContent}
         title={modalTitle}
       />
+
     </div>
       
           

@@ -9,18 +9,17 @@ const ContactForm = ({darkMode}) => {
 
     var formBg = 'bg-light-blueberry';
 
-    let inputStyle = 'py-5 my-2 rounded px-5 text-dark-neon-fade w-full lg:w-[32rem]';
-    let gradientBg = ' bg-gradient-to-r from-neon-blueberry  to-neon-pink'; 
-    let inputSendButtonStyle = ` ${gradientBg} py-5 my-3 rounded px-5 w-full  lg:w-[32rem]  w-full lg:w-[32rem] cursor-pointer hover:opacity-80`;
-    
-    let  inputTextAreaStyle = 'my-2 h-40 rounded py-5 px-5 text-dark-neon-fade w-full  lg:w-[32rem] ';
-    
+    let inputStyle = 'w-full py-5 my-2 rounded px-5 text-dark-neon-fade sm:w-[32rem] md:w-[32rem] lg:w-[32rem]';
+    let gradientBg = 'bg-gradient-to-r from-neon-blueberry to-neon-pink'; 
+    let inputSendButtonStyle = `w-full ${gradientBg} py-5 my-3 rounded px-5 sm:w-[32rem] md:w-[32rem] lg:w-[32rem] cursor-pointer hover:opacity-80`;
+    let inputTextAreaStyle = 'w-full my-2 h-40 rounded py-5 px-5 text-dark-neon-fade sm:w-[32rem] md:w-[32rem] lg:w-[32rem]';
+
     if(darkMode !== true){
-        inputStyle = `py-5 my-2 rounded px-5 text-dark-neon-fade w-full lg:w-[32rem] ${formBg}`
-        gradientBg = ' bg-gradient-to-r from-neon-blueberry  to-neon-pink'; 
-        inputSendButtonStyle = ` ${gradientBg} py-5 my-3 rounded px-5 w-full text-white lg:w-[32rem]`;
-        inputTextAreaStyle = `my-2 h-60 rounded py-5 px-5 text-dark-neon-fade w-full  lg:w-[32rem] ${formBg}`;
-    };
+      inputStyle = `w-full py-5 my-2 rounded px-5 text-dark-neon-fade sm:w-[32rem] md:w-[32rem] lg:w-[32rem] ${formBg}`
+      gradientBg = ' bg-gradient-to-r from-neon-blueberry  to-neon-pink'; 
+      inputSendButtonStyle = `w-full ${gradientBg} py-5 my-3 rounded px-5 sm:w-[32rem] md:w-[32rem] lg:w-[32rem] text-white`;
+      inputTextAreaStyle = `w-full my-2 h-40 rounded py-5 px-5 text-dark-neon-fade sm:w-[32rem] md:w-[32rem] lg:w-[32rem] ${formBg}`;
+  };
     const handleSubmit = (event) => {
         event.preventDefault();
         console.log('esta parte funciona 1');
@@ -35,13 +34,13 @@ const ContactForm = ({darkMode}) => {
           from_email: email,
           message: message,
         };
-        console.log('esta parte funciona 2');
+       
         // Envía el correo electrónico utilizando EmailJS
         emailjs.send('service_a1uxw4b', 'template_bb4bjrw', templateParams, 'zdnPvqDa-hzgIjpHf')
           .then((response) => {
-            console.log('Correo electrónico enviado correctamente', response.status, response.text);
+            //console.log('Correo electrónico enviado correctamente', response.status, response.text);
             Swal.fire({
-              //title:'Enviado',
+              
               text:'Thanks for your message!',
               width: 200,
               customClass: {
@@ -61,8 +60,8 @@ const ContactForm = ({darkMode}) => {
       };
 
     return (
-    <section className='section' >
-        <div className='text-center '>
+    <section className='section md:min-h-screen flex items-center justify-center' >
+        <div className='text-center mt-0 w-full'>
 
             {/* Title */}
         <div>
@@ -71,7 +70,7 @@ const ContactForm = ({darkMode}) => {
         </div>
         
         {/* Contact Form */}
-        <div className='justify-center my-10'>
+        <div className='my-10 w-full '>
 
 
             <form onSubmit={handleSubmit}>

@@ -5,13 +5,14 @@ import { MdClose } from "react-icons/md";
 Modal.setAppElement('#__next') // reemplaza '#root' con el id de tu elemento raíz
 
 const MyModal = ({ isOpen, onRequestClose, content,title }) => {
+  const gradientBg = ' bg-gradient-to-r from-dark-neon to-neon-pink hover:opacity-80';
   const classModal2 = 'my-modal';
-  const classModal = ' outline-none relative bg-gradient-to-r from-neon-orange  via-neon-blueberry to-neon-water opacity-90  text-white p-4 rounded-lg shadow-lg pt-5 px-10 mx-auto w-11/12 sm:w-1/2 md:w-1/2 lg:w-1/2';
+  const classModal = `outline-none relative ${gradientBg} text-white p-4 rounded-lg shadow-lg pt-5 px-10 mx-auto w-11/12 sm:w-1/2 md:w-1/2 lg:w-1/2`;
   //const classModal = ' outline-none relative   text-white p-4 rounded-lg shadow-lg pt-5 px-10 mx-auto w-11/12 sm:w-1/2 md:w-1/2 lg:w-1/2';
   const highlightTextStyle = ' text-md mt-3 leading-6 md:text-md mb-10 font-extralight font-exo ';
   const subTitleStyle = 
                   `text-3xl lg:text-4xl md:text-4xl font-bold py-1 font-exo  
-                   text-neon-water mt-10 text-left   leading-tight`;
+                   text-neon-water mt-10 text-center  leading-tight`;
   return (
     <Modal
       isOpen={isOpen}
