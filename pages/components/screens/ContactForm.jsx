@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
-import Title from './Title'
-import MiniSubTitle from './MiniSubTitle';
+import Title from '../widgets/Title'
+import MiniSubTitle from '../widgets/MiniSubTitle';
 import emailjs from 'emailjs-com';
 import Swal from 'sweetalert2';
 

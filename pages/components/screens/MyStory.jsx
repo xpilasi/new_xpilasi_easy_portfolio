@@ -1,16 +1,11 @@
 import React, { useState } from 'react'
-import design  from  '../../public/img/code.png';
-import Title from './Title';
-import MiniSubTitle from './MiniSubTitle';
-import Highlight from './Highlight';
+import Title from '../widgets/Title';
+import MiniSubTitle from '../widgets/MiniSubTitle';
 import coding from 'public/img/programming-code-signs.png';
-import code from 'public/img/coding.jpg';
 import hat from 'public/img/graduation-hat.png';
 import team from 'public/img/team.png';
-import TextHighlited from './TextHighlited';
-import backGround from 'public/img/background.svg'
 import Image  from 'next/image';
-import MyModal from './widgets/MyModal';
+import MyModal from '../widgets/MyModal';
 
 
 

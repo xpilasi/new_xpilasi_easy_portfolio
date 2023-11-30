@@ -1,15 +1,12 @@
 
 import { Inter } from 'next/font/google'
 import { useState } from 'react';
-import MyStory from './components/MyStory';
-import MyProjects from './components/MyProjects';
-import IntroXp from './components/IntroXp';
-import ContactForm from './components/ContactForm';
-import Footer from './components/Footer';
-import ScrollButton from './components/ScrollButton';
-
-
-
+import MyStory from './components/screens/MyStory';
+import MyProjects from './components/screens/MyProjects';
+import IntroXp from './components/screens/IntroXp';
+import ContactForm from './components/screens/ContactForm';
+import Footer from './components/screens/Footer';
+import ScrollButton from './components/widgets/ScrollButton';
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -35,6 +32,7 @@ export default function Home() {
     <main className={blackMain}
 >
      <IntroXp
+     
      darkMode = {darkMode}
      setDarkMode = {setDarkMode}
      ></IntroXp>

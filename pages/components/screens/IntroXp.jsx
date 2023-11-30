@@ -1,13 +1,13 @@
 import React from 'react'
 
-import logoXpWhite from '../../public/img/logo_xp_white.png'
-import logoXpBlueBerry from '../../public/img/logo_xp_blueberry.png'
-import profilePictureXp from '../../public/img/perfil.png'
+import logoXpWhite from '../../../public/img/logo_xp_white.png'
+import logoXpBlueBerry from '../../../public/img/logo_xp_blueberry.png'
+import profilePictureXp from '../../../public/img/perfil.png'
 import Image  from 'next/image';
 import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {IoMdSunny} from 'react-icons/io';
 import {AiFillLinkedin,AiFillGithub} from 'react-icons/ai';
-import SunMoonIcon from './SunMoonIcon';
+import SunMoonIcon from '../widgets/SunMoonIcon';
 
 
 const IntroXp = ({darkMode,setDarkMode}) => {

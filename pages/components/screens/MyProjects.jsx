@@ -1,12 +1,12 @@
 import React from 'react'
 import Image  from 'next/image';
-import gorillaWebImg from '../../public/img/gorillagrab1.png'
-import web2 from '../../public/img/web2.png'
-import web3 from '../../public/img/web3.png'
-import web4 from '../../public/img/web4.png'
+import gorillaWebImg from '../../../public/img/gorillagrab1.png'
+import web2 from '../../../public/img/web2.png'
+import web3 from '../../../public/img/web3.png'
+import web4 from '../../..//public/img/web4.png'
 
-import Title from './Title';
-import MiniSubTitle from './MiniSubTitle';
+import Title from '../widgets/Title';
+import MiniSubTitle from '../widgets/MiniSubTitle';
 
 
 

@@ -6,6 +6,10 @@ const ScrollButton = () => {
   const activeSectionRef = useRef(null);
 
   const scrollToNextSection = () => {
+    if (!activeSectionRef.current) {
+      activeSectionRef.current = document.querySelector('.section.active');
+    }
+
     const sections = document.querySelectorAll('.section');
     const currentIndex = Array.from(sections).findIndex((section) => section === activeSectionRef.current);
     const nextIndex = (currentIndex + 1) % sections.length;
@@ -17,10 +21,6 @@ const ScrollButton = () => {
     }
   };
 
-  useEffect(() => {
-    const activeSection = document.querySelector('.section.active');
-    activeSectionRef.current = activeSection;
-  }, []);
   const gradientBg = ' bg-gradient-to-r from-neon-blueberry  to-neon-water';
 
   return (
@@ -29,7 +29,6 @@ const ScrollButton = () => {
       onClick={scrollToNextSection}
     >
       <FontAwesomeIcon icon={faAngleDown} />
-      
     </button>
   );
 };
