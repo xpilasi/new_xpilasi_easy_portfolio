@@ -6,6 +6,9 @@ import hat from 'public/img/graduation-hat.png';
 import team from 'public/img/team.png';
 import Image  from 'next/image';
 import MyModal from '../widgets/MyModal';
+import degreeSVG from '../../../public/img/icons/iconBaseBg.svg';
+import mgmtSVG from '../../../public/img/icons/iconBaseBusinessM.svg';
+import codeSVG from '../../../public/img/icons/iconBaseCode.svg';
 
 
 
@@ -49,7 +52,7 @@ const MyStory = () => {
     
     
   return (
-    <section className='section mb-5 md:min-h-screen' id='myStory'>
+    <section className='section mb-5 h-screen' id='myStory'>
       <div>
         <Title title ={myStoryTitle}></Title>
         <MiniSubTitle miniSubTitle={myStorySubtitle} />
@@ -60,34 +63,41 @@ const MyStory = () => {
 
 
         {/*Icons  */}
-    <div className='mt-10 py-10 flex  gap-20 justify-between'>
+    <div className=' bg-neon-blueberry rounded-2xl px- mt-10 py-10 md:flex  md:gap-20 justify-center items-center  md:justify-between'>
 
           
-    
-    <a onClick={() => handleImageClick({
+    <div className='flex justify-center py-10 px-10 items-center'>
+      <a onClick={() => handleImageClick({
         content: story1,
         title: '2010: Degree'
       }
         )}>
-        <Image src={hat} width={150} />
+        <Image  src={degreeSVG} width={150} />
+        {/* <h1 className=' font-extrabold text-3xl py-5 text-'>2010. Degree sdsds</h1> */}
       </a>
-      {/* <div className="border-l-2 border-gray-300 h-1 w-10 my-auto"></div> */}
+    </div>
+      
+    <div className=' flex justify-center py-10 text-center'>
       <a onClick={() => handleImageClick({
         content: story2,
         title: '2016: Business Manager'
       }
         )}>
-        <Image src={team} width={150} />
+        <Image src={mgmtSVG} width={150} />
+        {/* <h1 className=' font-extrabold text-3xl py-5 '>2016. MGMT</h1> */}
       </a>
+    </div>
 
+    <div className=' flex justify-center py-10'>
       <a onClick={() => handleImageClick({
         content: story3,
         title: '2020: Coding'
       }
         )}>
-        <Image src={coding} width={150} />
+        <Image src={codeSVG} width={150} />
       </a>
-      
+    </div>
+
       <MyModal
         isOpen={modalOpen}
         onRequestClose={() => setModalOpen(false)}
