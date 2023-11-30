@@ -49,7 +49,7 @@ const MyStory = () => {
     
     
   return (
-    <section className='section mb-5' id='myStory'>
+    <section className='section mb-5 md:min-h-screen' id='myStory'>
       <div>
         <Title title ={myStoryTitle}></Title>
         <MiniSubTitle miniSubTitle={myStorySubtitle} />

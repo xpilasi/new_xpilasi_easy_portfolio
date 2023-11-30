@@ -7,6 +7,8 @@ import IntroXp from './components/screens/IntroXp';
 import ContactForm from './components/screens/ContactForm';
 import Footer from './components/screens/Footer';
 import ScrollButton from './components/widgets/ScrollButton';
+import Presentation from './components/screens/Presentation';
+
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -36,6 +38,7 @@ export default function Home() {
      darkMode = {darkMode}
      setDarkMode = {setDarkMode}
      ></IntroXp>
+     <Presentation/>
 
      <MyStory/>
      <MyProjects/>
