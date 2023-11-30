@@ -1,6 +1,7 @@
 import React from 'react'
 import Image  from 'next/image';
-import profilePictureXp from '../../../public/img/perfil.png'
+import profilePictureXp from '../../../public/img/portfolioXpilasi.png'
+import profilePictureXpT from '../../../public/img/fotoPerfil3.png'
 import quoteStartSVG from '../../../public/img/icons/iconQuoteOpenSVG.svg'
 import quoteCloseSVG from '../../../public/img/icons/iconQuoteCloseSVG.svg'
 
@@ -18,7 +19,7 @@ const Presentation = ({darkMode}) => {
 <div className='w-full'>
 
     <div className={`lg:flex p-0 justify-center items-center ${bgLightMode}`}>
-        <div className=' flex justify-center items-center '><Image src={profilePictureXp} width={250} ></Image></div>
+        <div className=' flex justify-center items-center '><Image src={profilePictureXpT} width={250} ></Image></div>
     
     <div className=' p-0 flex justify-center items-center mt-5 '>
         <Image  className=' ml-5' src={quoteStartSVG}width={60} ></Image>
