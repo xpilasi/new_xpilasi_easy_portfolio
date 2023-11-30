@@ -38,7 +38,7 @@ export default function Home() {
      darkMode = {darkMode}
      setDarkMode = {setDarkMode}
      ></IntroXp>
-     <Presentation/>
+     <Presentation darkMode={darkMode}/>
 
      <MyStory/>
      <MyProjects/>

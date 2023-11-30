@@ -4,7 +4,9 @@ import profilePictureXp from '../../../public/img/perfil.png'
 import quoteStartSVG from '../../../public/img/icons/iconQuoteOpenSVG.svg'
 import quoteCloseSVG from '../../../public/img/icons/iconQuoteCloseSVG.svg'
 
-const Presentation = () => {
+const Presentation = ({darkMode}) => {
+    const bgLightMode = 'bg-neon-pink text-white rounded-xl';
+    const bgDarkMode = '';
   return (
     <section>
 
@@ -15,10 +17,10 @@ const Presentation = () => {
 
 <div className='w-full'>
 
-    <div className='lg:flex p-0 justify-center items-center '>
+    <div className={`lg:flex p-0 justify-center items-center ${bgLightMode}`}>
         <div className=' flex justify-center items-center '><Image src={profilePictureXp} width={250} ></Image></div>
     
-    <div className=' p-0 flex justify-center items-center mt-5'>
+    <div className=' p-0 flex justify-center items-center mt-5 '>
         <Image  className=' ml-5' src={quoteStartSVG}width={60} ></Image>
         
         <div>
