@@ -10,6 +10,7 @@ const IntroXp = ({darkMode,setDarkMode}) => {
 
 const gradientText = 'bg-gradient-to-r from-neon-orange  via-neon-blueberry to-neon-water   inline-block text-transparent bg-clip-text ';
 const gradientBg = ' bg-gradient-to-r from-neon-blueberry  to-neon-pink hover:opacity-80'; 
+const cvUrl = 'https://drive.google.com/file/d/1gskQCNhkEyFgCH2RfqZiVGiDe1CSY3aT/view?usp=drive_link';
     
   return (
     <section 
@@ -28,8 +29,14 @@ const gradientBg = ' bg-gradient-to-r from-neon-blueberry  to-neon-pink hover:op
        
        <ul className=' flex items-center'>
          <li><SunMoonIcon darkMode={darkMode} setDarkMode={setDarkMode}/></li>
-         <li><a className={` bg-neon-pink text-white px-4 py-2 lg:px-6 lg:py-3 rounded-md ml-10 mr-0` } href='#'>Resume</a></li>
+         <li>
+          <a className={` bg-neon-pink text-white px-4 py-2 lg:px-6 lg:py-3 rounded-md ml-10 mr-0` } 
+             target="_blank"
+             rel="noopener noreferrer"
+             href={cvUrl}>Resume
+             </a></li>
          
+            
        </ul>
      </nav>
 
