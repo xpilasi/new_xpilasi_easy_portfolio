@@ -11,6 +11,10 @@ const IntroXp = ({darkMode,setDarkMode}) => {
 const gradientText = 'bg-gradient-to-r from-neon-orange  via-neon-blueberry to-neon-water   inline-block text-transparent bg-clip-text ';
 const gradientBg = ' bg-gradient-to-r from-neon-blueberry  to-neon-pink hover:opacity-80'; 
 const cvUrl = 'https://drive.google.com/file/d/1gskQCNhkEyFgCH2RfqZiVGiDe1CSY3aT/view?usp=drive_link';
+const linkedInUrl = 'https://www.linkedin.com/in/xavierpilasi/';
+const gitHubUrl = 'https://github.com/xpilasi';
+
+const hoverScale110 = 'transform transition-transform hover:scale-110';
     
   return (
     <section 
@@ -28,8 +32,8 @@ const cvUrl = 'https://drive.google.com/file/d/1gskQCNhkEyFgCH2RfqZiVGiDe1CSY3aT
 
        
        <ul className=' flex items-center'>
-         <li><SunMoonIcon darkMode={darkMode} setDarkMode={setDarkMode}/></li>
-         <li>
+         <li className={hoverScale110}><SunMoonIcon darkMode={darkMode} setDarkMode={setDarkMode}/></li>
+         <li className={hoverScale110}>
           <a className={` bg-neon-pink text-white px-4 py-2 lg:px-6 lg:py-3 rounded-md ml-10 mr-0` } 
              target="_blank"
              rel="noopener noreferrer"
@@ -55,10 +59,18 @@ const cvUrl = 'https://drive.google.com/file/d/1gskQCNhkEyFgCH2RfqZiVGiDe1CSY3aT
     </div>
 
   </div>
+  
 {/* Icons Social Media */}
 <div className=' text-6xl flex justify-left gap-5 py-3 text-dark-neon-fade dark:text-white mt-10 sm:flex justify-center'>
-    <AiFillLinkedin/>
-    <AiFillGithub/>
+    <a href={linkedInUrl}
+       target="_blank"
+       rel="noopener noreferrer">
+        <AiFillLinkedin className={`${hoverScale110} cursor-pointer`}/></a>
+    <a href={gitHubUrl}
+       target="_blank"
+       rel="noopener noreferrer">
+        <AiFillGithub className={`${hoverScale110} cursor-pointer`}/></a>
+    
     
 </div>
 
