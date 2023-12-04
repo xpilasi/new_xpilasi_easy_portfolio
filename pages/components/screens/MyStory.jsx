@@ -1,17 +1,23 @@
 import React, { useState } from 'react'
 import Title from '../widgets/Title';
 import MiniSubTitle from '../widgets/MiniSubTitle';
-import coding from 'public/img/programming-code-signs.png';
-import hat from 'public/img/graduation-hat.png';
-import team from 'public/img/team.png';
 import Image  from 'next/image';
 import MyModal from '../widgets/MyModal';
+
 import degreeSVG from '../../../public/img/icons/iconBaseBg.svg';
+import degreeLightSVG from '../../../public/img/icons/iconBaseBgLight.svg';
 import mgmtSVG from '../../../public/img/icons/iconBaseBusinessM.svg';
+import mgmtLightSVG from '../../../public/img/icons/iconBaseBusinessLight.svg';
 import codeSVG from '../../../public/img/icons/iconBaseCode.svg';
+import codeLightSVG from '../../../public/img/icons/iconBaseCodeLight.svg';
+
 import codeTitle from '../../../public/img/icons/codeSVG.svg';
+import codeLightTitle from '../../../public/img/icons/codeLightSVG.svg';
 import mgmtTitle from '../../../public/img/icons/mgmtSVG.svg';
+import mgmtLightTitle from '../../../public/img/icons/mgmtLightSVG.svg';
 import degreeTitle from '../../../public/img/icons/degreeSVG.svg';
+import degreeLightTitle from '../../../public/img/icons/degreeLightSVG.svg';
+
 
 
 
@@ -64,13 +70,13 @@ const MyStory = ({darkMode}) => {
       {/* My story*/}
       <div className='' id='myStoryPrincipal'>
 
-      <div className='pt-10'>
+      <div className='pt-10 mb-20'>
         <Title title ={myStoryTitle}></Title>
         <MiniSubTitle miniSubTitle={myStorySubtitle} />
       </div>
 
         {/*Icons  */}
-    <div className= {` py-5 first-line:px-5 mt-0 justify-center items-center`}>
+    <div className= {`  py-10 justify-center items-center`}>
 
           
     <div className=' flex justify-center mb-10'>
@@ -79,11 +85,11 @@ const MyStory = ({darkMode}) => {
         title: '2010: Degree'
       }
         )}>
-        <Image  src={degreeSVG} width={100} />
+        <Image  src={darkMode ? degreeLightSVG : degreeLightSVG} width={100} />
         {/* <Image  src={degreeTitle} width={100} /> */}
         {/* <h1 className=' font-extrabold text-3xl py-5 text-'>2010. Degree sdsds</h1> */}
       </a>
-      <Image className='px-5' src={degreeTitle} width={200} />
+      <Image className='px-5' src={darkMode ? degreeTitle : degreeLightTitle} width={200} />
       
     </div>
       
@@ -93,10 +99,10 @@ const MyStory = ({darkMode}) => {
         title: '2016: Business Manager'
       }
         )}>
-        <Image src={mgmtSVG} width={100} />
+        <Image src={darkMode ? mgmtLightSVG : mgmtLightSVG} width={100} />
         
       </a>
-      <Image className='px-5' src={mgmtTitle} width={200} />
+      <Image className='px-5' src={darkMode ? mgmtTitle : mgmtLightTitle } width={200} />
     </div>
 
     <div className=' flex justify-center mb-10'>
@@ -105,9 +111,9 @@ const MyStory = ({darkMode}) => {
         title: '2020: Coding'
       }
         )}>
-        <Image src={codeSVG} width={100} />
+        <Image src={darkMode ? codeLightSVG : codeLightSVG} width={100} />
       </a>
-      <Image className='px-5' src={codeTitle} width={200} />
+      <Image className='px-5' src={darkMode ? codeTitle: codeLightTitle} width={200} />
     </div>
 
       <MyModal
