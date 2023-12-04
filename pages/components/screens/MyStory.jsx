@@ -45,7 +45,17 @@ const MyStory = ({darkMode}) => {
     
     const gradientNeon1 = '';
 
-  
+    const iconsSpin = {
+      transition: 'transform 0.3s ease-in-out',
+    };
+
+    const handleMouseOver = (e) => {
+      e.currentTarget.style.transform = 'rotate(360deg)';
+    };
+    const handleMouseOut =(e) => {
+      e.currentTarget.style.transform = 'rotate(0deg)';
+    };
+    
     
     // Modal
     const [modalOpen, setModalOpen] = useState(false);
@@ -85,9 +95,16 @@ const MyStory = ({darkMode}) => {
         title: '2010: Degree'
       }
         )}>
-        <Image  src={darkMode ? degreeLightSVG : degreeLightSVG} width={100} />
-        {/* <Image  src={degreeTitle} width={100} /> */}
-        {/* <h1 className=' font-extrabold text-3xl py-5 text-'>2010. Degree sdsds</h1> */}
+        <Image
+        src={degreeLightSVG}
+        alt="Degree Icon"
+        width={100}
+        style={iconsSpin}
+        onMouseOver={handleMouseOver}
+        onMouseOut={handleMouseOut}
+        className=' cursor-pointer'
+      />
+        
       </a>
       <Image className='px-5' src={darkMode ? degreeTitle : degreeLightTitle} width={200} />
       
@@ -99,8 +116,17 @@ const MyStory = ({darkMode}) => {
         title: '2016: Business Manager'
       }
         )}>
-        <Image src={darkMode ? mgmtLightSVG : mgmtLightSVG} width={100} />
         
+        <Image
+        src={mgmtLightSVG}
+        alt="Management Icon"
+        width={100}
+        style={iconsSpin}
+        onMouseOver={handleMouseOver}
+        onMouseOut={handleMouseOut}
+        className=' cursor-pointer'
+        />
+
       </a>
       <Image className='px-5' src={darkMode ? mgmtTitle : mgmtLightTitle } width={200} />
     </div>
@@ -111,7 +137,17 @@ const MyStory = ({darkMode}) => {
         title: '2020: Coding'
       }
         )}>
-        <Image src={darkMode ? codeLightSVG : codeLightSVG} width={100} />
+        
+        <Image
+        src={codeLightSVG}
+        alt="Code Icon"
+        width={100}
+        style={iconsSpin}
+        onMouseOver={handleMouseOver}
+        onMouseOut={handleMouseOut}
+        className=' cursor-pointer'
+        />
+        
       </a>
       <Image className='px-5' src={darkMode ? codeTitle: codeLightTitle} width={200} />
     </div>
