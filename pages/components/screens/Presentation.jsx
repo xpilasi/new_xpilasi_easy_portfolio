@@ -11,17 +11,17 @@ const Presentation = ({darkMode}) => {
   return (
     <section>
 
-<div className='py-10 mb-12 h-screen section flex items-center ' id='presentation'>
+<div className='py-10 h-screen section flex items-center ' id='presentation'>
 
 {/* My picture */}
 
 
-<div className='w-full'>
+<div className='w-full justify-center items-center'>
 
-    <div className={`lg:flex p-0 justify-center items-center ${bgLightMode}`}>
+    <div className={`lg:flex justify-center items-center  ${bgLightMode} max-w-5xl mx-auto`}>
         <div className=' flex justify-center items-center '><Image src={profilePictureXpT} width={250} ></Image></div>
     
-    <div className=' p-0 flex justify-center items-center mt-5 '>
+    <div className=' flex justify-center items-center py-5 '>
         <Image  className=' ml-5' src={quoteStartSVG}width={60} ></Image>
         
         <div>

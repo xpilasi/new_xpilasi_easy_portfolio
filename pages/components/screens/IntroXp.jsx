@@ -13,7 +13,7 @@ const gradientBg = ' bg-gradient-to-r from-neon-blueberry  to-neon-pink hover:op
     
   return (
     <section 
-    className='md:min-h-screen section ' id='intro'
+    className='md:min-h-screen section  ' id='intro'
     >
       {/* First screen full */}
       <div className='min-h-screen'> 
@@ -34,7 +34,7 @@ const gradientBg = ' bg-gradient-to-r from-neon-blueberry  to-neon-pink hover:op
      </nav>
 
   {/* Title + Social Media Icons  */}
-<div className=' py-10'>
+<div className=' py-20  my-auto'>
 
 {/* Name and small bg */}
   <div className=' text-left'>

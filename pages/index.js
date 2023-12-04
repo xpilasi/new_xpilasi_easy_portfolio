@@ -40,7 +40,7 @@ export default function Home() {
      ></IntroXp>
      <Presentation darkMode={darkMode}/>
 
-     <MyStory/>
+     <MyStory darkMode = {darkMode}/>
      <MyProjects/>
      <ContactForm darkMode={darkMode}/>
      <Footer/>

@@ -9,13 +9,16 @@ import MyModal from '../widgets/MyModal';
 import degreeSVG from '../../../public/img/icons/iconBaseBg.svg';
 import mgmtSVG from '../../../public/img/icons/iconBaseBusinessM.svg';
 import codeSVG from '../../../public/img/icons/iconBaseCode.svg';
+import codeTitle from '../../../public/img/icons/codeSVG.svg';
+import mgmtTitle from '../../../public/img/icons/mgmtSVG.svg';
+import degreeTitle from '../../../public/img/icons/degreeSVG.svg';
 
 
 
-const MyStory = () => {
+const MyStory = ({darkMode}) => {
     const myStoryTitle = 'A little bit about my story';
     const highlightTextStyle = ' text-lg py-5 leading-6 md:text-xl mb-10 font-extralight';
-    const myStorySubtitle = `Two years ago, I embarked on a transformation into software development 
+    const myStorySubtitle = `In 2021, I embarked on a transformation into software development 
                              through online courses, certifications, and daily practice.`
 
     const story1 = `At the end of 2010, I obtained a Bachelor Business Administration degree from 
@@ -49,53 +52,62 @@ const MyStory = () => {
       setModalOpen(true);
     };
     
-    
+    const bgBlueberry = 'bg-neon-blueberry';
+    const bgPink = 'bg-neon-pink';
+    const bgGrey = 'bg-neon-grey';
     
   return (
-    <section className='section mb-5 h-screen' id='myStory'>
-      <div>
-        <Title title ={myStoryTitle}></Title>
-        <MiniSubTitle miniSubTitle={myStorySubtitle} />
-      </div>
+    <section className='section h-screen  bg-slate-600 ' id='myStory'>
+      
+      
       
       {/* My story*/}
-      <div className=''>
+      <div className=' bg-neon-blueberry rounded-xl px-10 py-10 in-h-screen' id='myStoryPrincipal'>
 
+      <div className='bg-neon-pink'>
+        {/* <Title title ={myStoryTitle}></Title> */}
+        <MiniSubTitle miniSubTitle={myStorySubtitle} />
+      </div>
 
         {/*Icons  */}
-    <div className=' bg-neon-blueberry rounded-2xl px- mt-10 py-10 md:flex  md:gap-20 justify-center items-center  md:justify-between'>
+    <div className= {`bg-dark-neon-fade  h-28 px-5 mt-0 justify-center items-center `}>
 
           
-    <div className='flex justify-center py-10 px-10 items-center'>
+    <div className=''>
       <a onClick={() => handleImageClick({
         content: story1,
         title: '2010: Degree'
       }
         )}>
-        <Image  src={degreeSVG} width={150} />
+        <Image  src={degreeSVG} width={100} />
+        {/* <Image  src={degreeTitle} width={100} /> */}
         {/* <h1 className=' font-extrabold text-3xl py-5 text-'>2010. Degree sdsds</h1> */}
       </a>
+      <Image className='px-5' src={degreeTitle} width={200} />
+      
     </div>
       
-    <div className=' flex justify-center py-10 text-center'>
+    <div className='flex justify-center text-center'>
       <a onClick={() => handleImageClick({
         content: story2,
         title: '2016: Business Manager'
       }
         )}>
-        <Image src={mgmtSVG} width={150} />
-        {/* <h1 className=' font-extrabold text-3xl py-5 '>2016. MGMT</h1> */}
+        <Image src={mgmtSVG} width={100} />
+        
       </a>
+      <Image className='px-5' src={mgmtTitle} width={200} />
     </div>
 
-    <div className=' flex justify-center py-10'>
+    <div className=' flex justify-center '>
       <a onClick={() => handleImageClick({
         content: story3,
         title: '2020: Coding'
       }
         )}>
-        <Image src={codeSVG} width={150} />
+        <Image src={codeSVG} width={100} />
       </a>
+      <Image className='px-5' src={codeTitle} width={200} />
     </div>
 
       <MyModal
