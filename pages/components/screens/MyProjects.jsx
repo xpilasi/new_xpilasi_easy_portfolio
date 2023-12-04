@@ -12,10 +12,10 @@ import MiniSubTitle from '../widgets/MiniSubTitle';
 
 const MyProjects = () => {
   return (
-    <section className='section' id='myProjects' >
+    <section className='section ' id='myProjects' >
       {/* My projects title */}
-      <div >
-        <Title className = ' bg-white'title = {'My projects' }></Title>
+      <div className=' pt-10'>
+        <Title className = ' 'title = {'My projects' }></Title>
         <MiniSubTitle miniSubTitle = {'These are the projects Ive developped since I started my journey.'}/>
            
       </div>

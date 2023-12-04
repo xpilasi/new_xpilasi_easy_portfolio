@@ -16,7 +16,7 @@ import degreeTitle from '../../../public/img/icons/degreeSVG.svg';
 
 
 const MyStory = ({darkMode}) => {
-    const myStoryTitle = 'A little bit about my story';
+    const myStoryTitle = 'Background';
     const highlightTextStyle = ' text-lg py-5 leading-6 md:text-xl mb-10 font-extralight';
     const myStorySubtitle = `In 2021, I embarked on a transformation into software development 
                              through online courses, certifications, and daily practice.`
@@ -57,23 +57,23 @@ const MyStory = ({darkMode}) => {
     const bgGrey = 'bg-neon-grey';
     
   return (
-    <section className='section h-screen  bg-slate-600 ' id='myStory'>
+    <section className='section h-screen md:flex justify-center items-center' id='myStory'>
       
       
       
       {/* My story*/}
-      <div className=' bg-neon-blueberry rounded-xl px-10 py-10 in-h-screen' id='myStoryPrincipal'>
+      <div className='' id='myStoryPrincipal'>
 
-      <div className='bg-neon-pink'>
-        {/* <Title title ={myStoryTitle}></Title> */}
+      <div className='pt-10'>
+        <Title title ={myStoryTitle}></Title>
         <MiniSubTitle miniSubTitle={myStorySubtitle} />
       </div>
 
         {/*Icons  */}
-    <div className= {`bg-dark-neon-fade  h-28 px-5 mt-0 justify-center items-center `}>
+    <div className= {` py-5 first-line:px-5 mt-0 justify-center items-center`}>
 
           
-    <div className=''>
+    <div className=' flex justify-center mb-10'>
       <a onClick={() => handleImageClick({
         content: story1,
         title: '2010: Degree'
@@ -87,7 +87,7 @@ const MyStory = ({darkMode}) => {
       
     </div>
       
-    <div className='flex justify-center text-center'>
+    <div className='  flex justify-center mb-10'>
       <a onClick={() => handleImageClick({
         content: story2,
         title: '2016: Business Manager'
@@ -99,7 +99,7 @@ const MyStory = ({darkMode}) => {
       <Image className='px-5' src={mgmtTitle} width={200} />
     </div>
 
-    <div className=' flex justify-center '>
+    <div className=' flex justify-center mb-10'>
       <a onClick={() => handleImageClick({
         content: story3,
         title: '2020: Coding'

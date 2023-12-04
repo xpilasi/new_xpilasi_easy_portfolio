@@ -34,7 +34,7 @@ const gradientBg = ' bg-gradient-to-r from-neon-blueberry  to-neon-pink hover:op
      </nav>
 
   {/* Title + Social Media Icons  */}
-<div className=' py-20  my-auto'>
+<div className=' py-10  my-auto'>
 
 {/* Name and small bg */}
   <div className=' text-left'>
