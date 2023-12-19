@@ -12,7 +12,7 @@ const ContactForm = ({darkMode}) => {
     let inputStyle = 'w-full py-5 my-2 rounded px-5 text-dark-neon-fade sm:w-[32rem] md:w-[32rem] lg:w-[32rem]';
     let gradientBg = 'bg-gradient-to-r from-neon-blueberry to-neon-pink'; 
     let inputSendButtonStyle = `transform transition-transform hover:scale-105 w-full bg-neon-pink py-5 my-3 rounded px-5 sm:w-[32rem] md:w-[32rem] lg:w-[32rem] cursor-pointer `;
-    let inputTextAreaStyle = 'w-full my-2 h-60 lg:h-80 rounded py-5 px-5 text-dark-neon-fade sm:w-[32rem] md:w-[32rem] lg:w-[32rem]';
+    let inputTextAreaStyle = 'w-full my-2 h-60 rounded py-5 px-5 text-dark-neon-fade sm:w-[32rem] md:w-[32rem] lg:w-[32rem]';
 
     if(darkMode !== true){
       inputStyle = `w-full py-5 my-2 rounded px-5 text-dark-neon-fade sm:w-[32rem] md:w-[32rem] lg:w-[32rem] ${formBg}`
