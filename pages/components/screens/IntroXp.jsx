@@ -27,7 +27,7 @@ const altMenu = '/xpilasi';
 {/* Top menu */}
 <nav className='py-10 mb-12 flex justify-between'>
        
-       <div className=' text-3xl'>
+       <div className=' text-3xl  text-dark-neon-fade dark:text-white'>
         {/* <Image src={darkMode ? logoXpWhite : logoXpBlueBerry} className='w-20 mt-0 lg:mb-0 '></Image> */}
         {altMenu}
 
