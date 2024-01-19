@@ -15,6 +15,7 @@ const linkedInUrl = 'https://www.linkedin.com/in/xavierpilasi/';
 const gitHubUrl = 'https://github.com/xpilasi';
 
 const hoverScale110 = 'transform transition-transform hover:scale-110';
+const altMenu = '/xpilasi';
     
   return (
     <section 
@@ -26,8 +27,10 @@ const hoverScale110 = 'transform transition-transform hover:scale-110';
 {/* Top menu */}
 <nav className='py-10 mb-12 flex justify-between'>
        
-       <div className=''>
-        <Image src={darkMode ? logoXpWhite : logoXpBlueBerry} className='w-20 mt-0 lg:mb-0 '></Image>
+       <div className=' text-3xl'>
+        {/* <Image src={darkMode ? logoXpWhite : logoXpBlueBerry} className='w-20 mt-0 lg:mb-0 '></Image> */}
+        {altMenu}
+
        </div>
 
        
