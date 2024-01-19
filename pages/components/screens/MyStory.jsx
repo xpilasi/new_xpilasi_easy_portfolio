@@ -47,7 +47,7 @@ const MyStory = ({darkMode}) => {
 
     const iconsSpin = {
       transition: 'transform 0.3s ease-in-out',
-    };
+    }; //CSS in JS
 
     const handleMouseOver = (e) => {
       e.currentTarget.style.transform = 'rotate(360deg)';
@@ -147,7 +147,7 @@ const MyStory = ({darkMode}) => {
         onMouseOut={handleMouseOut}
         className=' cursor-pointer'
         />
-        
+
       </a>
       <Image className='px-5' src={darkMode ? codeTitle: codeLightTitle} width={200} />
     </div>
