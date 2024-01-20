@@ -98,7 +98,7 @@ const MyStory = ({darkMode}) => {
         <Image
         src={degreeLightSVG}
         alt="Degree Icon"
-        width={150}
+        width={100}
         style={iconsSpin}
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
@@ -120,7 +120,7 @@ const MyStory = ({darkMode}) => {
         <Image
         src={mgmtLightSVG}
         alt="Management Icon"
-        width={150}
+        width={100}
         style={iconsSpin}
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
@@ -141,7 +141,7 @@ const MyStory = ({darkMode}) => {
         <Image
         src={codeLightSVG}
         alt="Code Icon"
-        width={150}
+        width={100}
         style={iconsSpin}
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
