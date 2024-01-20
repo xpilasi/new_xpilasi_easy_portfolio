@@ -81,7 +81,7 @@ const MyStory = ({darkMode}) => {
       <div className='' id='myStoryPrincipal'>
 
       <div className='pt-10 mb-20'>
-        <Title title ={myStoryTitle}></Title>
+        {/* <Title title ={myStoryTitle}></Title> */}
         <MiniSubTitle miniSubTitle={myStorySubtitle} />
       </div>
 
