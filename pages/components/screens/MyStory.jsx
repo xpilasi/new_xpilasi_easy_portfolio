@@ -98,7 +98,7 @@ const MyStory = ({darkMode}) => {
         <Image
         src={degreeLightSVG}
         alt="Degree Icon"
-        width={100}
+        width={150}
         style={iconsSpin}
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
@@ -106,7 +106,7 @@ const MyStory = ({darkMode}) => {
       />
         
       </a>
-      <Image className='px-5' src={darkMode ? degreeTitle : degreeLightTitle} width={200} />
+      {/* <Image className='px-5' src={darkMode ? degreeTitle : degreeLightTitle} width={200} /> */}
       
     </div>
       
@@ -120,7 +120,7 @@ const MyStory = ({darkMode}) => {
         <Image
         src={mgmtLightSVG}
         alt="Management Icon"
-        width={100}
+        width={150}
         style={iconsSpin}
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
@@ -128,7 +128,7 @@ const MyStory = ({darkMode}) => {
         />
 
       </a>
-      <Image className='px-5' src={darkMode ? mgmtTitle : mgmtLightTitle } width={200} />
+      {/* <Image className='px-5' src={darkMode ? mgmtTitle : mgmtLightTitle } width={200} /> */}
     </div>
 
     <div className=' flex justify-center mb-10'>
@@ -141,7 +141,7 @@ const MyStory = ({darkMode}) => {
         <Image
         src={codeLightSVG}
         alt="Code Icon"
-        width={100}
+        width={150}
         style={iconsSpin}
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
@@ -149,7 +149,7 @@ const MyStory = ({darkMode}) => {
         />
 
       </a>
-      <Image className='px-5' src={darkMode ? codeTitle: codeLightTitle} width={200} />
+      {/* <Image className='px-5' src={darkMode ? codeTitle: codeLightTitle} width={200} /> */}
     </div>
 
       <MyModal
