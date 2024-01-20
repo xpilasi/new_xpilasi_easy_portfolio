@@ -4,6 +4,7 @@ import gorillaWebImg from '../../../public/img/gorillagrab1.png'
 import web2 from '../../../public/img/web2.png'
 import web3 from '../../../public/img/web3.png'
 import web4 from '../../..//public/img/web4.png'
+import web5 from '../../../public/img/just_list_web.png'
 
 import Title from '../widgets/Title';
 import MiniSubTitle from '../widgets/MiniSubTitle';
@@ -28,7 +29,7 @@ const MyProjects = () => {
           </div>
           {/* project 2 */}
           <div className=' basis-1/3 flex-1'>
-            <Image src={web2} className=' rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'></Image>
+            <Image src={web5} className=' rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'></Image>
           </div>
           {/* project 3 */}
           <div className=' basis-1/3 flex-1'>
