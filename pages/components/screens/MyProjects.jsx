@@ -35,9 +35,9 @@ const MyProjects = () => {
             <Image src={justList} className=' rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'></Image>
           </div>
           {/* project 3 */}
-          <div className=' basis-1/3 flex-1'>
+          {/* <div className=' basis-1/3 flex-1'>
             <Image src={web3} className=' rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'></Image>
-          </div>
+          </div> */}
           {/* project 4 */}
           <div className=' basis-1/3 flex-1'>
             <Image src={web4} className=' rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'></Image>
