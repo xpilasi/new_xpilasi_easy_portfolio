@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <section className='mt-10 text-center'>
         <div className='  py-10'>
-            XPilab 2023
+            xPilab 2024
         </div>
     </section>
     

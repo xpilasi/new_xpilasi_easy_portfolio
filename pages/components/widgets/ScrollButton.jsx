@@ -15,6 +15,8 @@ const ScrollButton = () => {
     const nextIndex = (currentIndex + 1) % sections.length;
     const nextSection = sections[nextIndex];
 
+    console.log(currentIndex);
+
     if (nextSection) {
       nextSection.scrollIntoView({ behavior: 'smooth' });
       activeSectionRef.current = nextSection;
