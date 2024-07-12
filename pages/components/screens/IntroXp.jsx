@@ -56,9 +56,8 @@ const altMenu = '/xpilasi';
     <div className=' text-left '>
       <h2 className={`text-4xl py-2 tracking-tighter font-bogartRegular ${gradientText}  md:text-6xl `}>Hi, I'm Xavi.</h2>
       <br></br>
-      <h2 className={`text-4xl py-2 tracking-tighter font-bogartRegular ${gradientText}  md:text-6xl `}>A Product Manager</h2>
-      <br></br>
-      <h2 className={`text-4xl py-2 tracking-tighter font-bogartRegular ${gradientText}  md:text-6xl `}>who loves to code.</h2>
+      <h2 className={`text-4xl py-2 tracking-tighter font-bogartRegular ${gradientText}  md:text-6xl `}>A Front End Developer</h2>
+      
     </div>
 
   </div>
