@@ -20,7 +20,7 @@ const MyProjects = () => {
       {/* My projects title */}
       <div className=' pt-10'>
         <Title className = ' 'title = {'My projects' }></Title>
-        <MiniSubTitle miniSubTitle = {'These are the projects Ive developped since I started my journey.'}/>
+        <MiniSubTitle miniSubTitle = {"These are the projects I've developped since I started my journey."}/>
            
       </div>
 
