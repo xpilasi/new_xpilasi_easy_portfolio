@@ -11,11 +11,11 @@ const ScrollButton = () => {
     }
 
     const sections = document.querySelectorAll('.section');
-    const currentIndex = Array.from(sections).findIndex((section) => section === activeSectionRef.current);
+    const currentIndex = Array.from(sections).findIndex((section) => section === activeSectionRef.current)+1;
     const nextIndex = (currentIndex + 1) % sections.length;
     const nextSection = sections[nextIndex];
 
-    console.log(currentIndex);
+    console.log(`Section index --> ${currentIndex}`);
 
     if (nextSection) {
       nextSection.scrollIntoView({ behavior: 'smooth' });
