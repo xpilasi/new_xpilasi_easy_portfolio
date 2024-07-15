@@ -11,7 +11,7 @@ const ScrollButton = () => {
     }
 
     const sections = document.querySelectorAll('.section');
-    const currentIndex = Array.from(sections).findIndex((section) => section === activeSectionRef.current)+1;
+    const currentIndex = Array.from(sections).findIndex((section) => section === activeSectionRef.current);
     const nextIndex = (currentIndex + 1) % sections.length;
     const nextSection = sections[nextIndex];
 

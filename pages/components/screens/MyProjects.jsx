@@ -8,6 +8,7 @@ import web5 from '../../../public/img/just_list_web.png'
 import web6 from '../../../public/img/gorilla_web.png'
 import gorillaWeb from '../../../public/img/final_webs/gorilla_web2.png'
 import justList from '../../../public/img/final_webs/just_list_web_full.png'
+import barberWeb from '../../../public/img/final_webs/barber.png'
 
 import Title from '../widgets/Title';
 import MiniSubTitle from '../widgets/MiniSubTitle';
@@ -33,6 +34,10 @@ const MyProjects = () => {
           {/* project 2 */}
           <div className=' basis-1/3 flex-1'>
             <Image src={justList} className=' rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'></Image>
+          </div>
+          {/* project 3 */}
+          <div className=' basis-1/3 flex-1'>
+            <Image src={barberWeb} className=' rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'></Image>
           </div>
           
 

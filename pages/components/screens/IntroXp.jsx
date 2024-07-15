@@ -18,14 +18,14 @@ const hoverScale110 = 'transform transition-transform hover:scale-110';
 const altMenu = '/xpilasi';
     
   return (
-    <section 
-    className='md:min-h-screen section  ' id='intro'
-    >
+    <section className='md:min-h-screen section  ' id='intro'>
+    
+    
       {/* First screen full */}
       <div className='min-h-screen'> 
 
-{/* Top menu */}
-<nav className='py-10 mb-12 flex justify-between'>
+  { /* Top menu */}
+    <nav className='py-10 mb-12 flex justify-between'>
        
        <div className=' text-3xl  text-dark-neon-fade dark:text-white'>
         {/* <Image src={darkMode ? logoXpWhite : logoXpBlueBerry} className='w-20 mt-0 lg:mb-0 '></Image> */}
@@ -33,7 +33,6 @@ const altMenu = '/xpilasi';
 
        </div>
 
-       
        <ul className=' flex items-center'>
          <li className={hoverScale110}><SunMoonIcon darkMode={darkMode} setDarkMode={setDarkMode}/></li>
          <li className={hoverScale110}>
@@ -43,12 +42,11 @@ const altMenu = '/xpilasi';
              href={cvUrl}>Resume
              </a></li>
          
-            
        </ul>
      </nav>
 
   {/* Title + Social Media Icons  */}
-<div className=' py-10  my-auto'>
+<div className=' flex-col  items-center '>
 
 {/* Name and small bg */}
   <div className=' text-left'>
