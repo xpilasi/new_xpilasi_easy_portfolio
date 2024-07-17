@@ -6,9 +6,9 @@ import web3 from '../../../public/img/web3.png'
 import web4 from '../../..//public/img/web4.png'
 import web5 from '../../../public/img/just_list_web.png'
 import web6 from '../../../public/img/gorilla_web.png'
-import gorillaWeb from '../../../public/img/final_webs/gorilla_web2.png'
-import justList from '../../../public/img/final_webs/just_list_web_full.png'
-import barberWeb from '../../../public/img/final_webs/barber.png'
+import gorillaWeb from '../../../public/img/projects_logos/logoGorilla.svg'
+import justList from '../../../public/img/projects_logos/logoJustList.svg'
+import barberWeb from '../../../public/img/projects_logos/logoBarbershop.svg'
 
 import Title from '../widgets/Title';
 import MiniSubTitle from '../widgets/MiniSubTitle';
