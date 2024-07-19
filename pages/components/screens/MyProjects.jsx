@@ -41,28 +41,7 @@ const MyProjects = () => {
       
       </div>
       
-      
 
-
-      <article>
-      {/* <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'> */}
-          {/* project 1 */}
-          {/* <div className=' basis-1/3 flex-1'> */}
-            
-          {/* </div> */}
-          {/* project 2 */}
-          {/* <div className=' basis-1/3 flex-1'> */}
-            {/* <Image src={justList} className=' rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'></Image> */}
-          {/* </div> */}
-          {/* project 3 */}
-          {/* <div className=' basis-1/3 flex-1'> */}
-            {/* <Image src={barberWeb} className=' rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'></Image> */}
-          {/* </div> */}
-          
-
-        {/* </div> */}
-
-      </article>
         
      </section>
   )
