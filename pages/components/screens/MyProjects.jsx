@@ -17,7 +17,7 @@ import MiniSubTitle from '../widgets/MiniSubTitle';
 
 const MyProjects = () => {
   return (
-    <section className='section ' id='myProjects' >
+    <section className='section min-h-screen ' id='myProjects' >
       {/* My projects title */}
       <article className=' pt-10'>
         <Title className = ' 'title = {'My projects' }></Title>
