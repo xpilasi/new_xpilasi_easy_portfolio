@@ -12,7 +12,7 @@ const ContactForm = ({darkMode}) => {
     let inputStyle = 'w-full py-5 my-2 rounded px-5 text-dark-neon-fade sm:w-[32rem] md:w-[32rem] lg:w-[32rem]';
     let gradientBg = 'bg-gradient-to-r from-neon-blueberry to-neon-pink'; 
     let inputSendButtonStyle = `transform transition-transform hover:scale-105 w-full bg-neon-pink py-5 my-3 rounded px-5 sm:w-[32rem] md:w-[32rem] lg:w-[32rem] cursor-pointer `;
-    let inputTextAreaStyle = 'w-full my-2 h-60 rounded py-5 px-5 text-dark-neon-fade sm:w-[32rem] md:w-[32rem] lg:w-[32rem]';
+    let inputTextAreaStyle = 'w-full my-2 h-40 rounded py-5 px-5 text-dark-neon-fade sm:w-[32rem] md:w-[32rem] lg:w-[32rem]';
 
     if(darkMode !== true){
       inputStyle = `w-full py-5 my-2 rounded px-5 text-dark-neon-fade sm:w-[32rem] md:w-[32rem] lg:w-[32rem] ${formBg}`
@@ -60,7 +60,7 @@ const ContactForm = ({darkMode}) => {
       };
 
     return (
-    <section className='section h-screen flex items-center justify-center' >
+    <section className='section min-h-screen   py-10' >
         <div className='text-center mt-0 w-full'>
 
             {/* Title */}
@@ -70,7 +70,7 @@ const ContactForm = ({darkMode}) => {
         </div>
         
         {/* Contact Form */}
-        <div className='my-10 w-full'>
+        <div className=' w-full'>
 
 
             <form onSubmit={handleSubmit}>
