@@ -26,17 +26,17 @@ const MyProjects = () => {
       </article>
 
       {/* Projects */}
-      <div className='grid grid-cols-3 lg:grid lg:grid-cols-3 gap-5 '>
-        <div className='grid-item bg-slate-900 rounded-lg px-20 py-20'>
-        <Image src={gorillaWeb} className=' rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'></Image>
+      <div className='grid grid-cols-1 md:grid md:grid-cols-3 gap-5 '>
+        <div className='grid-item bg-slate-800 rounded-lg px-0 py-0'>
+        <Image src={gorillaWeb} className='w-3/4  '  layout='responsive'></Image>
         </div>
 
         <div className='grid-item bg-slate-900 rounded-lg  px-20 py-20'>
-        <Image src={justList} className=' rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'></Image>
+        <Image src={justList} className=' ' width={'100%'} height={'100%'} layout='responsive'></Image>
         </div>
 
         <div className='grid-item bg-slate-900 rounded-lg px-20 py-20'>
-        <Image src={barberWeb} className=' rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'></Image>
+        <Image src={barberWeb} className=' ' width={'100%'} height={'100%'} layout='responsive'></Image>
         </div>
       
       </div>
