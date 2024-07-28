@@ -9,6 +9,7 @@ import ContactForm from './components/screens/ContactForm';
 import Footer from './components/screens/Footer';
 import ScrollButton from './components/widgets/ScrollButton';
 import Presentation from './components/screens/Presentation';
+import MenuTop from './components/widgets/MenuTop';
 
 
 
@@ -35,6 +36,11 @@ export default function Home() {
 
     <main className={blackMain}
 >
+     <MenuTop
+     
+     darkMode = {darkMode}
+     setDarkMode = {setDarkMode}
+     ></MenuTop>
      <IntroXp
      
      darkMode = {darkMode}

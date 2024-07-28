@@ -18,66 +18,51 @@ const hoverScale110 = 'transform transition-transform hover:scale-110';
 const altMenu = '/xpilasi';
     
   return (
-    <section className='md:min-h-screen section  ' id='intro-xp'>
+    <section className='md:min-h-screen   ' id='intro-xp'>
     
     
       {/* First screen full */}
-      <div className='min-h-screen'> 
+    <div className='min-h-screens flex-col '> 
 
-  { /* Top menu */}
-    <nav className='py-10 mb-12 flex justify-between'>
-       
-       <div className=' text-3xl  text-dark-neon-fade dark:text-white'>
-        {/* <Image src={darkMode ? logoXpWhite : logoXpBlueBerry} className='w-20 mt-0 lg:mb-0 '></Image> */}
-        {altMenu}
 
-       </div>
-
-       <ul className=' flex items-center'>
-         <li className={hoverScale110}><SunMoonIcon darkMode={darkMode} setDarkMode={setDarkMode}/></li>
-         <li className={hoverScale110}>
-          <a className={` bg-neon-pink text-white px-4 py-2 lg:px-6 lg:py-3 rounded-md ml-10 mr-0` } 
-             target="_blank"
-             rel="noopener noreferrer"
-             href={cvUrl}>Resume
-             </a></li>
-         
-       </ul>
-     </nav>
-
-  {/* Title + Social Media Icons  */}
-<div className=' flex-col  items-center '>
-
-{/* Name and small bg */}
-  <div className=' text-left'>
-
-    <div className=' text-left '>
-      <h2 className={`text-4xl py-2 tracking-tighter font-bogartRegular ${gradientText}  md:text-6xl `}>Hi, I'm Xavi.</h2>
-      <br></br>
-      <h2 className={`text-4xl py-2 tracking-tighter font-bogartRegular ${gradientText}  md:text-6xl `}>A Front End Developer</h2>
       
-    </div>
 
-  </div>
-  
-{/* Icons Social Media */}
-<div className=' text-6xl flex justify-left gap-5 py-3 text-dark-neon-fade dark:text-white mt-10 sm:flex justify-center'>
-    <a href={linkedInUrl}
-       target="_blank"
-       rel="noopener noreferrer">
-        <AiFillLinkedin className={`${hoverScale110} cursor-pointer`}/></a>
-    <a href={gitHubUrl}
-       target="_blank"
-       rel="noopener noreferrer">
-        <AiFillGithub className={`${hoverScale110} cursor-pointer`}/></a>
-    
-    
-</div>
+      
+        {/* Title + Social Media Icons  */}
+        <div className='  flex-col py-10  bg-red-400 '>
 
-</div>
+          {/* Name and small bg */}
+            <div className=' text-left'>
+
+              <div className=' text-left '>
+                <h2 className={`text-4xl py-2 tracking-tighter font-bogartRegular ${gradientText}  md:text-6xl `}>Hi, I'm Xavi.</h2>
+                <br></br>
+                <h2 className={`text-4xl py-2 tracking-tighter font-bogartRegular ${gradientText}  md:text-6xl `}>A Front End Developer</h2>
+                
+              </div>
+
+            </div>
+            
+          {/* Icons Social Media */}
+          <div className=' text-6xl flex justify-left gap-5 py-3 text-dark-neon-fade dark:text-white mt-10 sm:flex justify-center'>
+              <a href={linkedInUrl}
+                target="_blank"
+                rel="noopener noreferrer">
+                  <AiFillLinkedin className={`${hoverScale110} cursor-pointer`}/></a>
+              <a href={gitHubUrl}
+                target="_blank"
+                rel="noopener noreferrer">
+                  <AiFillGithub className={`${hoverScale110} cursor-pointer`}/></a>
+              
+              
+          </div>
+
+        </div>
+      
+        
+      
      
-      {/* End first screen */}
-      </div>
+    </div>
      
  
     </section>
