@@ -4,5 +4,5 @@ This is my personal portfolio repository. I've highlighted  my last projects, al
 
 ## Created with REACT - VITE - TAILWIND CSS 
 ## Designed with FIGMA --> Checkout it online on ----> [HERE](https://www.figma.com/design/KOn0FKBSEPvNkkZbEuyjNy/portfolio-xpilasi.com?m=auto&t=9NNyesD72Qer9wAV-1)
-## Getting Started
+
 
