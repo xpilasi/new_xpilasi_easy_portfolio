@@ -1,35 +1,25 @@
 import React from 'react'
-import logoXpWhite from '../../../public/img/logo_xp_white.png'
-import logoXpBlueBerry from '../../../public/img/logo_xp_blueberry.png'
-import Image  from 'next/image';
 import {AiFillLinkedin,AiFillGithub} from 'react-icons/ai';
-import SunMoonIcon from '../widgets/SunMoonIcon';
+
 
 
 const IntroXp = ({darkMode,setDarkMode}) => {
 
 const gradientText = 'bg-gradient-to-r from-neon-orange  via-neon-blueberry to-neon-water   inline-block text-transparent bg-clip-text ';
-const gradientBg = ' bg-gradient-to-r from-neon-blueberry  to-neon-pink hover:opacity-80'; 
-const cvUrl = 'https://drive.google.com/file/d/1gskQCNhkEyFgCH2RfqZiVGiDe1CSY3aT/view?usp=drive_link';
 const linkedInUrl = 'https://www.linkedin.com/in/xavierpilasi/';
 const gitHubUrl = 'https://github.com/xpilasi';
 
 const hoverScale110 = 'transform transition-transform hover:scale-110';
-const altMenu = '/xpilasi';
+
     
   return (
     <section className='md:min-h-screen   ' id='intro-xp'>
-    
-    
-      {/* First screen full */}
+
     <div className='min-h-screens flex-col '> 
 
 
-      
-
-      
         {/* Title + Social Media Icons  */}
-        <div className='  flex-col py-10  bg-red-400 '>
+        <div className='  flex-col py-10'>
 
           {/* Name and small bg */}
             <div className=' text-left'>
