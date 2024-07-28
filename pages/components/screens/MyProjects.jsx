@@ -9,6 +9,9 @@ import MiniSubTitle from '../widgets/MiniSubTitle';
 
 
 const MyProjects = () => {
+
+  const projectContainerStyle = 'grid-item bg-new-neon rounded-lg px-5 py-10';
+
   return (
     <section className='section min-h-screen flex-col  ' id='myProjects' >
       {/* My projects title */}
@@ -21,15 +24,15 @@ const MyProjects = () => {
       <article className='flex justify-center items-center py-20'>
       {/* Projects */}
       <div className='grid grid-cols-1 md:grid md:grid-cols-3 gap-10 '>
-              <div className='grid-item rounded-lg '>
+              <div className={projectContainerStyle}>
               <Image src={gorillaWeb}   layout='responsive'></Image>
               </div>
 
-              <div className='grid-item bg-slate-900 rounded-lg  '>
+              <div className={projectContainerStyle}>
               <Image src={justList}  layout='responsive'></Image>
               </div>
 
-              <div className='grid-item bg-slate-900 rounded-lg '>
+              <div className={projectContainerStyle}>
               <Image src={barberWeb}   layout='responsive'></Image>
               </div>
             
