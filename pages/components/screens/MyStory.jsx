@@ -73,7 +73,7 @@ const MyStory = ({darkMode}) => {
     const bgGrey = 'bg-neon-grey';
     
   return (
-    <section className='section h-screen md:flex justify-center items-center' id='myStory'>
+    <section className='section h-screen md:flex justify-center items-center' id='my-story'>
       
       
       

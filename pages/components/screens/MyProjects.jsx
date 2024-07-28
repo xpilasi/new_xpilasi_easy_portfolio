@@ -13,7 +13,7 @@ const MyProjects = () => {
   const projectContainerStyle = 'grid-item bg-new-neon rounded-lg px-5 py-10';
 
   return (
-    <section className='section min-h-screen flex-col  ' id='myProjects' >
+    <section className='section min-h-screen flex-col  ' id='my-projects' >
       {/* My projects title */}
       <article className=' pt-10'>
         <Title className = ' 'title = {'My projects' }></Title>

@@ -18,7 +18,7 @@ const hoverScale110 = 'transform transition-transform hover:scale-110';
 const altMenu = '/xpilasi';
     
   return (
-    <section className='md:min-h-screen section  ' id='intro'>
+    <section className='md:min-h-screen section  ' id='intro-xp'>
     
     
       {/* First screen full */}

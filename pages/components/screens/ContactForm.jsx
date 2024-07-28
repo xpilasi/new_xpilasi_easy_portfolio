@@ -60,7 +60,7 @@ const ContactForm = ({darkMode}) => {
       };
 
     return (
-    <section className='section min-h-screen   py-10' >
+    <section id='contact' className='section min-h-screen    py-10' >
         <div className='text-center mt-0 w-full'>
 
             {/* Title */}
