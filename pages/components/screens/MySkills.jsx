@@ -69,7 +69,7 @@ const MySkills = ({darkMode}) => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          variants={containerVariantsRight}
+          variants={containerVariantsLeft}
         >
           <p className='flex justify-center items-center   px-10 h-40 text-3xl'>FRAMEWORKS</p>
           <p className='flex justify-center items-center   px-10 h-40'>This is a text description: my skills</p>
