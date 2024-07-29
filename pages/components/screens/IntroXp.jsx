@@ -15,7 +15,7 @@ const hoverScale110 = 'transform transition-transform hover:scale-110';
   return (
     <section className='md:min-h-screen   ' id='intro-xp'>
 
-    <div className='min-h-screens flex-col '> 
+    <div className='min-h-screen flex-col '> 
 
 
         {/* Title + Social Media Icons  */}
