@@ -16,9 +16,10 @@ const ScrollButton = () => {
     //const section1 = document.getElementById('intro-xp');
     const section2 = document.getElementById('presentation');
     const section3 = document.getElementById('my-story');
-    const section4 = document.getElementById('my-projects');
-    const section5 = document.getElementById('contact');
-    const sectionsPortfolio = [section0, section2, section3, section4, section5];
+    const section4 = document.getElementById('my-skills');
+    const section5 = document.getElementById('my-projects');
+    const section6 = document.getElementById('contact');
+    const sectionsPortfolio = [section0, section2, section3, section4, section5,section6];
     
     
     let nextIndex = 0;

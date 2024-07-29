@@ -10,6 +10,7 @@ import Footer from './components/screens/Footer';
 import ScrollButton from './components/widgets/ScrollButton';
 import Presentation from './components/screens/Presentation';
 import MenuTop from './components/widgets/MenuTop';
+import MySkills from './components/screens/MySkills';
 
 
 
@@ -49,6 +50,7 @@ export default function Home() {
      <Presentation darkMode={darkMode}/>
 
      <MyStory darkMode = {darkMode}/>
+     <MySkills darkMode = {darkMode}/>
      <MyProjects/>
      <ContactForm darkMode={darkMode}/>
      <Footer/>

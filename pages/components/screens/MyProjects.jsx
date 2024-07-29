@@ -10,18 +10,18 @@ import MiniSubTitle from '../widgets/MiniSubTitle';
 
 const MyProjects = () => {
 
-  const projectContainerStyle = 'grid-item bg-new-neon rounded-lg px-5 py-10';
+  const projectContainerStyle = 'grid-item bg-new-neon rounded-xl px-5 py-10';
 
   return (
-    <section className='section min-h-screen flex-col  ' id='my-projects' >
+    <section className='min-h-screen flex flex-col justify-center items-center ' id='my-projects' >
       {/* My projects title */}
-      <article className=' pt-10'>
-        <Title className = ' 'title = {'My projects' }></Title>
+      <article className=' pt-10 '>
+        {/* <Title className = ' 'title = {'My projects' }></Title> */}
         <MiniSubTitle miniSubTitle = {"These are the projects I've developped since I started my journey."}/>
            
       </article> 
 
-      <article className='flex justify-center items-center py-20'>
+      <article className='flex justify-center items-center py-20 '>
       {/* Projects */}
       <div className='grid grid-cols-1 md:grid md:grid-cols-3 gap-10 '>
               <div className={projectContainerStyle}>
