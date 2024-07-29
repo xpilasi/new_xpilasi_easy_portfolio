@@ -60,7 +60,7 @@ const ContactForm = ({darkMode}) => {
       };
 
     return (
-    <section id='contact' className='h-screen py-10 flex flex-col  justify-center  items-center' >
+    <section id='contact' className='h-screen flex flex-col  justify-center  items-center' >
 
         <div className='flex justify-center py-5  '>
             <Title title = {'Contact Me'}></Title>
