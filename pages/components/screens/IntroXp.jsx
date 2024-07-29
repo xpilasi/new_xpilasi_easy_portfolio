@@ -13,19 +13,19 @@ const hoverScale110 = 'transform transition-transform hover:scale-110';
 
     
   return (
-    <section className='md:min-h-screen   ' id='intro-xp'>
+    <section className='md:min-h-screenpt-20 items-center  ' id='intro-xp'>
 
-    <div className='min-h-screen flex-col '> 
+    <div className='  '> 
 
 
         {/* Title + Social Media Icons  */}
-        <div className='  flex-col py-10'>
+        <div className='  flex-col py-10 '>
 
           {/* Name and small bg */}
-            <div className=' text-left'>
+            <div className=' text-center'>
 
-              <div className=' text-left '>
-                <h2 className={`text-4xl py-2 tracking-tighter font-bogartRegular ${gradientText}  md:text-6xl `}>Hi, I'm Xavi.</h2>
+              <div className=' '>
+                <h2 className={`text-4xl py-2 tracking-tighter font-bogartRegular ${gradientText}  md:text-6xl lg:text-9xl `}>Hi, I'm Xavi.</h2>
                 <br></br>
                 <h2 className={`text-4xl py-2 tracking-tighter font-bogartRegular ${gradientText}  md:text-6xl `}>A Front End Developer</h2>
                 

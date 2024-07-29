@@ -12,13 +12,13 @@ const ContactForm = ({darkMode}) => {
     let inputStyle = 'w-full py-5 my-2 rounded px-5 text-dark-neon-fade sm:w-[32rem] md:w-[32rem] lg:w-[32rem]';
     let gradientBg = 'bg-gradient-to-r from-neon-blueberry to-neon-pink'; 
     let inputSendButtonStyle = `transform transition-transform hover:scale-105 w-full bg-neon-pink py-5 my-3 rounded px-5 sm:w-[32rem] md:w-[32rem] lg:w-[32rem] cursor-pointer `;
-    let inputTextAreaStyle = 'w-full my-2 lg:h-40 rounded h-72 py-5 px-5 text-dark-neon-fade sm:w-[32rem] md:w-[32rem] lg:w-[32rem]';
+    let inputTextAreaStyle = 'w-full my-2 h-60 sm:h-60 md:h-60 lg:h-36 xl:h-60 py-5 px-5 rounded text-dark-neon-fade sm:w-[32rem] md:w-[32rem] lg:w-[32rem]';
 
     if(darkMode !== true){
       inputStyle = `w-full py-5 my-2 rounded px-5 text-dark-neon-fade sm:w-[32rem] md:w-[32rem] lg:w-[32rem] ${formBg}`
       gradientBg = ' bg-gradient-to-r from-neon-blueberry  to-neon-pink'; 
       inputSendButtonStyle = `transform transition-transform hover:scale-105 w-full bg-neon-pink py-5 my-3 rounded px-5 sm:w-[32rem] md:w-[32rem] lg:w-[32rem] text-white cursor-pointer `;
-      inputTextAreaStyle = `w-full my-2 h-40 sm:h-70  rounded py-5 px-5 text-dark-neon-fade sm:w-[32rem] md:w-[32rem] lg:w-[32rem] ${formBg}`;
+      inputTextAreaStyle = `w-full my-2 h-40 sm:h-70 xl:h-72  rounded py-5 px-5 text-dark-neon-fade sm:w-[32rem] md:w-[32rem] lg:w-[32rem] ${formBg}`;
   };
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -60,17 +60,19 @@ const ContactForm = ({darkMode}) => {
       };
 
     return (
-    <section id='contact' className='section min-h-screen py-10' >
-        <div className='text-center mt-0 w-full'>
+    <section id='contact' className='h-screen py-10 flex flex-col  justify-center  items-center' >
 
-            {/* Title */}
-        <div className=' '>
+        <div className='flex justify-center py-5  '>
             <Title title = {'Contact Me'}></Title>
-            <MiniSubTitle miniSubTitle = {"Let's have a chat!"}/>
         </div>
+
+        <div className='text-center w-full flex-col justify-center items-center' id='centrado-verticalmente'>
+
+            
         
-        {/* Contact Form */}
-        <div className=' w-full'>
+        
+        <MiniSubTitle miniSubTitle = {"Let's have a chat!"}/>
+        <div className=' w-full '>
 
 
             <form onSubmit={handleSubmit}>
