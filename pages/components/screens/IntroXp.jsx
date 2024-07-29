@@ -13,7 +13,7 @@ const hoverScale110 = 'transform transition-transform hover:scale-110';
 
     
   return (
-    <section className='md:min-h-screenpt-20 items-center  ' id='intro-xp'>
+    <section className='min-h-screen pt-20 items-center  ' id='intro-xp'>
 
     <div className='  '> 
 
