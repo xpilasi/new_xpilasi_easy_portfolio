@@ -31,6 +31,7 @@ const ScrollButton = () => {
       case  1: nextIndex = 2;break;
       case  2: nextIndex = 3;break;
       case  3: nextIndex = 4;break;
+      case  4: nextIndex = 5;break;
       case  5: nextIndex = 0;break;
     }
 

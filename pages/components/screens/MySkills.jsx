@@ -65,7 +65,7 @@ const MySkills = ({darkMode}) => {
       <motion.div
           className='grid lg:grid-cols-2 bg-neon-blueberry rounded-xl'
           id='frameworks'
-          custom={1}
+          custom={0}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -80,7 +80,7 @@ const MySkills = ({darkMode}) => {
       <motion.div
           className='grid lg:grid-cols-2 bg-dark-neon-fade rounded-xl'
           id='databases'
-          custom={2}
+          custom={0}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
