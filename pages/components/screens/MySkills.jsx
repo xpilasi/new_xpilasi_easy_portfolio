@@ -48,7 +48,7 @@ const MySkills = ({darkMode}) => {
       </div>
         
       <article className='mt-10 flex flex-col lg:items-start items-center  w-full text-white'>
-      <div className='w-80 '>
+      <div className='w-80 lg:ml-20 '>
       <motion.div
           className='flex flex-col items-center bg-neon-pink rounded-xl w-full h-44'
           id='languajes'
@@ -66,7 +66,7 @@ const MySkills = ({darkMode}) => {
       </article> 
       
       <article className='mt-5 flex flex-col lg:items-end items-center  w-full text-white'>
-      <div className='w-80 '>
+      <div className='w-80 lg:mr-20 '>
       <motion.div
           className='flex flex-col items-center bg-neon-blueberry rounded-xl w-full h-44 '
           id='frameworks'
@@ -84,7 +84,7 @@ const MySkills = ({darkMode}) => {
       </article> 
 
       <article className='mt-5 flex flex-col lg:items-start items-center  w-full text-white'>
-        <div className='w-80'>
+        <div className='w-80 lg:ml-20'>
         <motion.div
           className='flex flex-col items-center bg-dark-neon-fade rounded-xl w-full h-44'
           id='databases'
