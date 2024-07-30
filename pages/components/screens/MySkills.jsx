@@ -40,15 +40,16 @@ const MySkills = ({darkMode}) => {
   const projectContainerStyle = 'grid-item bg-new-neon rounded-lg px-5 py-10';
 
   return (
-    <section className='min-h-screen flex flex-col justify-center items-center ' id='my-skills' >
-      
+    <section className='min-h-screen flex flex-col justify-center items-center  ' id='my-skills' >
       <div className=''>
       <MiniSubTitle miniSubTitle = {"I'm a really enthousiastic person and also a fast learner. I've worked with several tecnologies for different purposes."}/>
       
       </div>
+      <div className='xl:px-56'>
+      
         
       <article className='mt-10 flex flex-col lg:items-start items-center  w-full text-white'>
-      <div className='w-80 lg:ml-20 '>
+      <div className='w-80 lg:ml-20 xl:ml-50'>
       <motion.div
           className='flex flex-col items-center bg-neon-pink rounded-xl w-full h-44'
           id='languajes'
@@ -66,7 +67,7 @@ const MySkills = ({darkMode}) => {
       </article> 
       
       <article className='mt-5 flex flex-col lg:items-end items-center  w-full text-white'>
-      <div className='w-80 lg:mr-20 '>
+      <div className='w-80 lg:mr-20 xl:mr-50 '>
       <motion.div
           className='flex flex-col items-center bg-neon-blueberry rounded-xl w-full h-44 '
           id='frameworks'
@@ -84,7 +85,7 @@ const MySkills = ({darkMode}) => {
       </article> 
 
       <article className='mt-5 flex flex-col lg:items-start items-center  w-full text-white'>
-        <div className='w-80 lg:ml-20'>
+        <div className='w-80 lg:ml-20 xl:ml-50'>
         <motion.div
           className='flex flex-col items-center bg-dark-neon-fade rounded-xl w-full h-44'
           id='databases'
@@ -100,6 +101,8 @@ const MySkills = ({darkMode}) => {
         </div>
       
       </article>
+      </div>
+      
           
         
         
