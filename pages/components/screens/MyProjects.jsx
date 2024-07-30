@@ -3,6 +3,7 @@ import Image  from 'next/image';
 import gorillaWeb from '../../../public/img/projects_logos/gorillaGrabLogoSVG.svg'
 import justList from '../../../public/img/projects_logos/justListLogoSVGFinal.svg'
 import barberWeb from '../../../public/img/projects_logos/vintageGroomLogoSVG.svg'
+import db from '../../../public/img/icons/dbSVG.svg';
 import Title from '../widgets/Title';
 import MiniSubTitle from '../widgets/MiniSubTitle';
 

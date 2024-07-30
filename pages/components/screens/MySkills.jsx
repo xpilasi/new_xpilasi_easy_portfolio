@@ -1,11 +1,16 @@
 import React from 'react'
 import Image  from 'next/image';
-import gorillaWeb from '../../../public/img/projects_logos/gorillaGrabLogoSVG.svg'
-import justList from '../../../public/img/projects_logos/justListLogoSVGFinal.svg'
-import barberWeb from '../../../public/img/projects_logos/vintageGroomLogoSVG.svg'
+import db from '../../../public/img/icons/dbSVG.svg';
+import languajes from '../../../public/img/icons/languajesSVG.svg';
+import frameworks from '../../../public/img/icons/frameworksSVG.svg';
 import Title from '../widgets/Title';
 import MiniSubTitle from '../widgets/MiniSubTitle';
 import { motion } from 'framer-motion';
+import Svg from '../widgets/Svg';
+import { FaDatabase } from "react-icons/fa";
+import { FaCode } from "react-icons/fa";
+import { IoCube } from "react-icons/io5";
+
 
 
 
@@ -37,17 +42,15 @@ const MySkills = ({darkMode}) => {
   return (
     <section className='min-h-screen flex flex-col justify-center items-center ' id='my-skills' >
       
-      <div className='pb-10'>
+      <div className=''>
       <MiniSubTitle miniSubTitle = {"I'm a really enthousiastic person and also a fast learner. I've worked with several tecnologies for different purposes."}/>
+      
       </div>
         
-        
-           
-      
-
-      <article className='flex flex-col lg:items-start items-center  w-full text-white'>
+      <article className='mt-10 flex flex-col lg:items-start items-center  w-full text-white'>
+      <div className='w-80 '>
       <motion.div
-          className='grid lg:grid-cols-2 bg-neon-pink  rounded-xl'
+          className='flex flex-col items-center bg-neon-pink rounded-xl w-full h-44'
           id='languajes'
           custom={0}
           initial="hidden"
@@ -55,15 +58,17 @@ const MySkills = ({darkMode}) => {
           viewport={{ once: true }}
           variants={containerVariantsLeft}
         >
-          <p className='flex justify-center items-center   px-10 h-40 text-3xl'>LANGUAJES</p>
-          <p className='flex justify-center  items-center  px-10 h-40'>This is a text description: my skills</p>
+          <p className='flex justify-center items-center   px-10 pt-5 '><FaCode className = ' text-7xl '/> </p>
+          <p className='flex justify-center  items-center  px-10 text-3xl pb-5'>LANGUAJES</p>
       </motion.div>
+      </div>
         
       </article> 
       
-      <article className='mt-20 flex flex-col lg:items-end items-center  w-full text-white'>
+      <article className='mt-5 flex flex-col lg:items-end items-center  w-full text-white'>
+      <div className='w-80 '>
       <motion.div
-          className='grid lg:grid-cols-2 bg-neon-blueberry rounded-xl'
+          className='flex flex-col items-center bg-neon-blueberry rounded-xl w-full h-44 '
           id='frameworks'
           custom={0.25}
           initial="hidden"
@@ -71,14 +76,17 @@ const MySkills = ({darkMode}) => {
           viewport={{ once: true }}
           variants={containerVariantsLeft}
         >
-          <p className='flex justify-center items-center   px-10 h-40 text-3xl'>FRAMEWORKS</p>
-          <p className='flex justify-center items-center   px-10 h-40'>This is a text description: my skills</p>
+          <p className='flex justify-center items-center px-32  text-3xl pt-5'><IoCube className = 'text-8xl'/></p>
+          <p className='flex justify-center items-center    text-3xl pb-5'>FRAMEWORKS</p>
       </motion.div>
+      </div>
+      
       </article> 
 
-      <article className='mt-20 flex flex-col lg:items-start items-center w-full text-white'>
-      <motion.div
-          className='grid lg:grid-cols-2 bg-dark-neon-fade rounded-xl'
+      <article className='mt-5 flex flex-col lg:items-start items-center  w-full text-white'>
+        <div className='w-80'>
+        <motion.div
+          className='flex flex-col items-center bg-dark-neon-fade rounded-xl w-full h-44'
           id='databases'
           custom={0.5}
           initial="hidden"
@@ -86,9 +94,11 @@ const MySkills = ({darkMode}) => {
           viewport={{ once: true }}
           variants={containerVariantsLeft}
         >
-          <p className='flex justify-center items-center  px-10 h-40 text-3xl'>DATABASES</p>
-          <p className='flex justify-center items-center px-10 h-40'>This is a text description: my skills</p>
+          <p className='flex justify-center items-center px-36  text-3xl pt-8 pb-1'><FaDatabase className = 'text-7xl'/></p>
+          <p className='flex justify-center items-center  text-3xl pb-5'>DATABASES</p>
       </motion.div>
+        </div>
+      
       </article>
           
         
@@ -104,4 +114,4 @@ const MySkills = ({darkMode}) => {
   )
 }
 
-export default MySkills
+export default MySkills;
