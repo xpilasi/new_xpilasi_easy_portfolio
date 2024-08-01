@@ -6,6 +6,8 @@ import barberWeb from '../../../public/img/projects_logos/vintageGroomLogoSVG.sv
 import db from '../../../public/img/icons/dbSVG.svg';
 import Title from '../widgets/Title';
 import MiniSubTitle from '../widgets/MiniSubTitle';
+import Project from '../widgets/Project';
+
 
 
 
@@ -25,19 +27,14 @@ const MyProjects = () => {
       <article className='flex justify-center items-center py-20 '>
       {/* Projects */}
       <div className='grid grid-cols-1 md:grid md:grid-cols-3 gap-10 '>
-              <div className={projectContainerStyle}>
-              <Image src={gorillaWeb}   layout='responsive'></Image>
-              </div>
+              
+              <Project imageSrc={gorillaWeb} projectName='Gorilla Grab' designType='Mobile App'></Project>
+              <Project imageSrc={justList} projectName='Just List' designType='Mobile App'></Project>
+              <Project imageSrc={barberWeb} projectName='Vintage Groom' designType='Web design'></Project>
 
-              <div className={projectContainerStyle}>
-              <Image src={justList}  layout='responsive'></Image>
-              </div>
-
-              <div className={projectContainerStyle}>
-              <Image src={barberWeb}   layout='responsive'></Image>
-              </div>
+             
             
-            </div>
+          </div>
             
 
       </article>
