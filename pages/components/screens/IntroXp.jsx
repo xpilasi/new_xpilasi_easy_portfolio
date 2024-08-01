@@ -1,5 +1,6 @@
 import React from 'react'
 import {AiFillLinkedin,AiFillGithub} from 'react-icons/ai';
+import IntroXpAnimation from '../widgets/TituloIntro';
 
 
 
@@ -13,21 +14,22 @@ const hoverScale110 = 'transform transition-transform hover:scale-110';
 
     
   return (
-    <section className='min-h-screen pt-20 items-center  ' id='intro-xp'>
-
-    <div className='  '> 
+    <section className='min-h-screen pt-10 items-center  ' id='intro-xp'>
+<IntroXpAnimation/>
+    <div className=' '> 
 
 
         {/* Title + Social Media Icons  */}
-        <div className='  flex-col py-10 '>
+        <div className='  flex-col pb-10 '>
 
           {/* Name and small bg */}
             <div className=' text-center'>
 
               <div className=' '>
-                <h2 className={`text-7xl py-2 tracking-tighter font-bogartRegular ${gradientText}  md:text-7xl lg:text-9xl `}>Hi, I'm Xavi.</h2>
+                
+                <h2 className={`text-7xl   tracking-tighter font-bogartRegular ${gradientText}  md:text-7xl lg:text-9xl `}>Hi, I'm Xavi.</h2>
                 <br></br>
-                <h2 className={`text-4xl py-2 tracking-tighter font-bogartRegular ${gradientText}  md:text-6xl `}>A Front End Developer</h2>
+                <h2 className={`text-4xl  tracking-tighter font-bogartRegular ${gradientText}  md:text-6xl `}>A Front End Developer</h2>
                 
               </div>
 

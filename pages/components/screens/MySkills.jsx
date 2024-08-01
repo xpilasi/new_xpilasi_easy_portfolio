@@ -51,7 +51,7 @@ const MySkills = ({darkMode}) => {
       <article className='mt-10 flex flex-col lg:items-start items-center  w-full text-white'>
       <div className='w-80 lg:ml-20 xl:ml-50'>
       <motion.div
-          className='flex flex-col items-center bg-neon-pink rounded-xl w-full h-44'
+          className='flex flex-col items-center bg-neon-pink rounded-xl w-full h-36'
           id='languajes'
           custom={0}
           initial="hidden"
@@ -59,7 +59,7 @@ const MySkills = ({darkMode}) => {
           viewport={{ once: true }}
           variants={containerVariantsLeft}
         >
-          <p className='flex justify-center items-center   px-10 pt-5 '><FaCode className = ' text-7xl '/> </p>
+          <p className='flex justify-center items-center   px-10 pt-5 '><FaCode className = ' text-6xl '/> </p>
           <p className='flex justify-center  items-center  px-10 text-3xl pb-5'>LANGUAJES</p>
       </motion.div>
       </div>
@@ -69,7 +69,7 @@ const MySkills = ({darkMode}) => {
       <article className='mt-5 flex flex-col lg:items-end items-center  w-full text-white'>
       <div className='w-80 lg:mr-20 xl:mr-50 '>
       <motion.div
-          className='flex flex-col items-center bg-neon-blueberry rounded-xl w-full h-44 '
+          className='flex flex-col items-center bg-neon-blueberry rounded-xl w-full h-36 '
           id='frameworks'
           custom={0.25}
           initial="hidden"
@@ -77,7 +77,7 @@ const MySkills = ({darkMode}) => {
           viewport={{ once: true }}
           variants={containerVariantsLeft}
         >
-          <p className='flex justify-center items-center px-32  text-3xl pt-5'><IoCube className = 'text-8xl'/></p>
+          <p className='flex justify-center items-center px-32  text-3xl pt-5'><IoCube className = 'text-7xl'/></p>
           <p className='flex justify-center items-center    text-3xl pb-5'>FRAMEWORKS</p>
       </motion.div>
       </div>
@@ -87,7 +87,7 @@ const MySkills = ({darkMode}) => {
       <article className='mt-5 flex flex-col lg:items-start items-center  w-full text-white'>
         <div className='w-80 lg:ml-20 xl:ml-50'>
         <motion.div
-          className='flex flex-col items-center bg-dark-neon-fade rounded-xl w-full h-44'
+          className='flex flex-col items-center bg-dark-neon-fade rounded-xl w-full h-36'
           id='databases'
           custom={0.5}
           initial="hidden"
@@ -95,7 +95,7 @@ const MySkills = ({darkMode}) => {
           viewport={{ once: true }}
           variants={containerVariantsLeft}
         >
-          <p className='flex justify-center items-center px-36  text-3xl pt-8 pb-1'><FaDatabase className = 'text-7xl'/></p>
+          <p className='flex justify-center items-center px-36  text-3xl pt-8 pb-1'><FaDatabase className = 'text-6xl'/></p>
           <p className='flex justify-center items-center  text-3xl pb-5'>DATABASES</p>
       </motion.div>
         </div>
