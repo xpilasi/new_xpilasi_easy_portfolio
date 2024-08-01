@@ -51,7 +51,7 @@ export default function Home() {
 
      <MyStory darkMode = {darkMode}/>
      <MySkills darkMode = {darkMode}/>
-     <MyProjects/>
+     <MyProjects darkMode={darkMode}/>
      <ContactForm darkMode={darkMode}/>
      <Footer/>
      <ScrollButton />
