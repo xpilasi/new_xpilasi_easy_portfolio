@@ -11,8 +11,8 @@ const hoverScale110 = 'transform transition-transform hover:scale-110';
     <section className='mt-10 text-center'>
       <article className='lg:grid lg:grid-cols-3'>
         {/* col 1 */}
-        <div className='grid grid-col-2  justify-center items-center  '>
-          <div className='text-2xl text-start'>
+        <div className='grid grid-col-1  justify-start items-center  '>
+          <div className='text-md font-extralight text-start'>
             <p>Thanks for looking around.</p>
             <p>Stay in touch.</p>
             
@@ -22,7 +22,7 @@ const hoverScale110 = 'transform transition-transform hover:scale-110';
           
         </div>
         {/* col 2 */}
-        <div className=' text-6xl  gap-10  text-dark-neon-fade dark:text-white  sm:flex justify-center '>
+        <div className=' text-4xl  gap-10  text-dark-neon-fade dark:text-white  sm:flex justify-center '>
               <a href={linkedInUrl}
                 target="_blank"
                 rel="noopener noreferrer">
@@ -34,14 +34,14 @@ const hoverScale110 = 'transform transition-transform hover:scale-110';
               
               
       </div>
-        <div className='grid grid-cols-2 gap-10 justify-center items-center  text-start text-2xl'>
+        <div className='flex justify-end items-center  text-md  font-extralight'>
         <ul className='flex text-end gap-2'>
         {/* <li>background </li> */}
-        <li>skills</li>
+        <li className={`hover:text-neon-pink hover:cursor-pointer ${hoverScale110}`}>skills</li>
         <li>/</li>
-        <li>projects</li>
+        <li className={`hover:text-neon-pink hover:cursor-pointer ${hoverScale110}`}>projects</li>
         <li>/</li>
-        <li className='text-neon-pink  transition ease-in-out'>resume</li>
+        <li className={`hover:text-neon-pink hover:cursor-pointer ${hoverScale110}`}>resume</li>
         
       </ul >
         <ul className='flex flex-col gap-2 justify-start text-end items-start'>
@@ -54,7 +54,7 @@ const hoverScale110 = 'transform transition-transform hover:scale-110';
 
 
       </article>
-        <article className='  py-10'>
+        <article className='  py-10 font-extralight'>
         © xPilab 2024
         </article>
     </section>

@@ -7,7 +7,7 @@ import quoteStartSVG from '../../../public/img/icons/iconQuoteOpenSVG.svg'
 import quoteCloseSVG from '../../../public/img/icons/iconQuoteCloseSVG.svg'
 
 const Presentation = ({darkMode}) => {
-    const bgLightMode = 'bg-neon-pink text-white rounded-xl';
+    const bgLightMode = 'bg-neon-pink text-white rounded-md';
     const bgDarkMode = '';
 
     const productManagerDesc = 'I am a professional with a forward-thinking vision and proactive attitude who combines technical, strategic, and relational skills. I am passionate about creating innovative products and services that have a positive impact on the world.';
