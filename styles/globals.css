@@ -60,3 +60,11 @@ body {
   font-family: 'exo';
   src: url('../public/fonts/exo/Exo2-VariableFont_wght.ttf');
 }
+@font-face {
+  font-family: 'roboto-medium';
+  src: url('../public/fonts/Roboto/Roboto-Medium.ttf');
+}
+@font-face {
+  font-family: 'roboto-light';
+  src: url('../public/fonts/Roboto/Roboto-Light.ttf');
+}

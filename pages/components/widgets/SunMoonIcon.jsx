@@ -9,11 +9,11 @@ const SunMoonIcon = ({darkMode,setDarkMode}) => {
     ? <IoMdSunny 
          
         onClick={()=>setDarkMode(!darkMode)}
-        className=' cursor-pointer text-dark-neon-fade dark:text-white text-4xl lg:text-4xl'/>
+        className=' cursor-pointer   text-4xl lg:text-4xl'/>
     : <BsFillMoonStarsFill 
          
         onClick={()=>setDarkMode(!darkMode)}
-        className=' cursor-pointer text-dark-neon-fade dark:text-white text-3xl lg:text-4xl'/>
+        className=' cursor-pointer text-3xl lg:text-4xl'/>
     
   )
 }

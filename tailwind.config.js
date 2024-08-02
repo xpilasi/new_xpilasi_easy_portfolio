@@ -18,6 +18,7 @@ module.exports = {
         'neon-blueberry':'#9C62E5',
         'neon-pink':'#F87B91',
         'neon-water':'#84F7D4',
+        'neon-green':'#3DFA90',
         'neon-orange':'#edca85',
         'almost-white':'#F8F8F8',
         'light-blueberry':'#EADDF9',
@@ -30,6 +31,7 @@ module.exports = {
         'neon-pink':'#F87B91',
         'neon-orange':'#edca85',
         'neon-water':'#84F7D4',
+        'neon-green':'#3DFA90',
       },
       backgroundImage: {
         
@@ -41,6 +43,11 @@ module.exports = {
         'neon-pink':'#F87B91', 
         'neon-blueberry':'#9C62E5',
         'dark-neon-fade': '#453F9E',
+        'neon-green':'#3DFA90',
+        'new-neon':'#282A36',
+        'new-neon2':'#22222C',
+        'dark-neon': '#1F1D44',
+        'dark-neon-fade':'#453F9E',
       },
       fontFamily:{
         burtons: 'burtons',
@@ -50,6 +57,8 @@ module.exports = {
         bogartRegular: 'bogart_regular',
         montRegular: 'mont_regular',
         exo: 'exo',
+        robotoMedium: 'roboto-medium',
+        robotoLight: 'roboto-light',
       }
     },
   },

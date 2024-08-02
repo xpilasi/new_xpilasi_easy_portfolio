@@ -6,7 +6,8 @@ import IntroXpAnimation from '../widgets/TituloIntro';
 
 const IntroXp = ({darkMode,setDarkMode}) => {
 
-const gradientText = 'bg-gradient-to-r from-neon-orange  via-neon-blueberry to-neon-water   inline-block text-transparent bg-clip-text ';
+// const gradientText = 'bg-gradient-to-r from-neon-orange  via-neon-blueberry to-neon-green   inline-block text-transparent bg-clip-text ';
+const gradientText = 'bg-gradient-to-r from-neon-orange  via-neon-blueberry to-neon-green   inline-block text-transparent bg-clip-text ';
 const linkedInUrl = 'https://www.linkedin.com/in/xavierpilasi/';
 const gitHubUrl = 'https://github.com/xpilasi';
 
@@ -27,16 +28,16 @@ const hoverScale110 = 'transform transition-transform hover:scale-110';
 
               <div className=' '>
                 
-                <h2 className={`text-7xl   tracking-tighter font-bogartRegular ${gradientText}  md:text-7xl lg:text-9xl `}>Hi, I'm Xavi.</h2>
+                <h2 className={`text-7xl   tracking-tighter font-robotoMedium   md:text-7xl lg:text-9xl `}>Hi, I'm Xavi.</h2>
                 <br></br>
-                <h2 className={`text-4xl  tracking-tighter font-bogartRegular ${gradientText}  md:text-6xl `}>A Front End Developer</h2>
+                <h2 className={`text-4xl mt-0 tracking-tighter font-bogartRegular text-neon-green  md:text-6xl `}>A Front End Developer</h2>
                 
               </div>
 
             </div>
             
           {/* Icons Social Media */}
-          <div className=' text-6xl flex justify-left gap-5 py-3 text-dark-neon-fade dark:text-white mt-10 sm:flex justify-center'>
+          <div className=' text-6xl flex justify-left gap-5 py-3 mt-10 sm:flex justify-center'>
               <a href={linkedInUrl}
                 target="_blank"
                 rel="noopener noreferrer">
