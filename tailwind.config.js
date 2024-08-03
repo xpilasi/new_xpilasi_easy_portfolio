@@ -23,6 +23,7 @@ module.exports = {
         'almost-white':'#F8F8F8',
         'light-blueberry':'#EADDF9',
         'light-water':'#E4FBF9',
+        'danny-grey': '#1D1D1D',
       },
       gradientColorStops: {
         'dark-neon': '#1F1D44', 
@@ -47,7 +48,9 @@ module.exports = {
         'new-neon':'#282A36',
         'new-neon2':'#22222C',
         'dark-neon': '#1F1D44',
-        'dark-neon-fade':'#453F9E',
+        'new-neon2':'#22222C',
+        'danny-grey': '#1D1D1D',
+        
       },
       fontFamily:{
         burtons: 'burtons',

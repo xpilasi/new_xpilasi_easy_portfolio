@@ -22,7 +22,7 @@ const Project = ({
 
         <div className={`grid-item  ${roundedCss} px-0 overflow-hidden h-auto`} >
               <Image className='' src={imageSrc}   layout='responsive'></Image>
-              <div className={ `bg-new-neon py-3 pl-3 mb-0 ${roundedCssCard}`}>
+              <div className={ `bg-danny-grey py-3 pl-3 mb-0 ${roundedCssCard}`}>
                 <p className=' text-slate-500 font-extralight text-xs'>{designType}</p>
                 <p className='text-white font-extralight text-sm'>{projectName}</p>
               </div>

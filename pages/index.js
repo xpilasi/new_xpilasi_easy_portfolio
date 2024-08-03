@@ -21,7 +21,7 @@ export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
   
   const blueberryMain = "bg-white  font-titillumWebRegular bg-fixed px-10 md:px-20 lg:px-40 dark:bg-gradient-to-b dark:from-black dark:to-dark-neon-fade dark:text-white";
-  const blackMain = "bg-almost-white font-robotoLight text-new-neon bg-fixed px-10 md:px-20 lg:px-40 dark:bg-new-neon2 dark:text-white";
+  const blackMain = "bg-almost-white font-robotoLight text-dark-neon bg-fixed px-10 md:px-20 lg:px-40 dark:bg-black dark:text-white";
   
 
   return (

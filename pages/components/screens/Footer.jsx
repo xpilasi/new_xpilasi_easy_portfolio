@@ -22,7 +22,7 @@ const hoverScale110 = 'transform transition-transform hover:scale-110';
           
         </div>
         {/* col 2 */}
-        <div className=' text-4xl  gap-10  text-dark-neon-fade dark:text-white  sm:flex justify-center '>
+        <div className=' text-4xl text-center mb-2 lg:mb-0 lg:gap-10 gap-3 text-dark-neon-fade dark:text-white flex justify-end lg:justify-center items-center '>
               <a href={linkedInUrl}
                 target="_blank"
                 rel="noopener noreferrer">
@@ -32,7 +32,7 @@ const hoverScale110 = 'transform transition-transform hover:scale-110';
                 rel="noopener noreferrer">
                   <AiFillGithub className={`${hoverScale110} cursor-pointer`}/></a>
               
-              
+              {/* col 3 */}
       </div>
         <div className='flex justify-end items-center  text-md  font-extralight'>
         <ul className='flex text-end gap-2'>
