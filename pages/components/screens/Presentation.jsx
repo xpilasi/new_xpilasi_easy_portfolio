@@ -6,6 +6,9 @@ import profilePictureXpT2 from '../../../public/img/fotoPerfil4.png'
 
 import quoteStartSVG from '../../../public/img/icons/iconQuoteOpenSVG.svg'
 import quoteCloseSVG from '../../../public/img/icons/iconQuoteCloseSVG.svg'
+import ButtonGreen from '../widgets/buttons/ButtonGreen';
+import ButtonWhite from '../widgets/buttons/ButtonWhite';
+import ButtonWhiteBlack from '../widgets/buttons/ButtonWhiteBlack';
 
 const Presentation = ({darkMode}) => {
 
@@ -23,9 +26,9 @@ const Presentation = ({darkMode}) => {
     const productManagerDesc = 'I am a professional with a forward-thinking vision and proactive attitude who combines technical, strategic, and relational skills. I am passionate about creating innovative products and services that have a positive impact on the world.';
     const developerDesc = ' am a dedicated Junior developer seeking to leverage my technical skills and experience in the Retail and Business industry in the challenging field of software development';
   return (
-    <section id='presentation'>
+    <section id='presentation' className='h-screen flex flex-col items-center justify-center '>
 
-        <div className='py-10 h-screen flex items-center ' >
+        
 
         {/* My picture */}
 
@@ -35,7 +38,7 @@ const Presentation = ({darkMode}) => {
            
             
             <div className={`lg:flex  mt-5 justify-center items-center  ${bg} max-w-5xl  `}>
-                <div className=' flex justify-center items-center '><Image className='opacity-100' src={profilePicture} width={250} ></Image></div>
+                <div className=' flex justify-center items-center '><Image className='opacity-100 mt-2' src={profilePicture} width={250} ></Image></div>
             
                 <div className=' flex justify-center items-center py-5  '>
                 <Image  className=' ml-5 px-1' src={quoteStartSVG}width={60} ></Image>
@@ -52,9 +55,21 @@ const Presentation = ({darkMode}) => {
             </div>
 
         </div>
+        
 
 
+
+        
+        <div className={`w-full  flex justify-center lg:justify-end ${bg} pr-5 pb-5`}>
+            <div className={darkMode ? '' : 'hidden'}>
+            <ButtonGreen darkMode={darkMode} buttonName='Check my Roadmap'></ButtonGreen>
+            </div>
+            <div className={darkMode ? 'hidden' : ''}>
+            <ButtonWhiteBlack darkMode={darkMode} buttonName='Check my Roadmap'></ButtonWhiteBlack>
+            </div>
+            
         </div>
+        
 
     </section>
    

@@ -68,3 +68,11 @@ body {
   font-family: 'roboto-light';
   src: url('../public/fonts/Roboto/Roboto-Light.ttf');
 }
+@font-face {
+  font-family: 'interDisplay-regular';
+  src: url('../public/fonts/inter_display/InterDisplay-Medium.ttf');
+}
+@font-face {
+  font-family: 'interDisplay-light';
+  src: url('../public/fonts/inter_display/InterDisplay-Light.ttf');
+}

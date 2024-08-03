@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'inter-display';
+    src: url('../public/fonts/inter_display/InterDisplay-Medium.ttf'),
+         url('../public/fonts/inter_display/InterDisplay-Light.ttf'),
+          ;
+    font-weight: normal;
+    font-style: normal;
+}
+        
+       .btnHover {
+        position: relative;
+        display: inline-block;
+        padding: 16px 24px;
+        font-size: 16px;
+        /* font-weight: bold; */
+        font-stretch: expanded;
+        color: white;
+        background-color: #3DFA90; /* Color de fondo */
+        border: none;
+        border-radius: 0px;
+        overflow: hidden;
+        cursor: pointer;
+        
+    }
+    
+    .btnHover::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: #000000; /* Color del relleno en hover */
+        transition: width 0.5s ease;
+        z-index: 0; 
+        /* Asegura que esté detrás del contenido del botón */
+    }
+    
+    .btnHover:hover::before {
+        width: 100%;
+    }
+    
+    .btnHover span {
+        position: relative;
+        z-index: 1; /* Asegura que el texto esté por encima del pseudo-elemento */
+        color: white;
+        /* letter-spacing: 0.4px; */
+        font-family: 'inter-display'; /* Color del texto */
+    }
+       .btnHoverW {
+        position: relative;
+        display: inline-block;
+        padding: 16px 24px;
+        font-size: 16px;
+        /* font-weight: 600; */
+        color: black;
+        background-color: #FFFFFF; /* Color de fondo */
+        border: none;
+        border-radius: 0px;
+        overflow: hidden;
+        cursor: pointer;
+        
+    }
+    
+    .btnHoverW::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: #3DFA90; /* Color del relleno en hover */
+        transition: width 0.5s ease;
+        z-index: 0; 
+        color: #000000;
+        /* Asegura que esté detrás del contenido del botón */
+    }
+    
+    .btnHoverW:hover::before {
+        width: 100%;
+    }
+    
+    .btnHoverW span {
+        position: relative;
+        z-index: 1; /* Asegura que el texto esté por encima del pseudo-elemento */
+        color: black;
+        /* letter-spacing: 0.4px; */
+        font-family: 'inter-display';
+        
+    }
+    
+    .btnHoverWB {
+        position: relative;
+        display: inline-block;
+        padding: 16px 24px;
+        font-size: 16px;
+        color: black; /* Color inicial del texto */
+        background-color: #FFFFFF; /* Color de fondo del botón */
+        border: none;
+        border-radius: 0px;
+        overflow: hidden;
+        cursor: pointer;
+        font-family: 'inter-display';
+        transition: color 0.5s ease; /* Transición del color del texto */
+    }
+    
+    .btnHoverWB::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000000; /* Color del relleno en hover */
+        transform: scaleX(0); /* Inicialmente no visible */
+        transform-origin: left; /* Expande desde la izquierda */
+        transition: transform 0.5s ease;
+        z-index: 0; /* Asegura que esté detrás del texto */
+    }
+    
+    .btnHoverWB:hover::after {
+        transform: scaleX(1); /* Expande a 100% en hover */
+    }
+    
+    .btnHoverWB span {
+        position: relative;
+        z-index: 1; /* Asegura que el texto esté por encima del pseudo-elemento */
+        color: black; /* Color inicial del texto */
+        transition: color 0.5s ease; /* Transición del color del texto */
+    }
+    
+    .btnHoverWB:hover span {
+        color: white; /* Cambia el color del texto a blanco en hover */
+    }
+    
