@@ -22,7 +22,7 @@ const hoverScale110 = 'transform transition-transform hover:scale-110';
           
         </div>
         {/* col 2 */}
-        <div className=' text-4xl text-center mb-2 lg:mb-0 lg:gap-10 gap-3 text-dark-neon-fade dark:text-white flex justify-end lg:justify-center items-center '>
+        <div className=' text-4xl text-center mb-2 lg:mb-0 lg:gap-10 gap-3 dark:text-white flex justify-end lg:justify-center items-center '>
               <a href={linkedInUrl}
                 target="_blank"
                 rel="noopener noreferrer">

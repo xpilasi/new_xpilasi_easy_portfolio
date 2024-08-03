@@ -14,8 +14,8 @@ const Presentation = ({darkMode}) => {
 
     darkMode ? profilePicture = profilePictureXp : profilePicture = profilePictureXpT2;
   
-    const bgDarkMode = 'bg-neon-green text-white ';
-    const bgLightMode= 'bg-white';
+    const bgDarkMode = 'bg-white text-white ';
+    const bgLightMode= 'bg-neon-green';
     let bg = '';
     
     darkMode ? bg = bgDarkMode : bg = bgLightMode ;
@@ -34,11 +34,11 @@ const Presentation = ({darkMode}) => {
 
            
             
-            <div className={`lg:flex  mt-5 justify-center items-center  ${bg} max-w-5xl `}>
+            <div className={`lg:flex  mt-5 justify-center items-center  ${bg} max-w-5xl  `}>
                 <div className=' flex justify-center items-center '><Image className='opacity-100' src={profilePicture} width={250} ></Image></div>
             
                 <div className=' flex justify-center items-center py-5  '>
-                <Image  className=' ml-5 ' src={quoteStartSVG}width={60} ></Image>
+                <Image  className=' ml-5 px-1' src={quoteStartSVG}width={60} ></Image>
                 <div>
                 
                 <div>
@@ -46,7 +46,7 @@ const Presentation = ({darkMode}) => {
                 </div>
 
                 </div>  
-                <Image className=' flex ' src={quoteCloseSVG} width={100}></Image>
+                <Image className=' flex px-2 ' src={quoteCloseSVG} width={100}></Image>
                 </div>
 
             </div>
