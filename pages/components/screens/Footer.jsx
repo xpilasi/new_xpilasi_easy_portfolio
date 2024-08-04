@@ -35,13 +35,11 @@ const hoverScale110 = 'transform transition-transform hover:scale-110';
               {/* col 3 */}
       </div>
         <div className='flex justify-end items-center  text-md  font-extralight'>
-        <ul className='flex text-end gap-2'>
-        {/* <li>background </li> */}
-        <li className={`hover:text-neon-pink hover:cursor-pointer ${hoverScale110}`}>skills</li>
-        <li>/</li>
-        <li className={`hover:text-neon-pink hover:cursor-pointer ${hoverScale110}`}>projects</li>
-        <li>/</li>
-        <li className={`hover:text-neon-pink hover:cursor-pointer ${hoverScale110}`}>resume</li>
+        <ul className='flex text-end gap-1'>
+        
+        <li className={`hover:text-neon-green hover:cursor-pointer ${hoverScale110}`}>about me</li>
+        <li className={`hover:text-neon-green hover:cursor-pointer ${hoverScale110}`}>projects</li>
+        <li className={`hover:text-neon-green hover:cursor-pointer ${hoverScale110}`}>resume</li>
         
       </ul >
         <ul className='flex flex-col gap-2 justify-start text-end items-start'>

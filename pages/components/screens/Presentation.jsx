@@ -29,29 +29,37 @@ const Presentation = ({darkMode}) => {
     <section id='presentation' className='h-screen flex flex-col items-center justify-center '>
 
         
+        <div className=' max-w-5xl flex flex-col justify-center items-center bg-white '>
 
-        {/* My picture */}
+         
+            {/* presentation 1 */}  
+            <div className={`lg:flex   mt-5 justify-center items-center  ${bg} max-w-5xl  `}>
 
-
-        <div className='w-full justify-center items-center'>
-
-           
-            
-            <div className={`lg:flex  mt-5 justify-center items-center  ${bg} max-w-5xl  `}>
-                <div className=' flex justify-center items-center '><Image className='opacity-100 mt-2' src={profilePicture} width={250} ></Image></div>
-            
-                <div className=' flex justify-center items-center py-5  '>
-                <Image  className=' ml-5 px-1' src={quoteStartSVG}width={60} ></Image>
-                <div>
+                    <div className=' flex justify-center items-center '><Image className='opacity-100 mt-2' src={profilePicture} width={250} ></Image></div>
                 
-                <div>
-                    <p className='mx-0  py-5 px-0 text-center text-black font-light max-w-md'>{productManagerDesc}</p>
+                    <div className=' flex justify-center items-center py-5  '>
+                    <Image  className=' ml-5 px-1' src={quoteStartSVG}width={60} ></Image>
+                    <div>
+                    
+                    <div>
+                        <p className='mx-0  py-5 px-0 text-center text-black font-light max-w-md'>{productManagerDesc}</p>
+                    </div>
+
+                    </div>  
+                    <Image className=' flex px-2 ' src={quoteCloseSVG} width={100}></Image>
+                    </div>
+
                 </div>
 
-                </div>  
-                <Image className=' flex px-2 ' src={quoteCloseSVG} width={100}></Image>
+            {/* presentation 2 (button inside container) */}
+            <div className={`lg:flex lg:pr-5 flex justify-center items-center w-full ${bg} max-w-5xl pb-5 lg:justify-end lg:items-end`}>
+                <div className={darkMode ? '' : 'hidden'}>
+                <ButtonGreen darkMode={darkMode} buttonName='Check my Roadmap'></ButtonGreen>
                 </div>
-
+                <div className={darkMode ? 'hidden' : ''}>
+                <ButtonWhiteBlack darkMode={darkMode} buttonName='Check my Roadmap'></ButtonWhiteBlack>
+                </div>
+                
             </div>
 
         </div>
@@ -60,15 +68,6 @@ const Presentation = ({darkMode}) => {
 
 
         
-        <div className={`w-full  flex justify-center lg:justify-end ${bg} pr-5 pb-5`}>
-            <div className={darkMode ? '' : 'hidden'}>
-            <ButtonGreen darkMode={darkMode} buttonName='Check my Roadmap'></ButtonGreen>
-            </div>
-            <div className={darkMode ? 'hidden' : ''}>
-            <ButtonWhiteBlack darkMode={darkMode} buttonName='Check my Roadmap'></ButtonWhiteBlack>
-            </div>
-            
-        </div>
         
 
     </section>

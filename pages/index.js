@@ -49,8 +49,8 @@ export default function Home() {
      ></IntroXp>
      <Presentation darkMode={darkMode}/>
 
-     <MyStory darkMode = {darkMode}/>
-     <MySkills darkMode = {darkMode}/>
+     {/* <MyStory darkMode = {darkMode}/>
+     <MySkills darkMode = {darkMode}/> */}
      <MyProjects darkMode={darkMode}/>
      <ContactForm darkMode={darkMode}/>
      <Footer/>

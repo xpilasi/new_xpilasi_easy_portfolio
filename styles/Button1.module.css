@@ -101,7 +101,7 @@
         overflow: hidden;
         cursor: pointer;
         font-family: 'inter-display';
-        transition: color 0.5s ease; /* Transición del color del texto */
+        transition: all 0.5s ease; /* Transición del color del texto */
     }
     
     .btnHoverWB::after {
@@ -114,22 +114,27 @@
         background-color: #000000; /* Color del relleno en hover */
         transform: scaleX(0); /* Inicialmente no visible */
         transform-origin: left; /* Expande desde la izquierda */
-        transition: transform 0.5s ease;
+        transition: all 0.5s ease;
         z-index: 0; /* Asegura que esté detrás del texto */
     }
     
     .btnHoverWB:hover::after {
-        transform: scaleX(1); /* Expande a 100% en hover */
+        transform: scaleX(1); 
+        /* -moz-transform: scaleX(0.99);
+        -webkit-transform: scaleX(0.99); */
+        /* Expande a 100% en hover */
     }
     
     .btnHoverWB span {
         position: relative;
         z-index: 1; /* Asegura que el texto esté por encima del pseudo-elemento */
         color: black; /* Color inicial del texto */
-        transition: color 0.5s ease; /* Transición del color del texto */
+        transition: all 0.5s ease;
+        font-family: 'inter-display'; /* Transición del color del texto */
     }
     
     .btnHoverWB:hover span {
-        color: white; /* Cambia el color del texto a blanco en hover */
+        color: white; 
+        font-family: 'inter-display';/* Cambia el color del texto a blanco en hover */
     }
     
