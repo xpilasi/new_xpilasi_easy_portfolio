@@ -44,7 +44,7 @@ const ScrollButton = () => {
   };
 
   const gradientBg = ' bg-gradient-to-r from-neon-blueberry opacity-40 to-neon-water';
-  const bg= ' bg-new-neon from-neon-blueberry opacity-100 to-neon-water';
+  const bg= ' bg-danny-grey    opacity-100 to-neon-water';
 
   return (
     <button
