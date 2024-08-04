@@ -21,7 +21,7 @@ const hoverScale110 = 'transform transition-transform hover:scale-110';
 
 
         {/* Title + Social Media Icons  */}
-        <div className='  flex-col pb-10 '>
+        <div className='  flex-col pb-10 mt-20 '>
 
           {/* Name and small bg */}
             <div className=' text-center'>
