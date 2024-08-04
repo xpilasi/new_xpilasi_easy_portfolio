@@ -61,8 +61,8 @@ module.exports = {
         montRegular: 'mont_regular',
         exo: 'exo',
         robotoMedium: 'roboto-medium',
-        interDisplayMedium: 'interDisplay-regular',
-        interDisplayLight: 'interDisplay-light',
+        interDisplayMedium: 'interdisplay-regular',
+        interDisplayLight: 'interdisplay-light',
         robotoLight: 'roboto-light',
       }
     },

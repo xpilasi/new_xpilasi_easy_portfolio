@@ -3,6 +3,7 @@ import Title from '../widgets/Title'
 import MiniSubTitle from '../widgets/MiniSubTitle';
 import emailjs from 'emailjs-com';
 import Swal from 'sweetalert2';
+import SectionTitle from '../widgets/titles/SectionTitle';
 
 
 const ContactForm = ({darkMode}) => {
@@ -20,6 +21,10 @@ const ContactForm = ({darkMode}) => {
       inputSendButtonStyle = `transform transition-transform hover:scale-105 w-full bg-neon-green py-5 my-3  px-5 sm:w-[32rem] md:w-[32rem] lg:w-[32rem] text-dark-neon-fadecursor-pointer `;
       inputTextAreaStyle = `w-full my-2 h-40 sm:h-70 xl:h-72   py-5 px-5 text-dark-neon-fade sm:w-[32rem] md:w-[32rem] lg:w-[32rem] ${formBg}`;
   };
+
+const title =  'Send me a message!';
+const subtitle = 'Got a question or proposal, or just want to say hello? Go ahead.';
+        
     const handleSubmit = (event) => {
         event.preventDefault();
         console.log('esta parte funciona 1');
@@ -59,21 +64,19 @@ const ContactForm = ({darkMode}) => {
         event.target.reset();
       };
 
+      
+
     return (
     <section id='contact' className='h-screen flex flex-col  justify-center  items-center' >
 
-        <div className='flex justify-center   '>
-            {/* <Title title = {'Contact Me'}></Title> */}
-        </div>
-        <div className='pb-10'>
-        <MiniSubTitle miniSubTitle = {"Let's have a chat!"}/>
-        </div>
+        
+        
         
 
         <div className='text-center w-full flex-col justify-center items-center' id='centrado-verticalmente'>
-
+        <h2 className='text-neon-green text-left pb-5 w-full'></h2>
             
-        
+        <SectionTitle titleText={title}></SectionTitle>
         
         
         <div className=' w-full '>
