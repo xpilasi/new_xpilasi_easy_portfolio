@@ -54,7 +54,7 @@
         font-size: 16px;
         /* font-weight: 600; */
         color: black;
-        background-color: #FFFFFF; /* Color de fondo */
+        background-color: #837ecb; /* Color de fondo */
         border: none;
         border-radius: 0px;
         overflow: hidden;
@@ -187,4 +187,4 @@
         color: black; 
         font-family: 'inter-display';/* Cambia el color del texto a blanco en hover */
     }
-    
+  

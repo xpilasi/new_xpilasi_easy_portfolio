@@ -13,9 +13,14 @@ const gitHubUrl = 'https://github.com/xpilasi';
 
 const hoverScale110 = 'transform transition-transform hover:scale-110';
 
+const textAltDark = 'text-neon-green';
+const textAltLight= 'text-dark-neon-fade';
+let textAlt = ``;
+
+darkMode ? textAlt = textAltDark :textAlt = textAltLight ;
     
   return (
-    <section className='min-h-screen xl:pt-10 items-center  ' id='intro-xp'>
+    <section className='min-h-screen pt-16 lg:pt-0 xl:pt-10 items-center  ' id='intro-xp'>
 <IntroXpAnimation/>
     <div className=' '> 
 
@@ -24,13 +29,13 @@ const hoverScale110 = 'transform transition-transform hover:scale-110';
         <div className='  flex-col pb-10 mt-20 '>
 
           {/* Name and small bg */}
-            <div className=' text-center'>
+            <div className=' text-center neon-'>
 
               <div className=' '>
                 
                 <h2 className={`text-7xl   tracking-tighter font-robotoMedium   md:text-7xl lg:text-9xl `}>Hi, I'm Xavi.</h2>
                 <br></br>
-                <h2 className={`text-4xl mt-0 tracking-tighter font-bogartRegular text-neon-green  md:text-6xl `}>A Front End Developer</h2>
+                <h2 className={`text-4xl mt-0 tracking-tighter font-bogartRegular ${textAlt}  md:text-6xl `}>A Front End Developer</h2>
                 
               </div>
 

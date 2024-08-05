@@ -71,7 +71,7 @@ body {
 
 .custom-input {
   @apply 
-  rounded-none border-b border-green-100 focus:border-green-400 w-full py-2 mb-10 bg-black focus:outline-none font-interDisplayLight placeholder:font-interDisplayLight placeholder:text-gray-700 placeholder:text-sm ;
+  rounded-none border-b border-green-100 focus:border-green-400 w-full py-5 md:py-2 mb-10 bg-black focus:outline-none font-interDisplayLight placeholder:font-interDisplayLight placeholder:text-gray-700 placeholder:text-sm ;
 }
 
 .custom-input:focus::placeholder {
@@ -92,7 +92,7 @@ textarea:focus::placeholder {
 
 /* Estilo para todos los labels */
 label {
-  @apply block text-slate-100 pb-0 text-xs font-interDisplayLight;
+  @apply block text-slate-100 pb-0 text-sm md:text-xs font-interDisplayLight;
 }
 
 /* Estilo para el contenedor del label y el input */
@@ -102,6 +102,6 @@ label {
 
 /* Estilo para los labels cuando el input dentro del contenedor está en foco */
 .input-container:focus-within label {
-  @apply text-green-300 text-xs font-interDisplayLight;
+  @apply text-green-300 text-sm md:text-xs font-interDisplayLight;
 }
 

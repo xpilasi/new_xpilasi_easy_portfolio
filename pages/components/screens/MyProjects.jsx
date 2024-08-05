@@ -13,6 +13,7 @@ import xpilasiPortfolioWebDesignL from '../../../public/img/projects_logos/web_d
 import blockWebDesign from '../../../public/img/projects_logos/web_design/blockWebDesign.png'
 import ejemplo from '../../../public/img/projects_logos/web_design/ejemplo.png'
 import SectionTitle from '../widgets/titles/SectionTitle';
+import SectionSubTitle from '../widgets/titles/SectionSubTitle';
 
 
 
@@ -30,7 +31,8 @@ const MyProjects = ({darkMode}) => {
       
       <article className='flex flex-col justify-center items-center py-5 '>
       
-      <SectionTitle titleText='Projects gallery'></SectionTitle>
+      <SectionTitle titleText='Work gallery'></SectionTitle>
+      <SectionSubTitle titleText="These are some of my personal projects I've been developed since I started my software journey."></SectionSubTitle>
 
       <div className='grid grid-cols-1 md:grid md:grid-cols-3 gap-5 '>
               <a className={hoverScale110} href=""><Project  imageSrc={gorillaWeb} projectName='Gorilla Grab' designType='Mobile App'></Project></a>
