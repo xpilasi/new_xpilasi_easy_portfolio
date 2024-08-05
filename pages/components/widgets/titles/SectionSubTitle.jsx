@@ -6,7 +6,7 @@ const SectionTitle = ({titleText}) => {
     
   return (
      
-    <h2 className='text-white font-interdisplayLight text-4xl pb-5 font-bold'>
+    <h2 className='text-green-300 font-interdisplayLight text-md pb-12 tracking-wider'>
         {titleText}
     </h2>
     

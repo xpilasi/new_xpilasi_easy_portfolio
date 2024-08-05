@@ -71,27 +71,37 @@ body {
 
 .custom-input {
   @apply 
-  rounded-none border-b focus:border-green-400  w-full py-2 mb-10 bg-black  focus:outline-none font-interDisplayLight placeholder:font-interDisplayExtraLight placeholder:text-gray-100 placeholder:text-sm ;
+  rounded-none border-b border-green-100 focus:border-green-400 w-full py-2 mb-10 bg-black focus:outline-none font-interDisplayLight placeholder:font-interDisplayExtraLight placeholder:text-gray-100 placeholder:text-sm ;
 }
 
-input:focus::placeholder {
-  @apply text-transparent;
+.custom-input:focus::placeholder {
+  @apply text-transparent transition-opacity duration-300 ease-in-out  ;
 }
 .custom-textarea {
   @apply 
-  rounded-none resize-none border-b focus:border-green-400  w-full py-5 bg-black  focus:outline-none font-interDisplayLight placeholder:font-interDisplayExtraLight placeholder:text-gray-100 placeholder:text-sm;
+  rounded-none resize-none border-b focus:border-green-400  w-full py-2 mb-5 bg-black  focus:outline-none font-interDisplayLight placeholder:font-interDisplayExtraLight placeholder:text-gray-100 placeholder:text-sm;
 }
+
+
+
+
 
 textarea:focus::placeholder {
   @apply text-transparent;
 }
+
 /* Estilo para todos los labels */
 label {
-  @apply block text-slate-500 pb-2 text-xs font-interDisplayExtraLight;
+  @apply block text-slate-500 pb-0 text-xs font-interDisplayExtraLight;
 }
 
-/* Estilo para los labels cuando su input está en foco */
-label:focus-within {
+/* Estilo para el contenedor del label y el input */
+.input-container {
+  @apply relative;
+}
+
+/* Estilo para los labels cuando el input dentro del contenedor está en foco */
+.input-container:focus-within label {
   @apply text-neon-green;
 }
 

@@ -2,6 +2,12 @@ import React, { useRef } from 'react'
 import emailjs from 'emailjs-com';
 import Swal from 'sweetalert2';
 import SectionTitle from '../widgets/titles/SectionTitle';
+import SectionSubTitle from '../widgets/titles/SectionSubTitle';
+import ButtonGreen from '../widgets/buttons/ButtonGreen';
+import ButtonWhite from '../widgets/buttons/ButtonWhite';
+import ButtonGreenWhite from '../widgets/buttons/ButtonGreenWhite';
+import ButtonWhiteBlack from '../widgets/buttons/ButtonWhiteBlack';
+import styleInputCss from '../../../styles/Inputs.module.css';
 
 
 const ContactForm = ({darkMode}) => {
@@ -68,29 +74,43 @@ const subtitle = 'Got a question or proposal, or just want to say hello? Go ahea
     <section id='contact' className='h-screen flex flex-col  justify-center  items-center border-b ' >
 
         <article className='flex flex-col justify-center items-center py-5'>
-        <SectionTitle titleText={title}></SectionTitle>
+          <div className='text-center'>
+          <SectionTitle titleText={title}></SectionTitle>
+          <SectionSubTitle titleText={subtitle}></SectionSubTitle>
+          </div>
+        
 
         
         
-        <div className=' w-full '>
+        <div className=' w-full'>
 
 
             <form onSubmit={handleSubmit}>
-            <div>
-            <label for='name' class="label">Your Name</label>  
-            <input className='custom-input' type="text" placeholder={'Enter your name'} name="name" id='name'/>
+
+            <div className='input-container'>
+              <label for='name' class="label">Your Name</label>  
+              <input className='custom-input' type="text" placeholder={'Enter your name'} name="name" id='name'/>
+            </div>
+            
+            <div className='input-container'>
+              <label for='email' class="label">Email Address</label> 
+              <input className='custom-input' type="email" placeholder={'Enter your email address'} name="email" id='email'/>
+            </div>
+            
+            <div className='input-container'>
+              <label for='email' class="label">Your Message</label> 
+              <textarea className= 'custom-textarea' type="textarea" placeholder={'Hi, I think we need a design system for our products at Comany X. How soon can you hop on to discuss this?'} name="message"/>
             </div>
             
             
-            <label for='email' class="label">Email</label> 
-            <input className='custom-input' type="email" placeholder={'Enter your email address'} name="email" id='email'/>
-            <br/>  
-            
-            <label for='email' class="label">Your Message</label> 
-            <textarea className= 'custom-textarea' type="textarea" placeholder={'Hi, I think we need a design system for our products at Comany X. How soon can you hop on to discuss this?'} name="message"/>
-            <br />
-            <input className={inputSendButtonStyle}type="submit" value={'SEND'}  />
+            {/* <input className={inputSendButtonStyle}type="submit" value={'SEND'}  /> */}
+            {/* <ButtonGreen buttonName='  Send   '></ButtonGreen> */}
+            <div className='mt-5 w-full bg-slate-500 flex justify-center'>
+            <ButtonGreenWhite buttonName='  Send   '></ButtonGreenWhite>
 
+            
+            </div>
+            
             </form>
 
         </div>

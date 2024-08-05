@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'inter-display';
+    src: url('../public/fonts/inter_display/InterDisplay-Medium.ttf'),
+         url('../public/fonts/inter_display/InterDisplay-Light.ttf'),
+          ;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.custom-input-css {
+    border: none;
+    border-bottom: 2px solid;
+    width: 100%;
+    padding: 0.5rem 0;
+    margin-bottom: 2.5rem;
+    background-color: black;
+    font-family: 'Inter Display Light', sans-serif;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  /* Color del borde en estado de foco */
+  .custom-input-css:focus {
+    border-bottom-color: #38a169; /* color verde-400 de Tailwind */
+  }
+  
+  /* Estilo del placeholder */
+  .custom-input-css::placeholder {
+    font-family: 'Inter Display ExtraLight', sans-serif;
+    color: #e5e5e5; /* color gray-100 de Tailwind */
+    font-size: 0.875rem; /* tamaño de texto sm de Tailwind */
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  /* Opacidad del placeholder en estado de foco */
+  .custom-input-css:focus::placeholder {
+    opacity: 0;
+  }
