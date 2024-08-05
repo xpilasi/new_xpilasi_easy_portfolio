@@ -12,6 +12,7 @@ import xpilasiPortfolioWebDesign from '../../../public/img/projects_logos/web_de
 import xpilasiPortfolioWebDesignL from '../../../public/img/projects_logos/web_design/xpilasiPortfolioWebDesignLight.png'
 import blockWebDesign from '../../../public/img/projects_logos/web_design/blockWebDesign.png'
 import ejemplo from '../../../public/img/projects_logos/web_design/ejemplo.png'
+import SectionTitle from '../widgets/titles/SectionTitle';
 
 
 
@@ -26,19 +27,11 @@ const MyProjects = ({darkMode}) => {
   
   return (
     <section className='min-h-screen flex flex-col justify-center items-center ' id='my-projects' >
-      {/* My projects title */}
-      {/* <article className=' pt-10 '>
-        
-        <MiniSubTitle miniSubTitle = {"These are the projects I've developped since I started my journey."}/>
-           
-      </article>  */}
-      <article>
-        
-      </article>
-
+      
       <article className='flex flex-col justify-center items-center py-20 '>
-      {/* Projects */}
-      <h2 className='text-neon-green text-left pb-5 w-full'>Projects gallery</h2>
+      
+      <SectionTitle titleText='Projects gallery'></SectionTitle>
+
       <div className='grid grid-cols-1 md:grid md:grid-cols-3 gap-5 '>
               <a className={hoverScale110} href=""><Project  imageSrc={gorillaWeb} projectName='Gorilla Grab' designType='Mobile App'></Project></a>
               <a className={hoverScale110} href=""><Project imageSrc={justList} projectName='Just List' designType='Mobile App'></Project></a>
