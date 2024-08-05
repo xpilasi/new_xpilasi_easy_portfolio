@@ -9,6 +9,7 @@ const gitHubUrl = 'https://github.com/xpilasi';
 const hoverScale110 = 'transform transition-transform hover:scale-110';
   return (
     <section className='mt-10 text-center'>
+      
       <article className='lg:grid lg:grid-cols-3'>
         {/* col 1 */}
         <div className='grid grid-col-1  justify-start items-center  '>

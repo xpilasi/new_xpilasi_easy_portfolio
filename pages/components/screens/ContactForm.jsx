@@ -71,10 +71,10 @@ const subtitle = 'Got a question or proposal, or just want to say hello? Go ahea
       
 
     return (
-    <section id='contact' className='h-screen flex flex-col  justify-center  items-center border-b ' >
+    <section id='contact' className='h-screen flex flex-col  justify-center  items-center  ' >
 
         <article className='flex flex-col justify-center items-center py-5'>
-          <div className='text-center'>
+          <div className='text-center max-w-max mx-auto'>
           <SectionTitle titleText={title}></SectionTitle>
           <SectionSubTitle titleText={subtitle}></SectionSubTitle>
           </div>
@@ -103,9 +103,7 @@ const subtitle = 'Got a question or proposal, or just want to say hello? Go ahea
             </div>
             
             
-            {/* <input className={inputSendButtonStyle}type="submit" value={'SEND'}  /> */}
-            {/* <ButtonGreen buttonName='  Send   '></ButtonGreen> */}
-            <div className='mt-5 w-full bg-slate-500 flex justify-center'>
+            <div className='mt-5 w-full  flex justify-center'>
             <ButtonGreenWhite buttonName='  Send   '></ButtonGreenWhite>
 
             

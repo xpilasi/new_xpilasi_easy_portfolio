@@ -1,12 +1,12 @@
 import React from 'react'
 
 
-const SectionTitle = ({titleText}) => {
+const SectionSubTitle = ({titleText}) => {
     
     
   return (
      
-    <h2 className='text-green-300 font-interdisplayLight text-md pb-12 tracking-wider'>
+    <h2 className='text-green-300 font-interdisplayLight text-md pb-12 tracking-wider '>
         {titleText}
     </h2>
     
@@ -14,4 +14,4 @@ const SectionTitle = ({titleText}) => {
   )
 }
 
-export default SectionTitle
+export default SectionSubTitle

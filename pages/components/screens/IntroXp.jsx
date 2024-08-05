@@ -15,7 +15,7 @@ const hoverScale110 = 'transform transition-transform hover:scale-110';
 
     
   return (
-    <section className='min-h-screen pt-10 items-center  ' id='intro-xp'>
+    <section className='min-h-screen xl:pt-10 items-center  ' id='intro-xp'>
 <IntroXpAnimation/>
     <div className=' '> 
 
