@@ -28,7 +28,7 @@ const MyProjects = ({darkMode}) => {
   return (
     <section className='min-h-screen flex flex-col justify-center items-center ' id='my-projects' >
       
-      <article className='flex flex-col justify-center items-center py-20 '>
+      <article className='flex flex-col justify-center items-center py-5 '>
       
       <SectionTitle titleText='Projects gallery'></SectionTitle>
 
@@ -39,16 +39,7 @@ const MyProjects = ({darkMode}) => {
               <a className={hoverScale110} href=""><Project imageSrc={xPilasiPortfolio} projectName='Personal Portfolio' designType='Web design'></Project></a>
               <a className={hoverScale110} href=""><Project imageSrc={blockWebDesign} projectName='Block Disctrict' designType='Web design'></Project></a>
               <a className={hoverScale110} href=""><Project imageSrc={ejemplo} projectName='Block Disctrict' designType='Web design'></Project></a>
-              
-              
-              
-              
-              
-              
-
-             
-            
-          </div>
+      </div>
             
 
       </article>

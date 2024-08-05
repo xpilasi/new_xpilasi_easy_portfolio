@@ -54,15 +54,13 @@ module.exports = {
       },
       fontFamily:{
         burtons: 'burtons',
-        titillumWebRegular: 'titillium_web_regular',
-        titillumWebBold: 'titillium_web_bold',
-        titillumWebBlack: 'titillium_web_black',
         bogartRegular: 'bogart_regular',
         montRegular: 'mont_regular',
         exo: 'exo',
         robotoMedium: 'roboto-medium',
         interDisplayMedium: 'interdisplay-regular',
         interDisplayLight: 'interdisplay-light',
+        interDisplayExtraLight: 'interdisplay-extralight',
         robotoLight: 'roboto-light',
       }
     },

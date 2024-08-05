@@ -1,6 +1,4 @@
 import React, { useRef } from 'react'
-import Title from '../widgets/Title'
-import MiniSubTitle from '../widgets/MiniSubTitle';
 import emailjs from 'emailjs-com';
 import Swal from 'sweetalert2';
 import SectionTitle from '../widgets/titles/SectionTitle';
@@ -10,10 +8,10 @@ const ContactForm = ({darkMode}) => {
 
     var formBg = 'bg-light-blueberry';
 
-    let inputStyle = 'w-full py-5 my-2  px-5 text-dark-neon-fade sm:w-[32rem] md:w-[32rem] lg:w-[32rem]';
+    let inputStyle = 'w-full py-5 my-2 px-5 sm:w-[32rem] md:w-[32rem] lg:w-[32rem] bg-black border-b ';
     let gradientBg = 'bg-gradient-to-r from-neon-blueberry to-neon-pink'; 
     let inputSendButtonStyle = `transform transition-transform hover:scale-105 w-full text-black bg-neon-green py-5 my-3  px-5 sm:w-[32rem] md:w-[32rem] lg:w-[32rem] cursor-pointer `;
-    let inputTextAreaStyle = 'w-full my-2 h-60 sm:h-60 md:h-60 lg:h-36 xl:h-60 py-5 px-5  text-dark-neon-fade sm:w-[32rem] md:w-[32rem] lg:w-[32rem]';
+    let inputTextAreaStyle = 'w-full my-2 h-60 bg-black sm:h-60 md:h-60 lg:h-36 xl:h-60 py-5 px-5  text-white sm:w-[32rem] md:w-[32rem] lg:w-[32rem] border-b';
 
     if(darkMode !== true){
       inputStyle = `w-full py-5 my-2  px-5 text-dark-neon-fade sm:w-[32rem] md:w-[32rem] lg:w-[32rem] ${formBg}`
@@ -67,30 +65,29 @@ const subtitle = 'Got a question or proposal, or just want to say hello? Go ahea
       
 
     return (
-    <section id='contact' className='h-screen flex flex-col  justify-center  items-center' >
+    <section id='contact' className='h-screen flex flex-col  justify-center  items-center border-b ' >
 
-        
-        
-        
-
-        <div className='text-center w-full flex-col justify-center items-center' id='centrado-verticalmente'>
-        <h2 className='text-neon-green text-left pb-5 w-full'></h2>
-            
+        <article className='flex flex-col justify-center items-center py-5'>
         <SectionTitle titleText={title}></SectionTitle>
+
         
         
         <div className=' w-full '>
 
 
             <form onSubmit={handleSubmit}>
-              
-            <input className={inputStyle} type="text" placeholder={'Name'} name="name"/>
-            <br />
+            <div>
+            <label for='name' class="label">Your Name</label>  
+            <input className='custom-input' type="text" placeholder={'Enter your name'} name="name" id='name'/>
+            </div>
             
-            <input className={inputStyle} type="email" placeholder={'Email'} name="email"/>
+            
+            <label for='email' class="label">Email</label> 
+            <input className='custom-input' type="email" placeholder={'Enter your email address'} name="email" id='email'/>
             <br/>  
             
-            <textarea className= {inputTextAreaStyle} type="textarea" placeholder={'Write yor message here'} name="message"/>
+            <label for='email' class="label">Your Message</label> 
+            <textarea className= 'custom-textarea' type="textarea" placeholder={'Hi, I think we need a design system for our products at Comany X. How soon can you hop on to discuss this?'} name="message"/>
             <br />
             <input className={inputSendButtonStyle}type="submit" value={'SEND'}  />
 
@@ -98,7 +95,10 @@ const subtitle = 'Got a question or proposal, or just want to say hello? Go ahea
 
         </div>
 
-        </div>
+        
+        </article>
+
+        
         
         
 
