@@ -3,26 +3,14 @@ import SunMoonIcon from '../SunMoonIcon';
 import ButtonWhite from '../buttons/ButtonWhite';
 
 
-const MenuTop = ({darkMode,setDarkMode,showMenu}) => {
+const MenuTop = ({darkMode,showMenu}) => {
 
     const cvUrl = 'https://drive.google.com/file/d/1gskQCNhkEyFgCH2RfqZiVGiDe1CSY3aT/view?usp=drive_link';
     const hoverScale110 = 'transform transition-transform hover:scale-110 mr-10';
     const altMenu = '/xpilasi';
 
     const [isVisible, setIsVisible] = useState(showMenu);
-
     
-  //   useEffect(() => {
-  //     const menuElement = document.getElementById('menu-top');
-  //     if (menuElement) {
-  //         menuElement.className = showMenu ? '' : 'hidden';
-  //     }
-
-  //     console.log(menuElement.className);
-  // }, [showMenu]); 
-  
-  
-  // Se ejecuta cada vez que showMenu cambie
 
   useEffect(() => {
     setIsVisible(showMenu);
@@ -55,10 +43,11 @@ const MenuTop = ({darkMode,setDarkMode,showMenu}) => {
               </a>
           </li> */}
           <li className='font-interDisplayExtraLight text-md tracking-widest  pb-2  '>About Me</li>
-          <li className='font-interDisplayExtraLight text-md tracking-widest pb-10'>My projects</li>
+          <li className='font-interDisplayExtraLight text-md tracking-widest pb-2'>My projects</li>
+          <li className='font-interDisplayExtraLight text-md tracking-widest pb-10'>My Résumé</li>
           <li className='font-interDisplayExtraLight text-sm pb-5 text-green-300 tracking-widest'>SAY HELLO</li>
           <li className='font-interDisplayExtraLight pb-2 tracking-widest'>linkedin/xavier.pilasi</li>
-          <li className='font-interDisplayExtraLight pb-2 tracking-widest'>hey@xpilasi.com</li>
+          <li className='font-interDisplayExtraLight tracking-widest'>hey@xpilasi.com</li>
            
           
           

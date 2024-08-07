@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { HiMenuAlt3 } from 'react-icons/hi';
 import { IoCloseSharp } from 'react-icons/io5';
 import MenuTop from './MenuTop';
 
-const MenuBurger = ({ darkMode, setDarkMode, showMenu, setShowMenu }) => {
+const Menu = ({ darkMode, setDarkMode,showMenu, setShowMenu }) => {
+
+ 
+
+
+
     return (
         <div>
             {showMenu ? (
@@ -42,4 +47,4 @@ const MenuBurger = ({ darkMode, setDarkMode, showMenu, setShowMenu }) => {
     );
 };
 
-export default MenuBurger;
+export default Menu;

@@ -18,7 +18,7 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
 
   const [darkMode, setDarkMode] =  useState(true);
-  const [showMenu, setShowMenu] =  useState(true);
+  const [showMenu, setShowMenu] =  useState(false);
   
   const blueberryMain = "bg-white font-exo  bg-fixed px-10 md:px-20 lg:px-40 dark:bg-gradient-to-b dark:from-black dark:to-dark-neon-fade dark:text-white";
   const blackMain = "bg-almost-white font-interDisplayLight  text-zinc-800 bg-fixed px-10 md:px-20 lg:px-40 dark:bg-black dark:text-white";
