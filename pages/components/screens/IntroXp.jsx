@@ -1,10 +1,11 @@
 import React from 'react'
 import {AiFillLinkedin,AiFillGithub} from 'react-icons/ai';
-import IntroXpAnimation from '../widgets/TituloIntro';
+import MenuTop from '../widgets/menu/MenuTop';
 
 
 
-const IntroXp = ({darkMode,setDarkMode}) => {
+
+const IntroXp = ({darkMode,setDarkMode, showMenu}) => {
 
 // const gradientText = 'bg-gradient-to-r from-neon-orange  via-neon-blueberry to-neon-green   inline-block text-transparent bg-clip-text ';
 const gradientText = 'bg-gradient-to-r from-neon-orange  via-neon-blueberry to-neon-green   inline-block text-transparent bg-clip-text ';
@@ -20,13 +21,13 @@ let textAlt = ``;
 darkMode ? textAlt = textAltDark :textAlt = textAltLight ;
     
   return (
-    <section className='min-h-screen pt-16 lg:pt-0 xl:pt-10 items-center  ' id='intro-xp'>
-<IntroXpAnimation/>
-    <div className=' '> 
+    <section className='min-h-screen  flex flex-col   ' id='intro-xp'>
+      
+    <div className='min-h-screen flex flex-col  items-center justify-center'> 
 
 
         {/* Title + Social Media Icons  */}
-        <div className='  flex-col pb-10 mt-20 '>
+        <div className='  flex-col '>
 
           {/* Name and small bg */}
             <div className=' text-center neon-'>

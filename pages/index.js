@@ -9,16 +9,16 @@ import ContactForm from './components/screens/ContactForm';
 import Footer from './components/screens/Footer';
 import ScrollButton from './components/widgets/ScrollButton';
 import Presentation from './components/screens/Presentation';
-import MenuTop from './components/widgets/MenuTop';
 import MySkills from './components/screens/MySkills';
-
+import MenuBurger from './components/widgets/menu/MenuBurger';
 
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
 
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] =  useState(true);
+  const [showMenu, setShowMenu] =  useState(true);
   
   const blueberryMain = "bg-white font-exo  bg-fixed px-10 md:px-20 lg:px-40 dark:bg-gradient-to-b dark:from-black dark:to-dark-neon-fade dark:text-white";
   const blackMain = "bg-almost-white font-interDisplayLight  text-zinc-800 bg-fixed px-10 md:px-20 lg:px-40 dark:bg-black dark:text-white";
@@ -36,21 +36,10 @@ export default function Home() {
       
 
     <main className={blackMain}
->
-     <MenuTop
-     
-     darkMode = {darkMode}
-     setDarkMode = {setDarkMode}
-     ></MenuTop>
-     <IntroXp
-     
-     darkMode = {darkMode}
-     setDarkMode = {setDarkMode}
-     ></IntroXp>
+>     
+     <MenuBurger darkMode = {darkMode} showMenu = {showMenu} setShowMenu = {setShowMenu}></MenuBurger>
+     <IntroXp darkMode = {darkMode} setDarkMode = {setDarkMode} showMenu = {showMenu} ></IntroXp>
      <Presentation darkMode={darkMode}/>
-
-     {/* <MyStory darkMode = {darkMode}/>
-     <MySkills darkMode = {darkMode}/> */}
      <MyProjects darkMode={darkMode}/>
      <ContactForm darkMode={darkMode}/>
      <Footer/>

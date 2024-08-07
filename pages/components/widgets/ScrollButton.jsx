@@ -12,14 +12,14 @@ const ScrollButton = () => {
       activeSectionRef.current = document.querySelector('.section.active');
     }
 
-    const section0 = document.getElementById('menu-top');
-    //const section1 = document.getElementById('intro-xp');
+    // const section0 = document.getElementById('menu-top');
+    const section1 = document.getElementById('intro-xp');
     const section2 = document.getElementById('presentation');
     // const section3 = document.getElementById('my-story');
     // const section4 = document.getElementById('my-skills');
     const section5 = document.getElementById('my-projects');
     const section6 = document.getElementById('contact');
-    const sectionsPortfolio = [section0, section2,section5,section6];
+    const sectionsPortfolio = [section1, section2,section5,section6];
     
     
     let nextIndex = 0;
