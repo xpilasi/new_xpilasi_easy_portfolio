@@ -6,14 +6,14 @@ const Footer = () => {
 const linkedInUrl = 'https://www.linkedin.com/in/xavierpilasi/';
 const gitHubUrl = 'https://github.com/xpilasi';
 
-const hoverScale110 = 'transform transition-transform hover:scale-110';
+const hoverScale110 = 'transform transition-transform hover:scale-105';
   return (
     <section className='mt-10 text-center'>
       
       <article className='lg:grid lg:grid-cols-3'>
         {/* col 1 */}
         <div className='grid grid-col-1  justify-start items-center  '>
-          <div className='text-md font-extralight text-start'>
+          <div className='text-md font-extralight text-start font-interDisplayExtraLight tracking-widest'>
             <p>Thanks for looking around.</p>
             <p>Stay in touch.</p>
             
@@ -35,12 +35,12 @@ const hoverScale110 = 'transform transition-transform hover:scale-110';
               
               {/* col 3 */}
       </div>
-        <div className='flex justify-end items-center  text-md  font-extralight'>
+        <div className='flex justify-end items-center  text-md font-interDisplayExtraLight font-extralight'>
         <ul className='flex text-end gap-1'>
         
-        <li className={`hover:text-neon-green hover:cursor-pointer ${hoverScale110}`}>about me</li>
-        <li className={`hover:text-neon-green hover:cursor-pointer ${hoverScale110}`}>projects</li>
-        <li className={`hover:text-neon-green hover:cursor-pointer ${hoverScale110}`}>resume</li>
+        <li className={`hover:text-green-300 hover:cursor-pointer tracking-widest ${hoverScale110}`}>about me</li>
+        <li className={`hover:text-green-300 hover:cursor-pointer tracking-widest ${hoverScale110}`}>projects</li>
+        <li className={`hover:text-green-300 hover:cursor-pointer tracking-widest ${hoverScale110}`}>resume</li>
         
       </ul >
         <ul className='flex flex-col gap-2 justify-start text-end items-start'>
