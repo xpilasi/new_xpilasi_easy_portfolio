@@ -11,6 +11,7 @@ import ScrollButton from './components/widgets/ScrollButton';
 import Presentation from './components/screens/Presentation';
 import MySkills from './components/screens/MySkills';
 import MenuBurger from './components/widgets/menu/MenuBurger';
+import Menu from './components/widgets/menu/MenuTop';
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -38,6 +39,7 @@ export default function Home() {
     <main className={blackMain}
 >     
      <MenuBurger darkMode = {darkMode} showMenu = {showMenu} setShowMenu = {setShowMenu}></MenuBurger>
+     <Menu darkMode = {darkMode} showMenu = {showMenu}></Menu>
      <IntroXp darkMode = {darkMode} setDarkMode = {setDarkMode} showMenu = {showMenu} ></IntroXp>
      <Presentation darkMode={darkMode}/>
      <MyProjects darkMode={darkMode}/>
