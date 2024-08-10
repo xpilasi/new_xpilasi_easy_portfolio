@@ -17,7 +17,7 @@ const CloseRoadMap = ({ darkMode, setDarkMode,showRoadMap, setShowRoadMap }) => 
       >
           <IoCloseSharp 
             onClick={() => setShowRoadMap(!showRoadMap)} 
-            className='text-white text-4xl hover:rotate-90 transition ease-in-out hover:text-neon-green'>
+            className='text-white text-4xl hover:rotate-90 transition ease-in-out'>
 
             </IoCloseSharp>
          
