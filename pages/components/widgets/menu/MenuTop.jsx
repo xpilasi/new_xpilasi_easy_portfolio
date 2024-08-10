@@ -21,7 +21,7 @@ const Menu = ({darkMode,showMenu}) => {
 
     <header 
     id='menu-top' 
-    className={`transition-opacity duration-500 ease-in-out fixed z-40  bg-zinc-800 top-6 right-6 ${isVisible ? 'opacity-100 ' : 'opacity-0'}`}>
+    className={`transition-opacity duration-500 ease-in-out fixed z-30  bg-zinc-800 top-6 right-6 ${isVisible ? 'opacity-100 ' : 'opacity-0'}`}>
 
     <nav className=' mb-12 flex flex-col justify-start items-start  w-80 pl-14 pb-10 pt-20 '>
         

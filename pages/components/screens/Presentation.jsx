@@ -58,8 +58,8 @@ const Presentation = ({darkMode, showRoadMap, setShowRoadMap}) => {
             <div className={`lg:flex lg:pr-5 flex justify-center items-center w-full ${bg} max-w-5xl pb-5 lg:justify-end lg:items-end`}>
                 <div className={darkMode ? '' : 'hidden'}>
                     
-                <ButtonGreen onClick={() => setShowRoadMap(!showRoadMap)} darkMode={darkMode} buttonName='Check my Roadmap'></ButtonGreen>
-                {/* <ButtonGreen onClick={() => test()} darkMode={darkMode} buttonName='Check my Roadmap'></ButtonGreen> */}
+                <ButtonGreen onClick={() =>{console.log('TEST - SHOWROADMAP') ; setShowRoadMap(!showRoadMap);  }} darkMode={darkMode} buttonName='Check my Roadmap'></ButtonGreen>
+                
                 </div>
                 <div className={darkMode ? 'hidden' : ''}>
                 <ButtonWhiteBlack darkMode={darkMode} buttonName='Check my Roadmap'></ButtonWhiteBlack>

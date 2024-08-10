@@ -15,7 +15,11 @@ const CloseRoadMap = ({ darkMode, setDarkMode,showRoadMap, setShowRoadMap }) => 
           className="flex flex-col items-center justify-center w-8 h-8 cursor-pointer "
           
       >
-          <IoCloseSharp onClick={() => setShowRoadMap(!showRoadMap)} className='text-white tex-3xl'></IoCloseSharp>
+          <IoCloseSharp 
+            onClick={() => setShowRoadMap(!showRoadMap)} 
+            className='text-white text-4xl hover:rotate-90 transition ease-in-out hover:text-neon-green'>
+
+            </IoCloseSharp>
          
       </div>
     </div>

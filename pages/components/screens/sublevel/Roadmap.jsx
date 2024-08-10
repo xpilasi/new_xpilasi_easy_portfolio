@@ -35,10 +35,16 @@ const Roadmap = ({showRoadMap, setShowRoadMap}) => {
       );
     return (
 
-    <section id='roadmap' className={`min-h-screen bg-black w-full fixed z-50 left-0 px-5 ${isVisible ? '' : 'hidden'} `}>
+    <section 
+    id='roadmap' 
+    className={
+        `min-h-screen bg-black w-full fixed left-0 top-0 px-5 transition-all duration-300 ease-in-out 
+            ${isVisible ? 'z-50 opacity-100 pointer-events-auto' : 'opacity-0 z-30 pointer-events-none'}`
+        }
+    >
         <CloseRoadMap showRoadMap={showRoadMap } setShowRoadMap={setShowRoadMap} ></CloseRoadMap>
         <RoadmapTopTitle titleText={topDesc}></RoadmapTopTitle>
-        <RoadmapTitle titleText={titleDesc}></RoadmapTitle>
+        <RoadmapTitle titleText={titleDesc}></RoadmapTitle> 
         <RoadmapSubTitle titleText={subtitleDesc}></RoadmapSubTitle>
         <div className='flex flex-col lg:grid lg: grid-cols-2 gap-x-28'>
         <Road year={'2011'} yearDesc={yearDesc1}></Road>
