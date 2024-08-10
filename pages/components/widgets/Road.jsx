@@ -7,7 +7,7 @@ const Road = ({
     yearDesc
 }) => {
 
-    console.log('roadmap');
+    
 
     let rounded = false;
     let roundedCss = 'rounded-sm';
@@ -20,9 +20,9 @@ const Road = ({
     return(
             <article className={`grid-item  ${roundedCss} px-0 overflow-hidden h-auto`} >
               
-              <div className={ `bg-danny-grey py-3 pl-3 mb-0 ${roundedCssCard}`}>
-                <p className=' text-slate-500 font-extralight text-xs'>{year}</p>
-                <p className='text-white font-extralight text-sm'>{yearDesc}</p>
+              <div className={ `py-3  mb-0 ${roundedCssCard}`}>
+                <p className=' text-slate-500 font-interDisplayLight text-[13px] pb-3'>{year}</p>
+                <p className='text-white font-interDisplayLight text-[13px]'>{yearDesc}</p>
               </div>
             </article>
 
