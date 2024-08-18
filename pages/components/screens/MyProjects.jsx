@@ -18,7 +18,7 @@ import SectionSubTitle from '../widgets/titles/SectionSubTitle';
 
 
 
-const MyProjects = ({darkMode}) => {
+const MyProjects = ({darkMode, showProject, setShowProject}) => {
 
   const projectContainerStyle = 'grid-item bg-new-neon rounded-xl px-5 py-10';
   let xPilasiPortfolio = '';

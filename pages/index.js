@@ -15,6 +15,7 @@ import Menu from './components/widgets/menu/MenuTop';
 import Roadmap from './components/screens/sublevel/Roadmap';
 
 
+
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
   const [darkMode, setDarkMode] =  useState(true);
   const [showMenu, setShowMenu] =  useState(false);
   const [showRoadMap, setShowRoadMap] =  useState(false);
+  const [showProject, setShowProject] =  useState(false);
   
   const blueberryMain = "bg-white font-exo  bg-fixed px-10 md:px-20 lg:px-40 dark:bg-gradient-to-b dark:from-black dark:to-dark-neon-fade dark:text-white";
   const blackMain = "bg-almost-white font-interDisplayLight  text-zinc-800 bg-fixed px-10 md:px-20 lg:px-40 dark:bg-black dark:text-white";
@@ -41,11 +43,12 @@ export default function Home() {
     <main className={blackMain}
 >     
      <Roadmap showRoadMap={showRoadMap} setShowRoadMap={setShowRoadMap}></Roadmap>
+     
      <MenuBurger darkMode = {darkMode} showMenu = {showMenu} setShowMenu = {setShowMenu}></MenuBurger>
      <Menu darkMode = {darkMode} showMenu = {showMenu}></Menu>
      <IntroXp darkMode = {darkMode} setDarkMode = {setDarkMode} showMenu = {showMenu} ></IntroXp>
      <Presentation darkMode={darkMode} showRoadMap={showRoadMap} setShowRoadMap={setShowRoadMap}/>
-     <MyProjects darkMode={darkMode}/>
+     <MyProjects darkMode={darkMode} showProject={showProject} setShowProject={setShowProject}/>
      <ContactForm darkMode={darkMode}/>
      <Footer/>
      <ScrollButton />
