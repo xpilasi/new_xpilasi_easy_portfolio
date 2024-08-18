@@ -33,11 +33,7 @@ const ProjectsDesc = ({showProject, setShowProject, projectName, projectDescript
         <RoadmapTitle titleText={titleDesc}></RoadmapTitle> 
         <RoadmapSubTitle titleText={subtitleDesc}></RoadmapSubTitle>
         <div className='flex flex-col lg:grid lg: grid-cols-2 gap-x-28'>
-        <Road year={'2011'} yearDesc={yearDesc1}></Road>
-        <Road year={'2016'} yearDesc={yearDesc2}></Road>
-        <Road year={'2021'} yearDesc={yearDesc3}></Road>
-        <Road year={'2023'} yearDesc={yearDesc4}></Road>
-        <Road year={'2024'} yearDesc={yearDesc5}></Road>
+       
 
         </div>
         

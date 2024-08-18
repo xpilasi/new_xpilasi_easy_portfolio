@@ -88,17 +88,17 @@ const subtitle = 'Got a question or proposal, or just want to say hello? Go ahea
             <form onSubmit={handleSubmit}>
 
             <div className='input-container'>
-              <label for='name' class="label">Your Name</label>  
+              <label for='name' >Your Name</label>  
               <input className='custom-input' type="text" placeholder={'Enter your name'} name="name" id='name'/>
             </div>
             
             <div className='input-container'>
-              <label for='email' class="label">Email Address</label> 
+              <label for='email' >Email Address</label> 
               <input className='custom-input' type="email" placeholder={'Enter your email address'} name="email" id='email'/>
             </div>
             
             <div className='input-container'>
-              <label for='email' class="label">Your Message</label> 
+              <label for='email' >Your Message</label> 
               <textarea className= 'custom-textarea' type="textarea" placeholder={'Hi, I think we need a design system for our products at Comany X. How soon can you hop on to discuss this?'} name="message"/>
             </div>
             

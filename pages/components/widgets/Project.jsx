@@ -6,7 +6,8 @@ const Project = ({
     
     imageSrc,
     designType,
-    projectName
+    projectName,
+    onClick
 }) => {
 
     let rounded = false;
@@ -20,7 +21,7 @@ const Project = ({
 
     return (
 
-        <div className={`grid-item  ${roundedCss} px-0 overflow-hidden h-auto`} >
+        <div className={`grid-item  ${roundedCss} px-0 overflow-hidden h-auto`} onClick={onClick} >
               <Image className='' src={imageSrc}   layout='responsive'></Image>
               <div className={ `bg-danny-grey py-3 pl-3 mb-0 ${roundedCssCard}`}>
                 <p className=' text-slate-500 font-extralight text-xs'>{designType}</p>
