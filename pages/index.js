@@ -27,7 +27,7 @@ export default function Home() {
   
   const blueberryMain = "bg-white font-exo  bg-fixed px-10 md:px-20 lg:px-40 dark:bg-gradient-to-b dark:from-black dark:to-dark-neon-fade dark:text-white";
   const blackMain = "bg-almost-white font-interDisplayLight  text-zinc-800 bg-fixed px-10 md:px-20 lg:px-40 dark:bg-black dark:text-white";
-  
+ 
 
   return (
     <div className={darkMode ? 'dark' : ''}>
@@ -48,7 +48,7 @@ export default function Home() {
      <Menu darkMode = {darkMode} showMenu = {showMenu}></Menu>
      <IntroXp darkMode = {darkMode} setDarkMode = {setDarkMode} showMenu = {showMenu} ></IntroXp>
      <Presentation darkMode={darkMode} showRoadMap={showRoadMap} setShowRoadMap={setShowRoadMap}/>
-     <MyProjects darkMode={darkMode} showProject={showProject} setShowProject={setShowProject}/>
+     <MyProjects darkMode={darkMode} showProject={showProject} setShowProject={setShowProject} />
      <ContactForm darkMode={darkMode}/>
      <Footer/>
      <ScrollButton />
