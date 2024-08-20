@@ -6,7 +6,7 @@ const RoadmapTitle = ({titleText}) => {
     
   return (
      
-    <h2 className='text-white font-interDisplayMedium text-[80px] '>
+    <h2 className='text-white font-interDisplayMedium lg:text-[80px] text-[40px]'>
         {titleText}
     </h2>
     

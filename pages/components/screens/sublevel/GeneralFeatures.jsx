@@ -7,7 +7,7 @@ const GeneralFeatures = ({generalFeatures}) => {
     
   return (
 
-    <p className='text-white font-interdisplayLight text-sm pb-12 tracking-wider '>
+    <p className='text-white font-interdisplayLight lg:text-sm text-xs lg:pb-12 pb-6 tracking-wider '>
     {generalFeatures}
 </p>
    

@@ -113,22 +113,20 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
         <RoadmapTopTitle titleText={topDesc}></RoadmapTopTitle>
         <RoadmapTitle titleText={titleDesc}></RoadmapTitle> 
 
-        <article className='lg:grid lg:grid-cols-7 gap-10'>
+        <article className='lg:grid lg:grid-cols-7 lg:gap-10 gap-5 grid grid-cols-1'>
             <div className='bg-red-400 col-span-4'>
                 <Image src={ExampleImg}></Image>
                     
                 
 
             </div>
-            <div className='bg-black col-span-3'>
+            <div className='bg-blue-400 col-span-3 w-full'>
                 <h3 className='text-zinc-500 font-interDisplayLight text-[14px] pb-2'>General features</h3>
             <GeneralFeatures generalFeatures={generalFeatures}></GeneralFeatures>
             <Features year={year} framework={framework} language={language} backend={backend}></Features>
-            <div className='mb-5'>
+            
+            <div className='mb-5 grid grid-cols-2 lg:grid-cols-1  gap-4'>
             <ButtonGreenWhite buttonName='Download APK'></ButtonGreenWhite>
-            </div>
-
-            <div className='gap-2'>
             <ButtonGreenWhite buttonName='Check Repository'></ButtonGreenWhite>
             </div>
             
