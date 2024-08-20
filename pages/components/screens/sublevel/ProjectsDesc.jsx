@@ -114,13 +114,13 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
         <RoadmapTitle titleText={titleDesc}></RoadmapTitle> 
 
         <article className='lg:grid lg:grid-cols-7 lg:gap-10 gap-5 grid grid-cols-1'>
-            <div className='bg-red-400 col-span-4'>
+            <div className='bg-red-400 lg:col-span-4'>
                 <Image src={ExampleImg}></Image>
                     
                 
 
             </div>
-            <div className='bg-blue-400 col-span-3 w-full'>
+            <div className='bg-blue-400 lg:col-span-3 '>
                 <h3 className='text-zinc-500 font-interDisplayLight text-[14px] pb-2'>General features</h3>
             <GeneralFeatures generalFeatures={generalFeatures}></GeneralFeatures>
             <Features year={year} framework={framework} language={language} backend={backend}></Features>

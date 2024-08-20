@@ -10,7 +10,7 @@ const CloseRoadMap = ({ darkMode, setDarkMode,showRoadMap, setShowRoadMap }) => 
 
     return (
      
-      <div className={`fixed top-14 right-14 z-40`}>
+      <div className={`fixed lg:top-14 top-5 lg:right-14 right-5 z-40`}>
       <div 
           className="flex flex-col items-center justify-center w-8 h-8 cursor-pointer "
           

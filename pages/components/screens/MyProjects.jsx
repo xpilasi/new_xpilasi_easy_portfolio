@@ -48,28 +48,26 @@ const MyProjects = ({darkMode, showProject, setShowProject}) => {
       <SectionSubTitle titleText="These are some of my personal projects I've been developed since I started my software journey."></SectionSubTitle>
 
       <div className={`grid grid-cols-1 md:grid md:grid-cols-2 gap-5`}>
-        {
-          
-        }
-              <span className={hoverScale110} href=""><Project 
+       
+              <span className={hoverScale110} ><Project 
                                                         onClick={() =>{setShowProject(!showProject); visibleProject(1)}} 
                                                         imageSrc={gorillaGrabProject} 
                                                         projectName='Gorilla Grab' 
                                                         designType='Mobile App'>
                                                       </Project></span>
-              <span className={hoverScale110} href=""><Project 
+              <span className={hoverScale110} ><Project 
                                                         onClick={() =>{setShowProject(!showProject); visibleProject(2)}} 
                                                         imageSrc={justListProject} 
                                                         projectName='Gorilla Grab' 
                                                         designType='Mobile App'>
                                                       </Project></span>
-              <span className={hoverScale110} href=""><Project 
+              <span className={hoverScale110} ><Project 
                                                         onClick={() =>{setShowProject(!showProject); visibleProject(3)}} 
                                                         imageSrc={vintageGroomProject} 
                                                         projectName='Gorilla Grab' 
                                                         designType='Mobile App'>
                                                       </Project></span>
-              <span className={hoverScale110} href=""><Project 
+              <span className={hoverScale110} ><Project 
                                                         onClick={() =>{setShowProject(!showProject); visibleProject(4)}} 
                                                         imageSrc={xPilasiPortfolio} 
                                                         projectName='Gorilla Grab' 
