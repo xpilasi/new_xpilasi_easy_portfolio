@@ -9,7 +9,9 @@ const SubTitle = ({srcSubtitle}) => {
     
   return (
 
-    <Image src={srcSubtitle}/>
+    <h2 className='text-green-300 font-interdisplayLight text-md pb-12 tracking-wider '>
+    {srcSubtitle}
+</h2>
    
   )
 }

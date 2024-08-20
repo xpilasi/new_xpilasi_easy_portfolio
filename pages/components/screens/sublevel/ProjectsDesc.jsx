@@ -4,6 +4,12 @@ import RoadmapTitle from '../../widgets/titles/RoadmapTitle';
 import RoadmapSubTitle from '../../widgets/titles/RoadmapSubTitle';
 import RoadmapTopTitle from '../../widgets/titles/RoadmapTopTitle';
 import CloseRoadMap from '../../widgets/menu/CloseRoadMap';
+import Image from 'next/image';
+import ExampleImg from '../../../../public/img/final_webs/barber.png';
+import GeneralFeatures from './GeneralFeatures';
+import Features from './Features';
+import ButtonGreenWhite from '../../widgets/buttons/ButtonGreenWhite';
+
 
 
 const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
@@ -17,10 +23,11 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
         projectKey: 1,
         name : 'GorillaGrab',
         type: 'Mobile App',
-        description: 'this is the gorilla desc',
+        description: 'Create a user to start tracking your climbing trainings:  create independent Trainings with independent exercises within. Compare your historic records, compare your current record with your last records so you can easily understand how your level is evolving. Control your total training hours within specific time periods.',
         year: 2023,
         framework: `Flutter`,
-        language: 'Dart'
+        language: 'Dart',
+        backend:'Firebase'
       },
       {
         projectKey: 2,
@@ -29,7 +36,8 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
         description: 'this is the JustList desc',
         year: 2023,
         framework: `Flutter`,
-        language: 'Dart'
+        language: 'Dart',
+        backend:'Firebase'
       },
       {
         projectKey: 3,
@@ -38,7 +46,8 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
         description: 'this is the Vintage Groom desc',
         year: 2024,
         framework: `Vue`,
-        language: 'Javascript'
+        language: 'Javascript',
+        backend:'Firebase'
       },
       {
         projectKey: 4,
@@ -47,7 +56,8 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
         description: 'this is the xPilasi Portafolio desc',
         year: 2024,
         framework: `React`,
-        language: 'Javascript'
+        language: 'Javascript',
+        backend:'Firebase'
       },
     //   {
     //     projectKey: 5,
@@ -82,9 +92,13 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
     setIsVisible(showProject);
 }, [showProject]);
 
-    const topDesc = 'xpilasi.com';
+    const topDesc = currentProject(keyProject).type;
     const titleDesc = currentProject(keyProject).name;
-    const subtitleDesc = currentProject(keyProject).description ;
+    const generalFeatures = currentProject(keyProject).description ;
+    const year = currentProject(keyProject).year ;
+    const framework = currentProject(keyProject).framework ;
+    const language = currentProject(keyProject).language ;
+    const backend = currentProject(keyProject).backend ;
 
     return (
 
@@ -98,7 +112,38 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
         <CloseRoadMap showRoadMap={showProject } setShowRoadMap={setShowProject} ></CloseRoadMap>
         <RoadmapTopTitle titleText={topDesc}></RoadmapTopTitle>
         <RoadmapTitle titleText={titleDesc}></RoadmapTitle> 
-        <RoadmapSubTitle titleText={subtitleDesc}></RoadmapSubTitle>
+
+        <article className='lg:grid lg:grid-cols-7 gap-10'>
+            <div className='bg-red-400 col-span-4'>
+                <Image src={ExampleImg}></Image>
+                    
+                
+
+            </div>
+            <div className='bg-black col-span-3'>
+                <h3 className='text-zinc-500 font-interDisplayLight text-[14px] pb-2'>General features</h3>
+            <GeneralFeatures generalFeatures={generalFeatures}></GeneralFeatures>
+            <Features year={year} framework={framework} language={language} backend={backend}></Features>
+            <div className='mb-5'>
+            <ButtonGreenWhite buttonName='Download APK'></ButtonGreenWhite>
+            </div>
+
+            <div className='gap-2'>
+            <ButtonGreenWhite buttonName='Check Repository'></ButtonGreenWhite>
+            </div>
+            
+
+                    
+                
+
+            </div>
+
+        </article>
+        
+        <div className='flex flex-col lg:grid lg: grid-cols-2 gap-x-28'>
+       
+
+        </div>
         <div className='flex flex-col lg:grid lg: grid-cols-2 gap-x-28'>
        
 
