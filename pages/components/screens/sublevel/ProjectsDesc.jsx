@@ -9,6 +9,9 @@ import ExampleImg from '../../../../public/img/final_webs/barber.png';
 import GeneralFeatures from './GeneralFeatures';
 import Features from './Features';
 import ButtonGreenWhite from '../../widgets/buttons/ButtonGreenWhite';
+import gorillaGrabProject from '../../../../public/img/projects_logos/app_design/gorillaGrapAppDesign.png';
+import justlistAppDesign from '../../../../public/img/projects_logos/app_design/justlistAppDesign.png';
+
 
 
 
@@ -27,7 +30,8 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
         year: 2023,
         framework: `Flutter`,
         language: 'Dart',
-        backend:'Firebase'
+        backend:'Firebase',
+        imgSrc:gorillaGrabProject
       },
       {
         projectKey: 2,
@@ -37,7 +41,8 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
         year: 2023,
         framework: `Flutter`,
         language: 'Dart',
-        backend:'Firebase'
+        backend:'Firebase',
+        imgSrc:justlistAppDesign
       },
       {
         projectKey: 3,
@@ -47,7 +52,8 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
         year: 2024,
         framework: `Vue`,
         language: 'Javascript',
-        backend:'Firebase'
+        backend:'Firebase',
+        imgSrc:gorillaGrabProject
       },
       {
         projectKey: 4,
@@ -57,7 +63,8 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
         year: 2024,
         framework: `React`,
         language: 'Javascript',
-        backend:'Firebase'
+        backend:'Firebase',
+        imgSrc:gorillaGrabProject
       },
     //   {
     //     projectKey: 5,
@@ -99,6 +106,7 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
     const framework = currentProject(keyProject).framework ;
     const language = currentProject(keyProject).language ;
     const backend = currentProject(keyProject).backend ;
+    const imgSrc = currentProject(keyProject).imgSrc;
 
     return (
 
@@ -113,14 +121,14 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
         <RoadmapTopTitle titleText={topDesc}></RoadmapTopTitle>
         <RoadmapTitle titleText={titleDesc}></RoadmapTitle> 
 
-        <article className='lg:grid lg:grid-cols-7 lg:gap-10 gap-5 grid grid-cols-1'>
+        <article className='lg:grid lg:grid-cols-7 lg:gap-10 gap-5 grid grid-cols-1 mt-3 '>
             <div className='bg-red-400 lg:col-span-4'>
-                <Image src={ExampleImg}></Image>
+                <Image src={imgSrc}></Image>
                     
                 
 
             </div>
-            <div className='bg-blue-400 lg:col-span-3 '>
+            <div className='lg:col-span-3 '>
                 <h3 className='text-zinc-500 font-interDisplayLight text-[14px] pb-2'>General features</h3>
             <GeneralFeatures generalFeatures={generalFeatures}></GeneralFeatures>
             <Features year={year} framework={framework} language={language} backend={backend}></Features>

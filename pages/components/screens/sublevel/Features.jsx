@@ -7,7 +7,7 @@ const Features = ({year,framework,language,backend}) => {
     
   return (
 
-    <div className='grid grid-cols-4'>
+    <div className='grid grid-cols-4 py-5 lg:py-0'>
       <div className='text-zinc-500 font-interDisplayLight text-[14px]'>Year</div>
       
       
