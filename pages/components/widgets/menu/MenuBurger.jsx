@@ -13,7 +13,8 @@ const MenuBurger = ({ darkMode, setDarkMode,showMenu, setShowMenu }) => {
       <div className={`fixed lg:top-14 lg:right-14 z-40 top-10 right-10`}>
       <div 
           className="flex flex-col items-center justify-center w-8 h-8 cursor-pointer "
-          onClick={() => setShowMenu(!showMenu)}
+          onClick={() => {setShowMenu(!showMenu);console.log(`show Menu Burger = ${showMenu}`);}
+          }
       >
           <span 
               className={`absolute top-1.5 w-8   h-0.5 bg-white transition-all duration-300 ease-in-out transform ${

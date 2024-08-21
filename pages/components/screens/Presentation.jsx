@@ -29,7 +29,7 @@ const Presentation = ({darkMode, showRoadMap, setShowRoadMap}) => {
 
     const test = () => {console.log('test');}
     return (
-    <section id='presentation' className='h-screen flex flex-col items-center justify-center '>
+    <section id='about-me' className='h-screen flex flex-col items-center justify-center '>
 
         
         <div className=' max-w-5xl flex flex-col justify-center items-center bg-white '>
