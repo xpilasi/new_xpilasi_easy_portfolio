@@ -10,7 +10,7 @@ const MenuBurger = ({ darkMode, setDarkMode,showMenu, setShowMenu }) => {
 
     return (
      
-      <div className={`fixed top-14 right-14 z-40`}>
+      <div className={`fixed lg:top-14 lg:right-14 z-40 top-10 right-10`}>
       <div 
           className="flex flex-col items-center justify-center w-8 h-8 cursor-pointer "
           onClick={() => setShowMenu(!showMenu)}

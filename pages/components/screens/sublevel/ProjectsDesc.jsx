@@ -41,7 +41,7 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
         year: 2023,
         framework: `Flutter`,
         language: 'Dart',
-        backend:'Firebase',
+        backend:'Hive',
         imgSrc:justlistAppDesign
       },
       {
@@ -50,20 +50,20 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
         type: 'Web Design',
         description: 'this is the Vintage Groom desc',
         year: 2024,
-        framework: `Vue`,
+        framework: `Vue 3`,
         language: 'Javascript',
-        backend:'Firebase',
+        backend:'-',
         imgSrc:gorillaGrabProject
       },
       {
         projectKey: 4,
         name : 'xPilasi Porfolio',
         type: 'Web Design',
-        description: 'this is the xPilasi Portafolio desc',
+        description: 'I officially created this portflio website on 2023 and I completely renovated it on 2024. I changed the color palette and added brand new components to simplify the updates and most of all to have a clean and cool experience.',
         year: 2024,
-        framework: `React`,
+        framework: `Next.Js / React`,
         language: 'Javascript',
-        backend:'Firebase',
+        backend:' - ',
         imgSrc:gorillaGrabProject
       },
     //   {
