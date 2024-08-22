@@ -1,7 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import SunMoonIcon from '../SunMoonIcon';
-import ButtonWhite from '../buttons/ButtonWhite';
-
 
 const Menu = ({darkMode,showMenu,setShowMenu}) => {
 
@@ -16,7 +13,7 @@ const Menu = ({darkMode,showMenu,setShowMenu}) => {
     <header 
     
     id='menu-top' 
-    className={`transition-opacity duration-500 ease-in-out fixed left-0 right-0 top-0 bottom-0 md:w-80 bg-opacity-100 bg-black lg:bg-zinc-800 md:top-6 md:right-6 md:left-auto md:bottom-auto ${showMenu == false ? 'opacity-100 z-30 ' : 'opacity-0'}`}>
+    className={`  transition-opacity duration-500 ease-in-out fixed left-0 right-0 top-0 bottom-0 md:w-80 bg-opacity-100 bg-black lg:bg-zinc-800 md:top-6 md:right-6 md:left-auto md:bottom-auto ${showMenu == false? 'opacity-100 z-30 ' : 'opacity-0'}`}>
 
     <nav 
       
