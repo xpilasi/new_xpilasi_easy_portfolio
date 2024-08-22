@@ -21,7 +21,7 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
 
   const [darkMode, setDarkMode] =  useState(true);
-  const [showMenu, setShowMenu] =  useState(false);
+  const [showMenu, setShowMenu] =  useState(true);
   const [showRoadMap, setShowRoadMap] =  useState(false);
   const [showProject, setShowProject] =  useState(false);
   
@@ -45,7 +45,7 @@ export default function Home() {
      <Roadmap showRoadMap={showRoadMap} setShowRoadMap={setShowRoadMap}></Roadmap>
      
      <MenuBurger darkMode = {darkMode} showMenu = {showMenu} setShowMenu = {setShowMenu}></MenuBurger>
-     <Menu darkMode = {darkMode} showMenu = {!showMenu}  ></Menu>
+     <Menu darkMode = {darkMode} showMenu = {!showMenu} setShowMenu = {setShowMenu} ></Menu>
      <IntroXp darkMode = {darkMode} setDarkMode = {setDarkMode} showMenu = {showMenu} ></IntroXp>
      <Presentation darkMode={darkMode} showRoadMap={showRoadMap} setShowRoadMap={setShowRoadMap}/>
      <MyProjects darkMode={darkMode} showProject={showProject} setShowProject={setShowProject} />
