@@ -18,7 +18,7 @@ const MyProjects = ({darkMode, showProject, setShowProject}) => {
   let xPilasiPortfolio = '';
   const projectContainerStyle = 'grid-item bg-new-neon rounded-xl px-5 py-10';
   const [projectVisible, setProjectVisible] = useState(0);
-  const hoverScale110 = 'transform transition-transform hover:scale-105 cursor-pointer';
+  const hoverScale110 = 'transform transition-transform hover:scale-95 cursor-pointer';
 
   useEffect(() => {
     setProjectVisible(0);
@@ -34,7 +34,7 @@ const MyProjects = ({darkMode, showProject, setShowProject}) => {
   }
   return (
 
-    <section className='min-h-screen flex flex-col justify-center items-center  ' id='my-projects' >
+    <section className='min-h-screen flex flex-col justify-center items-center   ' id='my-projects' >
 
       <article>
         <ProjectsDesc showProject={showProject} setShowProject={setShowProject} keyProject={projectVisible}></ProjectsDesc>
