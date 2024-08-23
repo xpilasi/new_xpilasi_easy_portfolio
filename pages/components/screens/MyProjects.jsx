@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import gorillaGrabProject from '../../../public/img/projects_logos/app_design/gorillaGrapAppDesign.png';
-import justListProject from '../../../public/img/projects_logos/app_design/justlistAppDesign.png';
+import gorillaGrabProject from '../../../public/img/projects_logos/app_design/Flying-iPhone-X-Mockups.png';
+import justListProject from '../../../public/img/projects_logos/app_design/cozy-justlist-mockup_resized.png';
 import Project from '../widgets/Project';
-import vintageGroomProject from '../../../public/img/projects_logos/web_design/vintageGroomWebDesign.png'
+import vintageGroomProject from '../../../public/img/projects_logos/web_design/vintage-groom.png';
 import xpilasiPortfolioWebDesign from '../../../public/img/projects_logos/web_design/xpilasiPortfolioWebDesign.png'
-import xpilasiPortfolioWebDesignL from '../../../public/img/projects_logos/web_design/xpilasiPortfolioWebDesignLight.png'
+import xpilasiPortfolioWebDesignL from '../../../public/img/projects_logos/web_design/front-xpilasi-portfolio-2.png';
 import blockWebDesign from '../../../public/img/projects_logos/web_design/blockWebDesign.png'
 import ejemplo from '../../../public/img/projects_logos/web_design/ejemplo.png'
 import SectionTitle from '../widgets/titles/SectionTitle';

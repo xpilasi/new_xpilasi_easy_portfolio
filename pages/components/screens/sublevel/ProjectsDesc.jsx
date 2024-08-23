@@ -9,8 +9,8 @@ import ExampleImg from '../../../../public/img/final_webs/barber.png';
 import GeneralFeatures from './GeneralFeatures';
 import Features from './Features';
 import ButtonGreenWhite from '../../widgets/buttons/ButtonGreenWhite';
-import gorillaGrabProject from '../../../../public/img/projects_logos/app_design/gorilla.png';
-import justlistAppDesign from '../../../../public/img/projects_logos/app_design/justlistAppDesign.png';
+import gorillaGrabProject from '../../../../public/img/projects_logos/app_design/gorilla_mockup.png';
+import justlistAppDesign from '../../../../public/img/projects_logos/app_design/justlist_mockup_1.png';
 import Bullet from '../../widgets/Bullet';
 
 
