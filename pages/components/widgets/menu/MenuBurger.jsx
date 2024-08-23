@@ -1,7 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { HiMenuAlt3 } from 'react-icons/hi';
-import { IoCloseSharp } from 'react-icons/io5';
-import MenuTop from './MenuTop';
 
 const MenuBurger = ({ darkMode, setDarkMode,showMenu, setShowMenu }) => {
 
