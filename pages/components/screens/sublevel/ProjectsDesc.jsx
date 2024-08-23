@@ -11,13 +11,17 @@ import Features from './Features';
 import ButtonGreenWhite from '../../widgets/buttons/ButtonGreenWhite';
 import gorillaGrabProject from '../../../../public/img/projects_logos/app_design/gorilla.png';
 import justlistAppDesign from '../../../../public/img/projects_logos/app_design/justlistAppDesign.png';
-
+import Bullet from '../../widgets/Bullet';
 
 
 
 const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
 
     const [isVisible, setIsVisible] = useState(showProject);
+    const designDesc = 'Project and structure previously designed in Figma';
+    const tailwindDesc = 'General structure made with Tailwind CSS';
+    const cssDesc = 'Specific components made with CSS';
+    
 
     const projects = 
 
@@ -26,8 +30,11 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
         projectKey: 1,
         name : 'GorillaGrab',
         type: 'Mobile App',
-        description: 'Create a user to start tracking your climbing trainings:  create independent Trainings with independent exercises within. Compare your historic records, compare your current record with your last records so you can easily understand how your level is evolving. Control your total training hours within specific time periods.',
+        description: 'Create a user to start tracking your climbing trainings:  create independent Trainings with independent exercises within. Compare your historic records, compare your current record with your last records so you can easily understand how your level is evolving. Control your total training hours within specific time periods. ',
         year: 2023,
+        designDesc: designDesc,
+        cssLibrary: '-',
+        css: '-',
         framework: `Flutter`,
         language: 'Dart',
         backend:'Firebase',
@@ -39,6 +46,9 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
         type: 'Mobile App',
         description: 'this is the JustList desc',
         year: 2023,
+        designDesc: designDesc,
+        cssLibrary: '-',
+        css: '-',
         framework: `Flutter`,
         language: 'Dart',
         backend:'Hive',
@@ -50,6 +60,9 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
         type: 'Web Design',
         description: 'this is the Vintage Groom desc',
         year: 2024,
+        designDesc: designDesc,
+        cssLibrary: 'General structure made with Tailwind CSS',
+        css: 'Specific components made with CSS',
         framework: `Vue 3`,
         language: 'Javascript',
         backend:'-',
@@ -61,6 +74,9 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
         type: 'Web Design',
         description: 'I officially created this portflio website on 2023 and I completely renovated it on 2024. I changed the color palette and added brand new components to simplify the updates and most of all to have a clean and cool experience.',
         year: 2024,
+        designDesc: designDesc,
+        cssLibrary: 'General structure made with Tailwind CSS',
+        css: 'Specific components made with CSS',
         framework: `Next.Js / React`,
         language: 'Javascript',
         backend:' - ',
@@ -107,7 +123,15 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
     const language = currentProject(keyProject).language ;
     const backend = currentProject(keyProject).backend ;
     const imgSrc = currentProject(keyProject).imgSrc;
-
+    const testBullet = currentProject(keyProject).designDesc;
+    const bullets = [
+      currentProject(keyProject).designDesc,
+      currentProject(keyProject).cssLibrary,
+      currentProject(keyProject).css,
+    ]
+    
+      // console.log(testBullet);
+      
     return (
 
     <section 
@@ -118,11 +142,12 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
         }
     >
         <CloseRoadMap showRoadMap={showProject } setShowRoadMap={setShowProject} ></CloseRoadMap>
+        
         <RoadmapTopTitle titleText={topDesc}></RoadmapTopTitle>
         <RoadmapTitle titleText={titleDesc}></RoadmapTitle> 
 
         <article className='lg:grid lg:grid-cols-7 lg:gap-10 gap-5 grid grid-cols-1 mt-3 '>
-            <div className='bg-red-400 lg:col-span-4'>
+            <div className='lg:col-span-4'>
                 <Image src={imgSrc}></Image>
                     
                 
@@ -131,6 +156,8 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
             <div className='lg:col-span-3 '>
                 <h3 className='text-zinc-500 font-interDisplayLight text-[14px] pb-2'>General features</h3>
             <GeneralFeatures generalFeatures={generalFeatures}></GeneralFeatures>
+            <Bullet bulletsArray={bullets}></Bullet>
+            
             <Features year={year} framework={framework} language={language} backend={backend}></Features>
             
             <div className='mb-5 grid grid-cols-2 lg:grid-cols-1  gap-4'>
