@@ -4,7 +4,7 @@ const Bullet = ({ bulletsArray }) => {
 
     const showBullets = (bulletsArray) => {
 
-        return bulletsArray.map((bullet, index) => {
+        return bulletsArray?.map((bullet, index) => {
             
             if (bullet === '-') {
                 return null; // Si el elemento es '-', no se renderiza nada

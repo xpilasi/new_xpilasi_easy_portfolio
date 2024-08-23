@@ -58,20 +58,20 @@ const MyProjects = ({darkMode, showProject, setShowProject}) => {
               <span className={hoverScale110} ><Project 
                                                         onClick={() =>{setShowProject(!showProject); visibleProject(2)}} 
                                                         imageSrc={justListProject} 
-                                                        projectName='Gorilla Grab' 
+                                                        projectName='Just List' 
                                                         designType='Mobile App'>
                                                       </Project></span>
               <span className={hoverScale110} ><Project 
                                                         onClick={() =>{setShowProject(!showProject); visibleProject(3)}} 
                                                         imageSrc={vintageGroomProject} 
-                                                        projectName='Gorilla Grab' 
-                                                        designType='Mobile App'>
+                                                        projectName='Vintage Groom' 
+                                                        designType='Web Design'>
                                                       </Project></span>
               <span className={hoverScale110} ><Project 
                                                         onClick={() =>{setShowProject(!showProject); visibleProject(4)}} 
                                                         imageSrc={xPilasiPortfolio} 
-                                                        projectName='Gorilla Grab' 
-                                                        designType='Mobile App'>
+                                                        projectName='Personal Portfolio' 
+                                                        designType='Web Design'>
                                                       </Project></span>
               
               
