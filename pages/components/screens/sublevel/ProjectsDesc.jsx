@@ -10,7 +10,7 @@ import GeneralFeatures from './GeneralFeatures';
 import Features from './Features';
 import ButtonGreenWhite from '../../widgets/buttons/ButtonGreenWhite';
 import gorillaGrabProject from '../../../../public/img/projects_logos/app_design/gorilla_mockup.png';
-import justlistAppDesign from '../../../../public/img/projects_logos/app_design/justlist_mockup_1.png';
+import justlistAppDesign from '../../../../public/img/projects_logos/web_design/justlist_mockup_2png.png';
 import Bullet from '../../widgets/Bullet';
 
 
@@ -44,7 +44,7 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
         projectKey: 2,
         name : 'JustList',
         type: 'Mobile App',
-        description: 'this is the JustList desc',
+        description: "  With this super easy and light App you can create budget lists and manage them by adding and editing the items. You can save the purchase and reuse each list in the future." ,
         year: 2023,
         designDesc: designDesc,
         cssLibrary: '-',
