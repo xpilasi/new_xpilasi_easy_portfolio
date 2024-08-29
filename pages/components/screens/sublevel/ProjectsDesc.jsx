@@ -12,6 +12,7 @@ import ButtonGreenWhite from '../../widgets/buttons/ButtonGreenWhite';
 import gorillaGrabProject from '../../../../public/img/projects_logos/app_design/gorilla_mockup.png';
 import justlistAppDesign from '../../../../public/img/projects_logos/web_design/justlist_mockup_2png.png';
 import Bullet from '../../widgets/Bullet';
+import tonerelicsProject from '../../../../public/img/projects_logos/web_design/tonerelics.png';
 
 
 
@@ -82,15 +83,20 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
         backend:' - ',
         imgSrc:gorillaGrabProject
       },
-    //   {
-    //     projectKey: 5,
-    //     name : 'Vintage Groom',
-    //     type: 'Web Design',
-    //     description: 'this is the Vintage GRoom desc',
-    //     year: 2024,
-    //     framework: `Vue`,
-    //     language: 'Javascript'
-    //   },
+      {
+        projectKey: 5,
+        name : 'Tone Relics',
+        type: 'Ecommerce',
+        description: 'this is the Vintage GRoom desc',
+        year: 2024,
+        designDesc: designDesc,
+        cssLibrary: 'General structure made with Tailwind CSS',
+        css: 'Specific components made with CSS',
+        framework: `Next.Js / React`,
+        language: 'Typescrip',
+        backend:' Wix Headless ',
+        imgSrc:tonerelicsProject
+      },
     ]
 
   

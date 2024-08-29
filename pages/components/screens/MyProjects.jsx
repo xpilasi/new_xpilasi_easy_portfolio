@@ -3,6 +3,7 @@ import gorillaGrabProject from '../../../public/img/projects_logos/app_design/Fl
 import justListProject from '../../../public/img/projects_logos/app_design/cozy-justlist-mockup_resized.png';
 import Project from '../widgets/Project';
 import vintageGroomProject from '../../../public/img/projects_logos/web_design/vintage-groom.png';
+import tonerelicsProject from '../../../public/img/projects_logos/web_design/tonerelics.png';
 import xpilasiPortfolioWebDesign from '../../../public/img/projects_logos/web_design/xpilasiPortfolioWebDesign.png'
 import xpilasiPortfolioWebDesignL from '../../../public/img/projects_logos/web_design/front-xpilasi-portfolio-2.png';
 import blockWebDesign from '../../../public/img/projects_logos/web_design/blockWebDesign.png'
@@ -49,6 +50,12 @@ const MyProjects = ({darkMode, showProject, setShowProject}) => {
 
       <div className={`grid grid-cols-1 md:grid md:grid-cols-2 gap-5`}>
        
+              <span className={hoverScale110} ><Project 
+                                                        onClick={() =>{setShowProject(!showProject); visibleProject(5)}} 
+                                                        imageSrc={tonerelicsProject} 
+                                                        projectName='Tone Relics' 
+                                                        designType='Web Ecommerce'>
+                                                      </Project></span>
               <span className={hoverScale110} ><Project 
                                                         onClick={() =>{setShowProject(!showProject); visibleProject(1)}} 
                                                         imageSrc={gorillaGrabProject} 
