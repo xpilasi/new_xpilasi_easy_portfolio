@@ -12,7 +12,7 @@ import ButtonGreenWhite from '../../widgets/buttons/ButtonGreenWhite';
 import gorillaGrabProject from '../../../../public/img/projects_logos/app_design/gorilla_mockup.png';
 import justlistAppDesign from '../../../../public/img/projects_logos/web_design/justlist_mockup_2png.png';
 import Bullet from '../../widgets/Bullet';
-import tonerelicsProject from '../../../../public/img/projects_logos/web_design/tonerelics.png';
+import tonerelicsProject from '../../../../public/img/projects_logos/web_design/tonerelics2.png';
 
 
 
