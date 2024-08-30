@@ -187,8 +187,9 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
             <Features year={year} framework={framework} language={language} backend={backend}></Features>
             
             <div className='mb-5 grid grid-cols-2 lg:grid-cols-1  gap-4'>
-            <ButtonGreenWhite buttonName={`${projectCode == 'mobile' ? 'Download APK' : 'Go to Website'}`} url={url}></ButtonGreenWhite>
-            <ButtonGreenWhite buttonName='Check Repository' url={repositoryUrl}></ButtonGreenWhite>
+            {/* <ButtonGreenWhite buttonName={`${projectCode == 'mobile' ? 'Download APK' : 'Go to Website'}`} url={url}></ButtonGreenWhite> */}
+            <ButtonGreenWhite buttonName='GO' ></ButtonGreenWhite>
+            <ButtonGreenWhite buttonName='Check Repository' url={urlRepository}></ButtonGreenWhite>
             </div>
             
 

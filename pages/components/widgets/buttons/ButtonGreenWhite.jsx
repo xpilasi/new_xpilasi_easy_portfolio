@@ -8,7 +8,7 @@ const ButtonGreenWhite = ({darkMode, buttonName, url}) => {
   return (
 
     <Link
-      href={url}
+      href={`${url ? url : '/'}`}
       target="_blank"
 
     >
