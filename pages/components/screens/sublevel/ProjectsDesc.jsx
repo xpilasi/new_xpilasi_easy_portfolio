@@ -13,6 +13,7 @@ import gorillaGrabProject from '../../../../public/img/projects_logos/app_design
 import justlistAppDesign from '../../../../public/img/projects_logos/web_design/justlist_mockup_2png.png';
 import Bullet from '../../widgets/Bullet';
 import tonerelicsProject from '../../../../public/img/projects_logos/web_design/tonerelics2.png';
+import { Wendy_One } from 'next/font/google';
 
 
 
@@ -29,6 +30,7 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
     [
       {
         projectKey: 1,
+        code: 'mobile',
         name : 'GorillaGrab',
         type: 'Mobile App',
         description: 'Create a user to start tracking your climbing trainings:  create independent Trainings with independent exercises within. Compare your historic records, compare your current record with your last records so you can easily understand how your level is evolving. Control your total training hours within specific time periods. ',
@@ -39,10 +41,13 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
         framework: `Flutter`,
         language: 'Dart',
         backend:'Firebase',
-        imgSrc:gorillaGrabProject
+        imgSrc:gorillaGrabProject,
+        url:'',
+        repositoryUrl:''
       },
       {
         projectKey: 2,
+        code: 'mobile',
         name : 'JustList',
         type: 'Mobile App',
         description: "  With this super easy and light App you can create budget lists and manage them by adding and editing the items. You can save the purchase and reuse each list in the future." ,
@@ -53,24 +58,30 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
         framework: `Flutter`,
         language: 'Dart',
         backend:'Hive',
-        imgSrc:justlistAppDesign
+        imgSrc:justlistAppDesign,
+        url:'',
+        repositoryUrl:''
       },
       {
         projectKey: 3,
+        code: 'web',
         name : 'Vintage Groom',
         type: 'Web Design',
         description: 'this is the Vintage Groom desc',
         year: 2024,
         designDesc: designDesc,
         cssLibrary: 'Vintage Groom is my first official Vue 3 project, made with basic components and a minimal design. The idea is that the user can find all the relevant information to book an appointment. ',
-        css: ' - ',
+        css: '-',
         framework: `Vue 3`,
         language: 'Javascript',
         backend:'-',
-        imgSrc:gorillaGrabProject
+        imgSrc:gorillaGrabProject,
+        url:'',
+        repositoryUrl:''
       },
       {
         projectKey: 4,
+        code: 'web',
         name : 'xPilasi Porfolio',
         type: 'Web Design',
         description: 'I officially created this portflio website on 2023 and I completely renovated it on 2024. I changed the color palette and added brand new components to simplify the updates and most of all to have a clean and cool experience.',
@@ -85,17 +96,20 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
       },
       {
         projectKey: 5,
+        code: 'web',
         name : 'Tone Relics',
         type: 'Ecommerce',
         description: 'Tone Relics is a modern Ecommerce specialized in boutique Guitar/Bass instruments and accesories. All the Front-End is coded to achieve a clean and easy shopping experience.',
         year: 2024,
         designDesc: designDesc,
         cssLibrary: 'General structure made with Tailwind CSS',
-        css: ' - ',
+        css: '-',
         framework: `Next.Js / React`,
         language: 'Typescript',
         backend:' Wix Headless ',
-        imgSrc:tonerelicsProject
+        imgSrc:tonerelicsProject,
+        url:'',
+        repositoryUrl:''
       },
     ]
 
@@ -130,11 +144,15 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
     const backend = currentProject(keyProject).backend ;
     const imgSrc = currentProject(keyProject).imgSrc;
     const testBullet = currentProject(keyProject).designDesc;
+    const projectCode = currentProject(keyProject).code;
+    const urlProject = currentProject(keyProject).url;
+    const urlRepository = currentProject(keyProject).repositoryUrl;
     const bullets = [
       currentProject(keyProject).designDesc,
       currentProject(keyProject).cssLibrary,
       currentProject(keyProject).css,
     ]
+
     
       // console.log(testBullet);
       
@@ -167,8 +185,8 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
             <Features year={year} framework={framework} language={language} backend={backend}></Features>
             
             <div className='mb-5 grid grid-cols-2 lg:grid-cols-1  gap-4'>
-            <ButtonGreenWhite buttonName='Download APK'></ButtonGreenWhite>
-            <ButtonGreenWhite buttonName='Check Repository'></ButtonGreenWhite>
+            <ButtonGreenWhite buttonName={`${projectCode == 'app' ? 'Download APK' : 'Go to Website'}`} url={url}></ButtonGreenWhite>
+            <ButtonGreenWhite buttonName='Check Repository' url={repositoryUrl}></ButtonGreenWhite>
             </div>
             
 
