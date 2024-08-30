@@ -42,8 +42,8 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
         language: 'Dart',
         backend:'Firebase',
         imgSrc:gorillaGrabProject,
-        url:'',
-        repositoryUrl:''
+        url:'https://xpilasi.com',
+        repositoryUrl:'https://xpilasi.com'
       },
       {
         projectKey: 2,
@@ -59,8 +59,8 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
         language: 'Dart',
         backend:'Hive',
         imgSrc:justlistAppDesign,
-        url:'',
-        repositoryUrl:''
+        url:'https://xpilasi.com',
+        repositoryUrl:'https://xpilasi.com'
       },
       {
         projectKey: 3,
@@ -76,8 +76,8 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
         language: 'Javascript',
         backend:'-',
         imgSrc:gorillaGrabProject,
-        url:'',
-        repositoryUrl:''
+        url:'https://xpilasi.com',
+        repositoryUrl:'https://xpilasi.com'
       },
       {
         projectKey: 4,
@@ -92,7 +92,9 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
         framework: `Next.Js / React`,
         language: 'Javascript',
         backend:'-',
-        imgSrc:gorillaGrabProject
+        imgSrc:gorillaGrabProject,
+        url:'https://xpilasi.com',
+        repositoryUrl:'https://xpilasi.com'
       },
       {
         projectKey: 5,
@@ -108,8 +110,8 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
         language: 'Typescript',
         backend:' Wix Headless ',
         imgSrc:tonerelicsProject,
-        url:'',
-        repositoryUrl:''
+        url:'https://xpilasi.com',
+        repositoryUrl:'https://xpilasi.com'
       },
     ]
 
