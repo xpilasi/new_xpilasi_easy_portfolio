@@ -179,7 +179,7 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
                 
 
             </div>
-            <div className='lg:col-span-3 '>
+            <div className='lg:col-span-3 flex justify-between '>
                 <h3 className='text-zinc-500 font-interDisplayLight text-[14px] pb-2'>General features</h3>
             <GeneralFeatures generalFeatures={generalFeatures}></GeneralFeatures>
             <Bullet bulletsArray={bullets}></Bullet>
