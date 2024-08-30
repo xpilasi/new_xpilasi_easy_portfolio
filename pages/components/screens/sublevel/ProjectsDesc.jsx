@@ -84,7 +84,7 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
         code: 'web',
         name : 'xPilasi Porfolio',
         type: 'Web Design',
-        description: 'I officially created this portflio website on 2023 and I completely renovated it on 2024. I changed the color palette and added brand new components to simplify the updates and most of all to have a clean and cool experience.',
+        description: 'I officially created this portfolio website on 2023 and I completely renovated it on 2024. I changed the color palette and added brand new components to simplify the updates and most of all to have a clean and cool experience.',
         year: 2024,
         designDesc: designDesc,
         cssLibrary: 'General structure made with Tailwind CSS',
@@ -163,48 +163,49 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
     <section 
     id='projectDesc' 
     className={
-        `min-h-screen bg-black w-full fixed left-0 top-0 px-5 transition-all duration-300 ease-in-out 
+        `min-h-screen bg-black w-full fixed left-0 top-0 px-5 transition-all duration-300 ease-in-out flex flex-col justify-between
             ${isVisible ? 'z-50 opacity-100 pointer-events-auto' : 'opacity-0 z-30 pointer-events-none'}`
         }
     >
+      <div className=' '>
         <CloseRoadMap showRoadMap={showProject } setShowRoadMap={setShowProject} ></CloseRoadMap>
-        
         <RoadmapTopTitle titleText={topDesc}></RoadmapTopTitle>
-        <RoadmapTitle titleText={titleDesc}></RoadmapTitle> 
+        <RoadmapTitle titleText={titleDesc}></RoadmapTitle>
 
-        <article className='lg:grid lg:grid-cols-7 lg:gap-10 gap-5 grid grid-cols-1 mt-3 '>
-            <div className='lg:col-span-4'>
+      </div>
+         
+
+      <div className='md:grid md:grid-cols-7 md:gap-10 grid grid-cols-1 mt-3 mb-5   '>
+            <div className='md:col-span-4'>
                 <Image src={imgSrc}></Image>
-                    
-                
-
             </div>
-            <div className='lg:col-span-3 flex justify-between '>
-                <h3 className='text-zinc-500 font-interDisplayLight text-[14px] pb-2'>General features</h3>
-            <GeneralFeatures generalFeatures={generalFeatures}></GeneralFeatures>
-            <Bullet bulletsArray={bullets}></Bullet>
-            
-            <Features year={year} framework={framework} language={language} backend={backend}></Features>
-            
-            <div className='mb-5 grid grid-cols-2 lg:grid-cols-1  gap-4'>
-            <ButtonGreenWhite buttonName={`${projectCode == 'mobile' ? 'Download APK' : 'Go to Website'}`} url={urlProject}></ButtonGreenWhite>
-            {/* <ButtonGreenWhite buttonName='GO' ></ButtonGreenWhite> */}
-            <ButtonGreenWhite buttonName='Check Repository' url={urlRepository}></ButtonGreenWhite>
-            </div>
-            
 
-                    
-                
+            <div className='md:col-span-3 flex flex-col justify-between xl:justify-start  '>
+
+              
+              <div>
+              <h3 className='text-zinc-500 font-interDisplayLight text-[14px] pb-2 pt-5 md:pt-0'>General features</h3>
+              <GeneralFeatures generalFeatures={generalFeatures}></GeneralFeatures>
+              <Bullet bulletsArray={bullets}></Bullet>
+              <Features year={year} framework={framework} language={language} backend={backend}></Features>
+              </div>
+             
+              
+              <div className=' grid grid-cols-2 md:grid-cols-1  gap-4'>
+                <ButtonGreenWhite buttonName={`${projectCode == 'mobile' ? 'Download APK' : 'Go to Website'}`} url={urlProject}></ButtonGreenWhite>
+                <ButtonGreenWhite buttonName='Check Repository' url={urlRepository}></ButtonGreenWhite>
+              </div>
+            
 
             </div>
 
-        </article>
+      </div>
         
-        <div className='flex flex-col lg:grid lg: grid-cols-2 gap-x-28'>
+        <div className='flex flex-col md:grid md: grid-cols-2 gap-x-28'>
        
 
         </div>
-        <div className='flex flex-col lg:grid lg: grid-cols-2 gap-x-28'>
+        <div className='flex flex-col md:grid md: grid-cols-2 gap-x-28'>
        
 
         </div>

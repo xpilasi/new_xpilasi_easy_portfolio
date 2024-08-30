@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Bullet = ({ bulletsArray }) => {
+const   Bullet = ({ bulletsArray }) => {
 
     const showBullets = (bulletsArray) => {
 
@@ -16,7 +16,7 @@ const Bullet = ({ bulletsArray }) => {
     
     
     return (
-        <div className='text-white font-interdisplayLight text-sm  lg:pb-12 pb-6 tracking-wider'>
+        <div className='text-white font-interdisplayLight text-sm  lg:pb-12 pb-2 tracking-wider'>
             {showBullets(bulletsArray)}
         </div>
     );
