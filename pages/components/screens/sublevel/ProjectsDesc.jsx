@@ -177,7 +177,7 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
          
 
       <div className='md:grid md:grid-cols-7 md:gap-10 grid grid-cols-1 mt-3 mb-5   '>
-            <div className='md:col-span-4'>
+            <div className='md:col-span-4 lg:pb-5'>
                 <Image src={imgSrc}></Image>
             </div>
 
