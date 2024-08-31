@@ -193,8 +193,8 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
              
               
               <div className=' grid grid-cols-2 md:grid-cols-1  gap-4'>
-                <ButtonGreenWhite buttonName={`${projectCode == 'mobile' ? 'APK' : 'Web'}`} url={urlProject}></ButtonGreenWhite>
-                <ButtonGreenWhite  url={urlRepository}>AiFillGithu</ButtonGreenWhite>
+                <ButtonGreenWhite buttonName={`${projectCode == 'mobile' ? 'APK' : 'Website'}`} url={urlProject}></ButtonGreenWhite>
+                <ButtonGreenWhite buttonName='Repository' url={urlRepository}></ButtonGreenWhite>
               </div>
             
 

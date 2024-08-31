@@ -16,7 +16,7 @@ const   Bullet = ({ bulletsArray }) => {
     
     
     return (
-        <div className='text-white font-interdisplayLight text-sm  lg:pb-12 pb-2 tracking-wider'>
+        <div className='text-white font-interdisplayLight text-xs lg:text-sm  lg:pb-12 pb-2 tracking-wider'>
             {showBullets(bulletsArray)}
         </div>
     );
