@@ -77,7 +77,7 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
         language: 'Javascript',
         backend:'-',
         imgSrc:gorillaGrabProject,
-        url:'https://xpilasi.com',
+        url:'https://vintagegroom.netlify.app',
         repositoryUrl:'https://xpilasi.com'
       },
       {
@@ -111,7 +111,7 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
         language: 'Typescript',
         backend:' Wix Headless ',
         imgSrc:tonerelicsProject,
-        url:'https://xpilasi.com',
+        url:'https://tonerelics.netlify.app',
         repositoryUrl:'https://xpilasi.com'
       },
     ]
