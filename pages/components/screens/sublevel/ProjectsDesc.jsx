@@ -14,6 +14,7 @@ import justlistAppDesign from '../../../../public/img/projects_logos/web_design/
 import Bullet from '../../widgets/Bullet';
 import tonerelicsProject from '../../../../public/img/projects_logos/web_design/tonerelics2.png';
 import { Wendy_One } from 'next/font/google';
+import {AiFillLinkedin,AiFillGithub} from 'react-icons/ai';
 
 
 
@@ -192,8 +193,8 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
              
               
               <div className=' grid grid-cols-2 md:grid-cols-1  gap-4'>
-                <ButtonGreenWhite buttonName={`${projectCode == 'mobile' ? 'Download APK' : 'Go to Website'}`} url={urlProject}></ButtonGreenWhite>
-                <ButtonGreenWhite buttonName='Check Repository' url={urlRepository}></ButtonGreenWhite>
+                <ButtonGreenWhite buttonName={`${projectCode == 'mobile' ? 'APK' : 'Web'}`} url={urlProject}></ButtonGreenWhite>
+                <ButtonGreenWhite  url={urlRepository}>AiFillGithu</ButtonGreenWhite>
               </div>
             
 
