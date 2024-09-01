@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Column = (header,content) => {
+const Column = ({header,content}) => {
   return (
     <div className='flex flex-col'>
         
