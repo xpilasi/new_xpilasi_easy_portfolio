@@ -8,7 +8,7 @@ const Features = ({year,framework,language,backend}) => {
     
   return (
 
-    <div className='grid grid-cols-4 py-5 lg:py-0 text-xs lg:text-sm w-full justify-between'>
+    <div className='py-5 lg:py-0 text-xs lg:text-sm w-full flex justify-between'>
       
       <Column header='Year' content={year}/>
       <Column header='Framework' content={framework}/>
