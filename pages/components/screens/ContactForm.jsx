@@ -102,12 +102,10 @@ const subtitle = 'Got a question or proposal, or just want to say hello? Go ahea
               <textarea className= 'custom-textarea' type="textarea" placeholder={'Hi, I think we need a design system for our products at Comany X. How soon can you hop on to discuss this?'} name="message"/>
             </div>
             
-            
-            <div className='mt-5 w-full  flex justify-center'>
-            <ButtonGreenWhite buttonName='  Send   '></ButtonGreenWhite>
+            <ButtonGreenWhite buttonName='Send'></ButtonGreenWhite>
 
             
-            </div>
+            
             
             </form>
 

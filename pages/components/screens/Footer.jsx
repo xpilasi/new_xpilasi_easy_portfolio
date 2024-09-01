@@ -1,5 +1,6 @@
 import React from 'react'
 import {AiFillLinkedin,AiFillGithub} from 'react-icons/ai';
+import Link from 'next/link';
 
 const Footer = () => {
 
@@ -33,22 +34,22 @@ const hoverScale110 = 'transform transition-transform hover:scale-105';
                 rel="noopener noreferrer">
                   <AiFillGithub className={`${hoverScale110} cursor-pointer`}/></a>
               
-              {/* col 3 */}
+              
       </div>
-        <div className='flex justify-end items-center  text-md font-interDisplayExtraLight font-extralight'>
-        <ul className='flex text-end gap-1'>
+
+      {/* col 3 */}
+      <div className='flex justify-end items-center  text-md font-interDisplayExtraLight font-extralight'>
+          <ul className='flex text-end gap-1'>
+          
+            <li className={`hover:text-green-300 hover:cursor-pointer tracking-widest ${hoverScale110}`}><Link href='/#about-me'>about me</Link></li>
+            <li className={`hover:text-green-300 hover:cursor-pointer tracking-widest ${hoverScale110}`}><Link href='/#my-projects'>my projects</Link></li>
+            <li className={`hover:text-green-300 hover:cursor-pointer tracking-widest ${hoverScale110}`}><Link href='/'>resume</Link></li>
+            
+          
+          </ul >
         
-        <li className={`hover:text-green-300 hover:cursor-pointer tracking-widest ${hoverScale110}`}>about me</li>
-        <li className={`hover:text-green-300 hover:cursor-pointer tracking-widest ${hoverScale110}`}>projects</li>
-        <li className={`hover:text-green-300 hover:cursor-pointer tracking-widest ${hoverScale110}`}>resume</li>
-        
-      </ul >
-        <ul className='flex flex-col gap-2 justify-start text-end items-start'>
-        
-        
-      </ul>
       
-        </div>
+      </div>
       
 
 
