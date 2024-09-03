@@ -51,7 +51,7 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
         code: 'mobile',
         name : 'JustList',
         type: 'Mobile App',
-        description: "  With this super easy and light App you can create budget lists and manage them by adding and editing the items. You can save the purchase and reuse each list in the future." ,
+        description: "With this super easy and light App you can create budget lists and manage them by adding and editing the items. You can save the purchase and reuse each list in the future." ,
         year: 2023,
         designDesc: designDesc,
         cssLibrary: '-',
@@ -156,8 +156,7 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
       currentProject(keyProject).css,
     ]
 
-    
-      // console.log(testBullet);
+
       
     return (
 
