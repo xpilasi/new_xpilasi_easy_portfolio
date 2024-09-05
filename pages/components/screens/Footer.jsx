@@ -6,6 +6,7 @@ const Footer = () => {
 
 const linkedInUrl = 'https://www.linkedin.com/in/xavierpilasi/';
 const gitHubUrl = 'https://github.com/xpilasi';
+const resumeUrl = 'https://drive.google.com/file/d/104GOWlxnjBN3TUkVUByq_sCExOW7e7Vx/view?usp=sharing';
 
 const hoverScale110 = 'transform transition-transform hover:scale-105';
   return (
@@ -43,7 +44,7 @@ const hoverScale110 = 'transform transition-transform hover:scale-105';
           
             <li className={`hover:text-green-300 hover:cursor-pointer tracking-widest ${hoverScale110}`}><Link href='/#about-me'>about me</Link></li>
             <li className={`hover:text-green-300 hover:cursor-pointer tracking-widest ${hoverScale110}`}><Link href='/#my-projects'>my projects</Link></li>
-            <li className={`hover:text-green-300 hover:cursor-pointer tracking-widest ${hoverScale110}`}><Link href='/'>resume</Link></li>
+            <li className={`hover:text-green-300 hover:cursor-pointer tracking-widest ${hoverScale110}`}><Link href={resumeUrl}>resume</Link></li>
             
           
           </ul >

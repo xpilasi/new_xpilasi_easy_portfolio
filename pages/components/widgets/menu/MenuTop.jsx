@@ -6,6 +6,7 @@ const Menu = ({darkMode,showMenu,setShowMenu}) => {
     const hoverScale110 = 'transform transition-transform hover:scale-110 mr-10';
     const altMenu = '/xpilasi';
     const linkedInUrl = 'https://www.linkedin.com/in/xavierpilasi/';
+    const resumeUrl = 'https://drive.google.com/file/d/104GOWlxnjBN3TUkVUByq_sCExOW7e7Vx/view?usp=sharing';
   
   return (
    
@@ -37,7 +38,7 @@ const Menu = ({darkMode,showMenu,setShowMenu}) => {
           <li className={`font-interDisplayExtraLight md:text-base text-2xl tracking-widest pb-10 hover:text-green-300 transition-colors duration-500 ${showMenu ? 'pointer-events-none' : ''}`}>
               <a 
               onClick={()=>{setShowMenu(false); }}
-              href= {linkedInUrl} target="_blank" >My Résumé</a></li>
+              href= {resumeUrl} target="_blank" >My Résumé</a></li>
           
           <li className={`font-interDisplayExtraLight md:text-base text-2xl pb-5 text-green-300 tracking-widest ${showMenu ? 'pointer-events-none' : ''}`}>SAY HELLO</li>
           
