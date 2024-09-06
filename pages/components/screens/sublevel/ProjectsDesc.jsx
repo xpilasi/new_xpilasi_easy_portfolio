@@ -44,7 +44,8 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
         backend:'Firebase',
         imgSrc:gorillaGrabProject,
         url:'https://xpilasi.com',
-        repositoryUrl:'https://xpilasi.com'
+        repositoryUrl:'https://github.com/xpilasi/gorilla_grab',
+
       },
       {
         projectKey: 2,
@@ -61,7 +62,7 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
         backend:'Hive',
         imgSrc:justlistAppDesign,
         url:'https://xpilasi.com',
-        repositoryUrl:'https://xpilasi.com'
+        repositoryUrl:'https://github.com/xpilasi/just_list_app'
       },
       {
         projectKey: 3,
@@ -95,7 +96,7 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
         backend:'-',
         imgSrc:gorillaGrabProject,
         url:'https://xpilasi.com',
-        repositoryUrl:'https://xpilasi.com'
+        repositoryUrl:'https://github.com/xpilasi/new_xpilasi_easy_portfolio'
       },
       {
         projectKey: 5,
@@ -112,7 +113,7 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
         backend:' Wix Headless ',
         imgSrc:tonerelicsProject,
         url:'https://tonerelics.netlify.app',
-        repositoryUrl:'https://xpilasi.com'
+        repositoryUrl:'https://github.com/xpilasi/guitar-boutique'
       },
     ]
 
