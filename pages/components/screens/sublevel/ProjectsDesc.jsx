@@ -193,7 +193,7 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
       <div className='md:grid md:grid-cols-7 md:gap-10 grid grid-cols-1 mt-3     '>
             <div className='md:col-span-4   w-full flex justify-center items-center  ' onClick={test}>
                 {/* <CustomSwiper photoMap={imgArray} /> */}
-                <Image src={imgSrc} alt='' onClick={test}></Image>
+                <Image src={imgSrc} alt='' onClick={test} priority={true}></Image>
             </div>
 
             <div className='md:col-span-3 flex flex-col justify-between xl:justify-start p '>
