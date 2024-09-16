@@ -11,6 +11,8 @@ import Features from './Features';
 import ButtonGreenWhite from '../../widgets/buttons/ButtonGreenWhite';
 import gorillaGrabProject from '../../../../public/img/projects_logos/app_design/gorilla_mockup_main_2.png';
 import justlistAppDesign from '../../../../public/img/projects_logos/web_design/justlist_mockup_3png.png';
+import vintageGroomDesign from '../../../../public/img/final_webs/vintage-groom.png';
+import xpPortfolio from '../../../../public/img/final_webs/templatePortfolio-xp.png';
 import Bullet from '../../widgets/Bullet';
 import tonerelicsProject from '../../../../public/img/projects_logos/web_design/tonerelics2.png';
 import { Wendy_One } from 'next/font/google';
@@ -79,7 +81,7 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
         framework: `Vue 3`,
         language: 'Javascript',
         backend:'-',
-        imgSrc:gorillaGrabProject,
+        imgSrc:vintageGroomDesign,
         imgSwiper: [justlistAppDesign,gorillaGrabProject],
         url:'https://vintagegroom.netlify.app',
         repositoryUrl:'https://github.com/xpilasi/barbershop'
@@ -97,7 +99,7 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
         framework: `Next.Js / React`,
         language: 'Javascript',
         backend:'-',
-        imgSrc:gorillaGrabProject,
+        imgSrc:xpPortfolio,
         imgSwiper: [gorillaGrabProject,gorillaGrabProject],
         url:'https://xpilasi.com',
         repositoryUrl:'https://github.com/xpilasi/new_xpilasi_easy_portfolio'
@@ -176,7 +178,7 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
     <section 
     id='projectDesc' 
     className={
-        `min-h-screen bg-black w-full fixed left-0 top-0 px-5 transition-all duration-300 ease-in-out flex flex-col justify-between
+        `min-h-screen bg-black w-full fixed left-0 top-0 px-5 transition-all duration-300 ease-in-out flex flex-col 
             ${isVisible ? 'z-50 opacity-100 pointer-events-auto' : 'opacity-0 z-30 pointer-events-none'}`
         }
     >
@@ -188,13 +190,13 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
       </div>
          
 
-      <div className='md:grid md:grid-cols-7 md:gap-10 grid grid-cols-1 mt-3 mb-5   '>
-            <div className='md:col-span-4 lg:pb-5 bg-red-400 w-full ' onClick={test}>
+      <div className='md:grid md:grid-cols-7 md:gap-10 grid grid-cols-1 mt-3     '>
+            <div className='md:col-span-4   w-full flex justify-center items-center  ' onClick={test}>
                 {/* <CustomSwiper photoMap={imgArray} /> */}
                 <Image src={imgSrc} alt='' onClick={test}></Image>
             </div>
 
-            <div className='md:col-span-3 flex flex-col justify-between xl:justify-start  '>
+            <div className='md:col-span-3 flex flex-col justify-between xl:justify-start p '>
 
               
               <div>
@@ -215,14 +217,8 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
 
       </div>
         
-        <div className='flex flex-col md:grid md: grid-cols-2 gap-x-28'>
        
-
-        </div>
-        <div className='flex flex-col md:grid md: grid-cols-2 gap-x-28'>
-       
-
-        </div>
+     
         
 
     </section>
