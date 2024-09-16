@@ -18,6 +18,7 @@ import tonerelicsProject from '../../../../public/img/projects_logos/web_design/
 import { Wendy_One } from 'next/font/google';
 import {AiFillLinkedin,AiFillGithub} from 'react-icons/ai';
 import CustomSwiper from '../../widgets/CustomSwiper';
+import { Suspense } from 'react';
 
 
 const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
@@ -193,7 +194,9 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
       <div className='md:grid md:grid-cols-7 md:gap-10 grid grid-cols-1 mt-3     '>
             <div className='md:col-span-4   w-full flex justify-center items-center  ' onClick={test}>
                 {/* <CustomSwiper photoMap={imgArray} /> */}
-                <Image src={imgSrc} alt='' onClick={test} priority={true}></Image>
+                <Suspense fallback='LOADING...'>
+                  <Image src={imgSrc} alt='' onClick={test} priority={true}></Image>
+                </Suspense>
             </div>
 
             <div className='md:col-span-3 flex flex-col justify-between xl:justify-start p '>
