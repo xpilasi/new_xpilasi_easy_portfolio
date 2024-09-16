@@ -1,13 +1,15 @@
 import React from 'react';
 import styles from '../../../../styles/Button1.module.css';
 
-const ButtonWhiteBlack = ({darkMode, buttonName}) => {
+const ButtonWhiteBlack = ({darkMode, buttonName, onClick}) => {
 
 
   return (
 
 
-    <button className={styles.btnHoverWB}><span className='font-interDisplayLight'>{buttonName}</span></button>
+    <button 
+    onClick={onClick}
+      className={styles.btnHoverWB}><span className='font-interDisplayLight'>{buttonName}</span></button>
    
   )
 }

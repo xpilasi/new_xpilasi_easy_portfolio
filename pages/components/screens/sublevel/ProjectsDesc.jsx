@@ -82,7 +82,7 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
         imgSrc:gorillaGrabProject,
         imgSwiper: [justlistAppDesign,gorillaGrabProject],
         url:'https://vintagegroom.netlify.app',
-        repositoryUrl:'https://xpilasi.com'
+        repositoryUrl:'https://github.com/xpilasi/barbershop'
       },
       {
         projectKey: 4,
@@ -116,7 +116,7 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
         language: 'Typescript',
         backend:' Wix Headless ',
         imgSrc:tonerelicsProject,
-        imgSwiper: [tonerelicsProject,gorillaGrabProject],
+        imgSwiper: [tonerelicsProject,gorillaGrabProject,justlistAppDesign],
         url:'https://tonerelics.netlify.app',
         repositoryUrl:'https://github.com/xpilasi/guitar-boutique'
       },
@@ -163,8 +163,10 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
     ]
     const imgArray = currentProject(keyProject).imgSwiper;
 
-    const test = ()=>{console.table(imgArray);
+    const test = ()=>{console.log(imgArray.length);
     }
+    // console.log('imgArray:', imgArray)
+    
     
 
       
@@ -187,9 +189,9 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
          
 
       <div className='md:grid md:grid-cols-7 md:gap-10 grid grid-cols-1 mt-3 mb-5   '>
-            <div className='md:col-span-4 lg:pb-5'>
-                {/* <CustomSwiper photoMap={imgArray}></CustomSwiper> */}
-                {/* <Image src={imgSrc} alt='' onClick={test}></Image> */}
+            <div className='md:col-span-4 lg:pb-5 bg-red-400 w-full ' onClick={test}>
+                {/* <CustomSwiper photoMap={imgArray} /> */}
+                <Image src={imgSrc} alt='' onClick={test}></Image>
             </div>
 
             <div className='md:col-span-3 flex flex-col justify-between xl:justify-start  '>
