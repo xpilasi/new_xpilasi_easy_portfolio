@@ -62,7 +62,7 @@ const Roadmap = ({showRoadMap, setShowRoadMap}) => {
         <RoadmapTopTitle titleText={topDesc}></RoadmapTopTitle>
         <RoadmapTitle titleText={titleDesc}></RoadmapTitle> 
         <RoadmapSubTitle titleText={subtitleDesc}></RoadmapSubTitle>
-        <div className='flex flex-col lg:grid lg: grid-cols-2 gap-x-28'>
+        <div className='flex flex-col lg:grid lg: grid-cols-2 gap-x-28  lg:px-10 lg:py-10'>
         <Road year={'2011'} yearDesc={yearDesc1}></Road>
         <Road year={'2016'} yearDesc={yearDesc2}></Road>
         <Road year={'2021'} yearDesc={yearDesc3}></Road>
