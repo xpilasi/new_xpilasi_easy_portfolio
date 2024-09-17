@@ -47,7 +47,7 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
         backend:'Firebase',
         imgSrc:gorillaGrabProject,
         imgSwiper: [gorillaGrabProject,gorillaGrabProject],
-        url:'https://xpilasi.com',
+        url:'https://drive.google.com/file/d/1-xzam17uKIzBzUH3HmMW_7knXPtk9siO/view?usp=sharing',
         repositoryUrl:'https://github.com/xpilasi/gorilla_grab',
 
       },
