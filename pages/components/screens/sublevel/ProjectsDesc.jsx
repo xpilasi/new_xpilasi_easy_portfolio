@@ -66,7 +66,7 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
         backend:'Hive',
         imgSrc:justlistAppDesign,
         imgSwiper: [justlistAppDesign,gorillaGrabProject],
-        url:'https://xpilasi.com',
+        url:'https://drive.google.com/file/d/1MPDDd4N0kqO78msDHO_YvBIWH4EzHi-A/view?usp=drive_link',
         repositoryUrl:'https://github.com/xpilasi/just_list_app'
       },
       {
