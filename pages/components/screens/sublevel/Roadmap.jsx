@@ -16,7 +16,7 @@ const Roadmap = ({showRoadMap, setShowRoadMap}) => {
 }, [showRoadMap]);
 
     const topDesc = 'xpilasi.com';
-    const titleDesc = 'Roadmap';
+    const titleDesc = 'My Story';
     const subtitleDesc = 'In 2021, I embarked on a transformation into software development through courses, certifications, and daily practice.';
 
     const yearDesc1 = (

@@ -59,10 +59,11 @@ const Presentation = ({darkMode, showRoadMap, setShowRoadMap}) => {
                 <div className={darkMode ? '' : 'hidden'}>
                     
                 {/* <ButtonGreen onClick={() =>{setShowRoadMap(!showRoadMap);  }} darkMode={darkMode} buttonName='Check my Roadmap'></ButtonGreen> */}
-                <ButtonWhiteBlack onClick={() =>{setShowRoadMap(!showRoadMap);  }} darkMode={darkMode} buttonName='Check my Roadmap'></ButtonWhiteBlack>
+                <ButtonWhiteBlack onClick={() =>{setShowRoadMap(!showRoadMap);  }} darkMode={darkMode} buttonName='Check my 
+                Story'></ButtonWhiteBlack>
                 </div>
                 <div className={darkMode ? 'hidden' : ''}>
-                <ButtonWhiteBlack darkMode={darkMode} buttonName='Check my Roadmap'></ButtonWhiteBlack>
+                <ButtonWhiteBlack darkMode={darkMode} buttonName='Check my Story'></ButtonWhiteBlack>
                 </div>
                 
             </div>

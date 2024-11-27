@@ -48,10 +48,10 @@ const ScrollButton = () => {
 
   return (
     <button
-      className={`fixed bottom-4 right-6 ${bg} text-white px-4 py-2  transform transition-transform hover:scale-110 `}
+      className={`fixed bottom-4  right-6 ${bg} text-white px-4 py-2  transform transition-transform hover:scale-110 text-3xl   `}
       onClick={scrollToNextSection}
     >
-      <FontAwesomeIcon icon={faAngleDown} />
+      <FontAwesomeIcon icon={faAngleDown} />..
     </button>
   );
 };
