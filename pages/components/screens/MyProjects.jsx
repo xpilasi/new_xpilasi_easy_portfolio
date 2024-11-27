@@ -11,6 +11,7 @@ import ejemplo from '../../../public/img/projects_logos/web_design/ejemplo.png'
 import SectionTitle from '../widgets/titles/SectionTitle';
 import SectionSubTitle from '../widgets/titles/SectionSubTitle';
 import ProjectsDesc from './sublevel/ProjectsDesc';
+import serieslabWebDesign from '../../../public/img/final_webs/serieslabportafolio.png'
 
 
 
@@ -51,10 +52,10 @@ const MyProjects = ({darkMode, showProject, setShowProject}) => {
       <div className={`grid grid-cols-1 md:grid md:grid-cols-2 gap-5`}>
        
               <span className={hoverScale110} ><Project 
-                                                        onClick={() =>{setShowProject(!showProject); visibleProject(5)}} 
-                                                        imageSrc={tonerelicsProject} 
-                                                        projectName='Tone Relics' 
-                                                        designType='Web Ecommerce'>
+                                                        onClick={() =>{setShowProject(!showProject); visibleProject(4)}} 
+                                                        imageSrc={serieslabWebDesign} 
+                                                        projectName='Serieslab' 
+                                                        designType='Web App'>
                                                       </Project></span>
               <span className={hoverScale110} ><Project 
                                                         onClick={() =>{setShowProject(!showProject); visibleProject(1)}} 
@@ -74,12 +75,7 @@ const MyProjects = ({darkMode, showProject, setShowProject}) => {
                                                         projectName='Vintage Groom' 
                                                         designType='Web Design'>
                                                       </Project></span>
-              <span className={hoverScale110} ><Project 
-                                                        onClick={() =>{setShowProject(!showProject); visibleProject(4)}} 
-                                                        imageSrc={xPilasiPortfolio} 
-                                                        projectName='Personal Portfolio' 
-                                                        designType='Web Design'>
-                                                      </Project></span>
+             
               
               
       </div>

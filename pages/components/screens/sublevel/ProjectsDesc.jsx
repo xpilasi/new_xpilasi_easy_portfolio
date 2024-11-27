@@ -19,7 +19,7 @@ import { Wendy_One } from 'next/font/google';
 import {AiFillLinkedin,AiFillGithub} from 'react-icons/ai';
 import CustomSwiper from '../../widgets/CustomSwiper';
 import { Suspense } from 'react';
-
+import serieslabWeb from '../../../../public/img/final_webs/serieslabportafolio.png'
 
 const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
 
@@ -90,39 +90,39 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
       {
         projectKey: 4,
         code: 'web',
-        name : 'xPilasi Porfolio',
+        name : 'Serieslab',
         type: 'Web Design',
-        description: 'I officially created this portfolio website on 2023 and I completely renovated it on 2024. I changed the color palette and added brand new components to simplify the updates and most of all to have a clean and cool experience.',
-        year: 2024,
-        designDesc: designDesc,
-        cssLibrary: 'General structure made with Tailwind CSS',
-        css: 'Specific components made with CSS',
-        framework: `Next.Js / React`,
-        language: 'Javascript',
-        backend:'-',
-        imgSrc:xpPortfolio,
-        imgSwiper: [gorillaGrabProject,gorillaGrabProject],
-        url:'https://xpilasi.com',
-        repositoryUrl:'https://github.com/xpilasi/new_xpilasi_easy_portfolio'
-      },
-      {
-        projectKey: 5,
-        code: 'web',
-        name : 'Tone Relics',
-        type: 'Ecommerce',
-        description: 'Tone Relics is a modern Ecommerce specialized in boutique Guitar/Bass instruments and accesories. All the Front-End is coded to achieve a clean and easy shopping experience.',
+        description: 'SeriesLab is a web application developed as the final project for our Frontend Development certification at LaSalle. The goal is to provide a complete experience for users to search, review, and explore TV series.',
         year: 2024,
         designDesc: designDesc,
         cssLibrary: 'General structure made with Tailwind CSS',
         css: '-',
-        framework: `Next.Js / React`,
-        language: 'Typescript',
-        backend:' Wix Headless ',
-        imgSrc:tonerelicsProject,
-        imgSwiper: [tonerelicsProject,gorillaGrabProject,justlistAppDesign],
-        url:'https://tonerelics.netlify.app',
-        repositoryUrl:'https://github.com/xpilasi/guitar-boutique'
+        framework: `Vue.js`,
+        language: 'Javascript',
+        backend:'Firebase/Firestore',
+        imgSrc:serieslabWeb,
+        imgSwiper: [gorillaGrabProject,gorillaGrabProject],
+        url:'https://theserieslab.netlify.app',
+        repositoryUrl:'https://github.com/xpilasi/serieslab'
       },
+      // {
+      //   projectKey: 5,
+      //   code: 'web',
+      //   name : 'Tone Relics',
+      //   type: 'Ecommerce',
+      //   description: 'Tone Relics is a modern Ecommerce specialized in boutique Guitar/Bass instruments and accesories. All the Front-End is coded to achieve a clean and easy shopping experience.',
+      //   year: 2024,
+      //   designDesc: designDesc,
+      //   cssLibrary: 'General structure made with Tailwind CSS',
+      //   css: '-',
+      //   framework: `Next.Js / React`,
+      //   language: 'Typescript',
+      //   backend:' Wix Headless ',
+      //   imgSrc:tonerelicsProject,
+      //   imgSwiper: [tonerelicsProject,gorillaGrabProject,justlistAppDesign],
+      //   url:'https://tonerelics.netlify.app',
+      //   repositoryUrl:'https://github.com/xpilasi/guitar-boutique'
+      // },
     ]
 
   
