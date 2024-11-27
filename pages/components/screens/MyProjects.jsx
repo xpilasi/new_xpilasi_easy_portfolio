@@ -47,7 +47,7 @@ const MyProjects = ({darkMode, showProject, setShowProject}) => {
       <article className='flex flex-col justify-center items-center py-5 '>
       
       <SectionTitle titleText='Work gallery'></SectionTitle>
-      <SectionSubTitle titleText="These are some of my personal projects I've been developed since I started my software journey."></SectionSubTitle>
+      <SectionSubTitle titleText="These are some of the projects I've been developed since I started my software journey."></SectionSubTitle>
 
       <div className={`grid grid-cols-1 md:grid md:grid-cols-2 gap-5`}>
        
