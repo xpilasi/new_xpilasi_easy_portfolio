@@ -8,9 +8,10 @@ import ButtonWhite from '../widgets/buttons/ButtonWhite';
 import ButtonGreenWhite from '../widgets/buttons/ButtonGreenWhite';
 import ButtonWhiteBlack from '../widgets/buttons/ButtonWhiteBlack';
 import styleInputCss from '../../../styles/Inputs.module.css';
+import ModalConfirmation from './sublevel/ModalConfirmation';
 
 
-const ContactForm = ({darkMode}) => {
+const ContactForm = ({darkMode, showModal, setShowModal}) => {
 
     var formBg = 'bg-light-blueberry';
 
@@ -31,7 +32,7 @@ const subtitle = 'Got a question or proposal, or just want to say hello? Go ahea
         
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log('esta parte funciona 1');
+        
         // Recopila los datos del formulario
         const name = event.target.name.value;
         const email = event.target.email.value;
@@ -43,11 +44,16 @@ const subtitle = 'Got a question or proposal, or just want to say hello? Go ahea
           from_email: email,
           message: message,
         };
-       
-        // Envía el correo electrónico utilizando EmailJS
-        emailjs.send('service_a1uxw4b', 'template_bb4bjrw', templateParams, 'zdnPvqDa-hzgIjpHf')
+
+    
+        
+        if(name == 0 || email || message == 0 ){
+          console.log('ERROR');
+          
+        }else{
+          emailjs.send('service_irzho0e', 'template_bb4bjrw', templateParams, 'zdnPvqDa-hzgIjpHf')
           .then((response) => {
-            //console.log('Correo electrónico enviado correctamente', response.status, response.text);
+            console.log('Correo electrónico enviado correctamente', response.status, response.text);
             Swal.fire({
               
               text:'Thanks for your message!',
@@ -59,11 +65,21 @@ const subtitle = 'Got a question or proposal, or just want to say hello? Go ahea
             }
              
             );
+            
+            setTimeout(()=>{
+              setShowModal(!showModal)
+            },700
+            )
+            
+            
           })
           .catch((error) => {
             console.error('Error al enviar el correo electrónico', error);
           });
     
+        }
+        // Envía el correo electrónico utilizando EmailJS
+        
         // Restablece el formulario
         event.target.reset();
       };

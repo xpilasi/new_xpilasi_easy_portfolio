@@ -42,9 +42,9 @@ const MyProjects = ({darkMode, showProject, setShowProject}) => {
         <ProjectsDesc showProject={showProject} setShowProject={setShowProject} keyProject={projectVisible}></ProjectsDesc>
       
         
-      </article>
-      
-      <article className='flex flex-col justify-center items-center py-5 '>
+        </article>q
+          <article className='flex flex-col justify-center items-center py-5'>
+        
       
       <SectionTitle titleText='Work gallery'></SectionTitle>
       <SectionSubTitle titleText="These are some of the projects I've been developed since I started my software journey."></SectionSubTitle>
