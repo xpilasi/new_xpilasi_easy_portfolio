@@ -42,7 +42,7 @@ const MyProjects = ({darkMode, showProject, setShowProject}) => {
         <ProjectsDesc showProject={showProject} setShowProject={setShowProject} keyProject={projectVisible}></ProjectsDesc>
       
         
-        </article>q
+        </article>
           <article className='flex flex-col justify-center items-center py-5'>
         
       
