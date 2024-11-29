@@ -47,24 +47,14 @@ const subtitle = 'Got a question or proposal, or just want to say hello? Go ahea
 
     
         
-        if(name == 0 || email || message == 0 ){
+        if(name.length == 0 || email.length  == 0 || message.length  == 0 ){
           console.log('ERROR');
           
         }else{
           emailjs.send('service_irzho0e', 'template_bb4bjrw', templateParams, 'zdnPvqDa-hzgIjpHf')
           .then((response) => {
             console.log('Correo electrónico enviado correctamente', response.status, response.text);
-            Swal.fire({
-              
-              text:'Thanks for your message!',
-              width: 200,
-              customClass: {
-                popup: 'my-popup-class',
-                confirmButton: 'my-confirm-button-class',
-              }
-            }
-             
-            );
+           
             
             setTimeout(()=>{
               setShowModal(!showModal)
