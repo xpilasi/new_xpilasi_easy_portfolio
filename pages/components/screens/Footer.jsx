@@ -6,7 +6,7 @@ const Footer = () => {
 
 const linkedInUrl = 'https://www.linkedin.com/in/xavierpilasi/';
 const gitHubUrl = 'https://github.com/xpilasi';
-const resumeUrl = 'https://drive.google.com/file/d/1-cjh09ZKeTZVRypii8fqbPqg8aExEpv-/view?usp=drive_link';
+const resumeUrl = 'https://drive.google.com/file/d/1-q-fniRrfr5hIPxpB6rtt5WEJeaf6FDe/view?usp=sharing';
 
 const hoverScale110 = 'transform transition-transform hover:scale-105';
   return (
