@@ -1,6 +1,7 @@
 import React from 'react'
 import {AiFillLinkedin,AiFillGithub} from 'react-icons/ai';
 import Link from 'next/link';
+import { PiGitlabLogoSimpleThin } from "react-icons/pi";
 
 const Footer = () => {
 
@@ -34,6 +35,10 @@ const hoverScale110 = 'transform transition-transform hover:scale-105';
                 target="_blank"
                 rel="noopener noreferrer">
                   <AiFillGithub className={`${hoverScale110} cursor-pointer`}/></a>
+              <a href='https://gitlab.com/xpilasi'
+                target="_blank"
+                rel="noopener noreferrer">
+                  <PiGitlabLogoSimpleThin className={`${hoverScale110} cursor-pointer`}/></a>
               
               
       </div>

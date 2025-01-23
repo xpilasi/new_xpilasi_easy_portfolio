@@ -1,5 +1,6 @@
 import React from 'react'
 import {AiFillLinkedin,AiFillGithub} from 'react-icons/ai';
+import { PiGitlabLogoSimpleThin } from "react-icons/pi";
 import MenuTop from '../widgets/menu/MenuTop';
 
 
@@ -52,6 +53,10 @@ darkMode ? textAlt = textAltDark :textAlt = textAltLight ;
                 target="_blank"
                 rel="noopener noreferrer">
                   <AiFillGithub className={`${hoverScale110} cursor-pointer`}/></a>
+              <a href='https://gitlab.com/xpilasi'
+                target="_blank"
+                rel="noopener noreferrer">
+                  <PiGitlabLogoSimpleThin className={`${hoverScale110} cursor-pointer`}/></a>
               
               
           </div>
