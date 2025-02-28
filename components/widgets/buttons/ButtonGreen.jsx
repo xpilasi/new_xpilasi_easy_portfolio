@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../../../styles/Button1.module.css';
+import styles from '@/styles/Button1.module.css';
 
 const ButtonGreen = ({darkMode, buttonName, onClick}) => {
 

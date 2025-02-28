@@ -6,6 +6,10 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --button-bg: #4b478d; 
+}
+[data-theme='dark'] {
+  --button-bg: #3DFA90; /* Green in dark mode */
 }
 .my-popup-class {
   @apply bg-neon-grey bg-opacity-80  text-white font-exo ;
@@ -71,7 +75,10 @@ body {
 
 .custom-input {
   @apply 
-  rounded-none border-b border-green-100 focus:border-green-400 w-full py-5 md:py-2 mb-10 bg-black focus:outline-none font-interDisplayLight placeholder:font-interDisplayLight placeholder:text-gray-700 placeholder:text-sm ;
+  rounded-none border-b  dark:focus:border-green-400  focus:border-purple-900 w-full py-5 md:py-2 mb-10 bg-transparent focus:outline-none font-interDisplayLight placeholder:font-interDisplayLight placeholder:text-gray-700 placeholder:text-sm;
+}
+.custom-input::placeholder{
+  @apply dark:text-gray-600 text-gray-300;
 }
 
 .custom-input:focus::placeholder {
@@ -79,10 +86,12 @@ body {
 }
 .custom-textarea {
   @apply 
-  rounded-none resize-none border-b focus:border-green-400  w-full py-2 mb-5 bg-black  focus:outline-none font-interDisplayLight placeholder:font-interDisplayLight placeholder:text-gray-700 placeholder:text-sm;
+  rounded-none resize-none border-b dark:focus:border-green-400 focus:border-purple-900 w-full py-2 mb-5  bg-transparent focus:outline-none font-interDisplayLight placeholder:font-interDisplayLight placeholder:text-gray-700 placeholder:text-sm;
 }
 
-
+.custom-textarea::placeholder{
+  @apply dark:text-gray-600 text-gray-300;
+}
 
 
 
@@ -92,16 +101,16 @@ textarea:focus::placeholder {
 
 /* Estilo para todos los labels */
 label {
-  @apply block text-slate-100 pb-0 text-sm md:text-xs font-interDisplayLight;
+  @apply block dark:text-slate-100 text-gray-800 pb-0 text-sm md:text-xs font-interDisplayLight;
 }
 
 /* Estilo para el contenedor del label y el input */
 .input-container {
-  @apply relative;
+  @apply relative bg-transparent;
 }
 
 /* Estilo para los labels cuando el input dentro del contenedor está en foco */
 .input-container:focus-within label {
-  @apply text-green-300 text-sm md:text-xs font-interDisplayLight;
+  @apply dark:text-green-300 text-purple-900 text-sm md:text-xs font-interDisplayLight;
 }
 

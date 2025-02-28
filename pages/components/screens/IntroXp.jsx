@@ -1,12 +1,15 @@
 import React from 'react'
 import {AiFillLinkedin,AiFillGithub} from 'react-icons/ai';
 import { PiGitlabLogoSimpleThin } from "react-icons/pi";
-import MenuTop from '../widgets/menu/MenuTop';
+import MenuTop from '../../../components/MenuTop';
+import useMenuStore from '@/store/menuStore.js';
 
 
 
 
-const IntroXp = ({darkMode,setDarkMode, showMenu}) => {
+const IntroXp = () => {
+
+  const { darkMode } = useMenuStore();
 
 // const gradientText = 'bg-gradient-to-r from-neon-orange  via-neon-blueberry to-neon-green   inline-block text-transparent bg-clip-text ';
 const gradientText = 'bg-gradient-to-r from-neon-orange  via-neon-blueberry to-neon-green   inline-block text-transparent bg-clip-text ';

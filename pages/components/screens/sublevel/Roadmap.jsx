@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Road from '../../widgets/Road';
-import RoadmapTitle from '../../widgets/titles/RoadmapTitle';
-import RoadmapSubTitle from '../../widgets/titles/RoadmapSubTitle';
-import RoadmapTopTitle from '../../widgets/titles/RoadmapTopTitle';
+import RoadmapTitle from '../../../../components/widgets/titles/RoadmapTitle';
+import RoadmapSubTitle from '../../../../components/widgets/titles/RoadmapSubTitle';
+import RoadmapTopTitle from '../../../../components/widgets/titles/RoadmapTopTitle';
 import CloseRoadMap from '../../widgets/menu/CloseRoadMap';
 
 
@@ -46,7 +46,7 @@ const Roadmap = ({showRoadMap, setShowRoadMap}) => {
       );
     const yearDesc5 = (
         <>
-          I wanted to expand my <span className='text-neon-green'>Front End</span> skills and validate my knowledge so I decide to start an official IT education at the <span className='text-neon-green'>University Ramón Llul - LaSalle</span>  at Barcelona. I learned and practiced Website’s development with <span className='text-neon-green'>React</span>  and <span className='text-neon-green'>Vue</span>, besides several industry standards regarding HTML, CSS and Javascript.
+          I wanted to expand my <span className='text-neon-green'>Front End</span> skills and validate my knowledge so I decide to start an official IT education at the <span className='text-neon-green'>University Ramón Llul - LaSalle</span>  at Barcelona. I learned and practiced Website's development with <span className='text-neon-green'>React</span>  and <span className='text-neon-green'>Vue</span>, besides several industry standards regarding HTML, CSS and Javascript.
         </>
       );
     return (
@@ -54,11 +54,11 @@ const Roadmap = ({showRoadMap, setShowRoadMap}) => {
     <section 
     id='roadmap' 
     className={
-        `min-h-screen bg-black w-full fixed left-0 top-0 px-5 transition-all duration-300 ease-in-out 
-            ${isVisible ? 'z-50 opacity-100 pointer-events-auto' : 'opacity-0 z-30 pointer-events-none'}`
+        `min-h-screen w-full fixed left-0 top-0 px-5 transition-all duration-300 ease-in-out 
+            ${isVisible ? 'z-50 opacity-100 pointer-events-auto bg-black dark:bg-black' : 'opacity-0 z-30 pointer-events-none'}`
         }
     >
-        <CloseRoadMap showRoadMap={showRoadMap } setShowRoadMap={setShowRoadMap} ></CloseRoadMap>
+        <CloseRoadMap showRoadMap={showRoadMap} setShowRoadMap={setShowRoadMap} ></CloseRoadMap>
         <RoadmapTopTitle titleText={topDesc}></RoadmapTopTitle>
         <RoadmapTitle titleText={titleDesc}></RoadmapTitle> 
         <RoadmapSubTitle titleText={subtitleDesc}></RoadmapSubTitle>

@@ -1,14 +1,9 @@
 import React, { useRef } from 'react'
 import emailjs from 'emailjs-com';
-import Swal from 'sweetalert2';
-import SectionTitle from '../widgets/titles/SectionTitle';
-import SectionSubTitle from '../widgets/titles/SectionSubTitle';
-import ButtonGreen from '../widgets/buttons/ButtonGreen';
-import ButtonWhite from '../widgets/buttons/ButtonWhite';
-import ButtonGreenWhite from '../widgets/buttons/ButtonGreenWhite';
-import ButtonWhiteBlack from '../widgets/buttons/ButtonWhiteBlack';
-import styleInputCss from '../../../styles/Inputs.module.css';
-import ModalConfirmation from './sublevel/ModalConfirmation';
+import SectionSubTitle from '../../../components/widgets/titles/SectionSubTitle';
+import SectionTitle from '../../../components/widgets/titles/SectionTitle';
+import ButtonGreenWhite from '../../../components/widgets/buttons/ButtonGreenWhite';
+
 
 
 const ContactForm = ({darkMode, showModal, setShowModal}) => {

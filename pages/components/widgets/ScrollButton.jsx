@@ -1,9 +1,11 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { ChevronDown } from 'lucide-react';
 
 const ScrollButton = () => {
   const activeSectionRef = useRef(null);
+  const [isLastSection, setIsLastSection] = useState(false);
 
     
 
@@ -40,6 +42,7 @@ const ScrollButton = () => {
     if (nextSection) {
       nextSection.scrollIntoView({ behavior: 'smooth' });
       activeSectionRef.current = nextSection;
+      setIsLastSection(nextIndex === 3);
     }
   };
 
@@ -48,10 +51,14 @@ const ScrollButton = () => {
 
   return (
     <button
-      className={`fixed bottom-4  right-6 ${bg} text-white px-4 py-2  transform transition-transform hover:scale-110 text-3xl   `}
+      className={`fixed bottom-10 right-10 dark:bg-zinc-800/10 transform transition-transform hover:scale-110 `}
       onClick={scrollToNextSection}
     >
-      <FontAwesomeIcon icon={faAngleDown} />..
+      <ChevronDown 
+        className={`dark:text-white text-zinc-800 w-full h-14 transition-transform duration-300 ${
+          isLastSection ? 'rotate-180' : ''
+        }`} 
+      />
     </button>
   );
 };

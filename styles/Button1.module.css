@@ -94,14 +94,23 @@
         display: inline-block;
         padding: 16px 24px;
         font-size: 16px;
-        color: black; /* Color inicial del texto */
-        background-color: #3DFA90; /* Color de fondo del botón */
+        /* color: white; */
+        background-color: #4b478d; /* Default purple */
         border: none;
         border-radius: 0px;
         overflow: hidden;
         cursor: pointer;
         font-family: 'inter-display';
-        transition: all 0.5s ease; /* Transición del color del texto */
+        transition: all 0.5s ease;
+    }
+    
+    [data-theme='dark'] .btnHoverWB {
+        background-color: #3DFA90;
+        /* color: black; Green for dark mode */
+    }
+    [data-theme='light'] .btnHoverWB {
+        background-color: #4b478d;
+        color: white; 
     }
     
     .btnHoverWB::after {
@@ -127,10 +136,17 @@
     
     .btnHoverWB span {
         position: relative;
-        z-index: 1; /* Asegura que el texto esté por encima del pseudo-elemento */
-        color: black; /* Color inicial del texto */
+        z-index: 1;
         transition: all 0.5s ease;
-        font-family: 'inter-display'; /* Transición del color del texto */
+        font-family: 'inter-display';
+    }
+    
+    [data-theme='dark'] .btnHoverWB span {
+        color: black;
+    }
+    
+    [data-theme='light'] .btnHoverWB span {
+        color: white;
     }
     
     .btnHoverWB:hover span {
@@ -187,4 +203,52 @@
         color: black; 
         font-family: 'inter-display';/* Cambia el color del texto a blanco en hover */
     }
-  
+
+    /* Light mode button */
+    .btnHoverGWLightMode {
+        width: 100%;
+        position: relative;
+        display: inline-block;
+        padding: 16px 24px;
+        font-size: 16px;
+        color: rgb(255, 255, 255);
+        background-color: #4B478E;
+        border: none;
+        border-radius: 0px;
+        overflow: hidden;
+        cursor: pointer;
+        font-family: 'inter-display';
+        transition: all 0.5s ease;
+    }
+    
+    .btnHoverGWLightMode::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color:#27272A ;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: all 0.5s ease;
+        z-index: 0;
+    }
+    
+    .btnHoverGWLightMode:hover::after {
+        transform: scaleX(1); 
+    }
+    
+    .btnHoverGWLightMode span {
+        position: relative;
+        z-index: 1;
+        transition: all 0.5s ease;
+        font-family: 'inter-display';
+    }
+    
+    .btnHoverGWLightMode:hover span {
+        color: rgb(255, 255, 255); 
+        font-family: 'inter-display';
+    }
+    
+   
