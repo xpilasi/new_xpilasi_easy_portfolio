@@ -14,7 +14,6 @@ import ProjectsDesc from './sublevel/ProjectsDesc';
 import serieslabWebDesign from '../../../public/img/final_webs/serieslabportafolio.png'
 import useMenuStore from '@/store/menuStore.js';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
-import '@splidejs/react-splide/css';
 
 
 
@@ -67,7 +66,7 @@ const MyProjects = ({showProject, setShowProject}) => {
 
   return (
 
-    <section className='h-screen flex flex-col justify-center items-center   ' id='my-projects' >
+    <section className='min-h-screen flex flex-col justify-center items-center   ' id='my-projects' >
 
       <article>
         <ProjectsDesc showProject={showProject} setShowProject={setShowProject} keyProject={projectVisible}></ProjectsDesc>
@@ -81,34 +80,41 @@ const MyProjects = ({showProject, setShowProject}) => {
       <SectionSubTitle titleText="These are some of the projects I've been developed since I started my software journey."></SectionSubTitle>
 
       {/* Mobile Slider */}
-      <div className="md:hidden w-full  ">
+      {/* <div className="md:hidden py-10 w-full px-4">
         <Splide
           options={{
             perPage: 1,
-            gap: '1rem',
+            gap: '0.5rem',
             arrows: true,
-            pagination: false,
+            pagination: true,
             drag: true,
-            type: 'loop'
+            type: 'loop',
+            width: '85%',
+            focus: 'center',
+            trimSpace: true,
+            autoWidth: false
           }}
+          className="mobile-splide"
         >
           {projects.map((project) => (
             <SplideSlide key={project.id}>
-              <span className={hoverScale110}>
-                <Project
-                  onClick={() => {setShowProject(!showProject); visibleProject(project.id)}}
-                  imageSrc={project.imageSrc}
-                  projectName={project.projectName}
-                  designType={project.designType}
-                />
-              </span>
+              <div className="flex justify-center">
+                <span className={hoverScale110}>
+                  <Project
+                    onClick={() => {setShowProject(!showProject); visibleProject(project.id)}}
+                    imageSrc={project.imageSrc}
+                    projectName={project.projectName}
+                    designType={project.designType}
+                  />
+                </span>
+              </div>
             </SplideSlide>
           ))}
         </Splide>
-      </div>
+      </div> */}
 
       {/* Desktop Grid */}
-      <div className="hidden md:grid md:grid-cols-2 gap-5 md:w-2/3 lg:w-1/2">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:w-2/3 lg:w-1/2">
         {projects.map((project) => (
           <span key={project.id} className={hoverScale110}>
             <Project
