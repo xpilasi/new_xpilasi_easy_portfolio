@@ -6,7 +6,7 @@ const Menu = () => {
 
   
   const linkedInUrl = 'https://www.linkedin.com/in/xavierpilasi/';
-  const resumeUrl = 'https://drive.google.com/file/d/102JONLRudD3tPyBdPKZZbX03G7QKpj3z/view?usp=sharing';
+  const resumeUrl = '/xpilasi_2025_cv.pdf';
 
   const handleClick = (e, id) => {
     e.preventDefault();
@@ -42,7 +42,7 @@ const Menu = () => {
               href="#my-projects">My projects</a></li>
 
           <li className={`font-interDisplayExtraLight md:text-base text-2xl tracking-widest pb-10 ${darkMode ? 'text-white hover:text-green-300' : 'text-black hover:text-neon-blueberry'} transition-colors duration-500 ${!showMenu ? 'pointer-events-none' : ''}`}>
-              <a href= {resumeUrl} target="_blank" >My Résumé</a></li>
+              <a href={resumeUrl} download="xpilasi_2025_cv.pdf">My Résumé</a></li>
 
           <li className={`font-interDisplayExtraLight md:text-base text-2xl pb-5 ${!darkMode ? 'text-neon-blueberry' : 'text-green-300'} tracking-widest ${!showMenu ? 'pointer-events-none' : ''}`}>SAY HELLO</li>
           
