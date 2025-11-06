@@ -54,7 +54,7 @@ const MySkills = ({darkMode}) => {
       <article className=' flex flex-col lg:items-start items-center  w-full text-white'>
       <div className='w-80 '>
       <motion.div
-          className='flex flex-col items-center bg-neon-pink rounded-xl w-full h-36'
+          className='group flex flex-col items-center bg-gradient-to-br from-indigo-500 to-purple-500 dark:from-indigo-600 dark:to-purple-600 rounded-2xl w-full h-36 shadow-xl hover:shadow-2xl transition-all duration-500 cursor-pointer backdrop-blur-sm'
           id='languajes'
           custom={0}
           initial="hidden"
@@ -62,17 +62,17 @@ const MySkills = ({darkMode}) => {
           viewport={{ once: true }}
           variants={containerVariantsLeft}
         >
-          <p className='flex justify-center items-center   px-10 pt-5 '><FaCode className = ' text-6xl '/> </p>
-          <p className='flex justify-center  items-center  px-10 text-3xl pb-5'>LANGUAJES</p>
+          <p className='flex justify-center items-center px-10 pt-5 transform group-hover:scale-110 transition-transform duration-300 text-white'><FaCode className = 'text-6xl'/></p>
+          <p className='flex justify-center items-center px-10 text-3xl pb-5 font-semibold tracking-wide text-white'>LANGUAJES</p>
       </motion.div>
       </div>
-        
+
       </article> 
       
       <article className='mt-10 flex flex-col lg:items-end items-center  w-full text-white'>
       <div className='w-80'>
       <motion.div
-          className='flex flex-col items-center bg-neon-blueberry rounded-xl w-full h-36 '
+          className='group flex flex-col items-center bg-gradient-to-br from-purple-500 to-indigo-400 dark:from-purple-600 dark:to-indigo-500 rounded-2xl w-full h-36 shadow-xl hover:shadow-2xl transition-all duration-500 cursor-pointer backdrop-blur-sm'
           id='frameworks'
           custom={0.25}
           initial="hidden"
@@ -80,17 +80,17 @@ const MySkills = ({darkMode}) => {
           viewport={{ once: true }}
           variants={containerVariantsLeft}
         >
-          <p className='flex justify-center items-center px-32  text-3xl pt-5'><IoCube className = 'text-6xl'/></p>
-          <p className='flex justify-center items-center    text-3xl pb-5'>FRAMEWORKS</p>
+          <p className='flex justify-center items-center px-32 text-3xl pt-5 transform group-hover:scale-110 transition-transform duration-300 text-white'><IoCube className = 'text-6xl'/></p>
+          <p className='flex justify-center items-center text-3xl pb-5 font-semibold tracking-wide text-white'>FRAMEWORKS</p>
       </motion.div>
       </div>
-      
+
       </article> 
 
       <article className='mt-10 flex flex-col lg:items-start items-center  w-full text-white'>
         <div className='w-80 l'>
         <motion.div
-          className='flex flex-col items-center bg-dark-neon-fade rounded-xl w-full h-36'
+          className='group flex flex-col items-center bg-gradient-to-br from-indigo-400 to-purple-400 dark:from-indigo-500 dark:to-purple-500 rounded-2xl w-full h-36 shadow-xl hover:shadow-2xl transition-all duration-500 cursor-pointer backdrop-blur-sm'
           id='databases'
           custom={0.5}
           initial="hidden"
@@ -98,11 +98,11 @@ const MySkills = ({darkMode}) => {
           viewport={{ once: true }}
           variants={containerVariantsLeft}
         >
-          <p className='flex justify-center items-center px-36  text-3xl pt-8 pb-1'><FaDatabase className = 'text-5xl'/></p>
-          <p className='flex justify-center items-center  text-3xl pb-5'>DATABASES</p>
+          <p className='flex justify-center items-center px-36 text-3xl pt-8 pb-1 transform group-hover:scale-110 transition-transform duration-300 text-white'><FaDatabase className = 'text-5xl'/></p>
+          <p className='flex justify-center items-center text-3xl pb-5 font-semibold tracking-wide text-white'>DATABASES</p>
       </motion.div>
         </div>
-      
+
       </article>
       </div>
       

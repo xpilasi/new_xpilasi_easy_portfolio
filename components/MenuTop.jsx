@@ -19,11 +19,11 @@ const Menu = () => {
   };
 
   return (
-    <header 
-      id='menu-top' 
-      className={`  transition-opacity duration-500 ease-in-out fixed left-0 right-0 top-0 bottom-0 md:w-80 bg-opacity-100 
-      ${darkMode ? 'bg-gradient-to-r from-gray-800 to-black' : 'bg-gradient-to-r from-white to-gray-100'} 
-      md:top-6 md:right-6 md:left-auto md:bottom-auto 
+    <header
+      id='menu-top'
+      className={`transition-opacity duration-500 ease-in-out fixed left-0 right-0 top-0 bottom-0 md:w-80 bg-opacity-100 md:rounded-2xl md:shadow-2xl backdrop-blur-md
+      ${darkMode ? 'bg-gradient-to-br from-slate-900 to-slate-800' : 'bg-gradient-to-br from-white to-slate-50'}
+      md:top-6 md:right-6 md:left-auto md:bottom-auto
       ${showMenu ? 'opacity-100 z-30' : 'opacity-0'}`}>
 
       <nav 
@@ -31,26 +31,26 @@ const Menu = () => {
 
         <ul className=' flex flex-col md:items-start items-center z-50'>
          
-          <li className={`font-interDisplayExtraLight md:text-base text-2xl tracking-widest  pb-2 ${darkMode ? 'text-white hover:text-green-300' : 'text-black hover:text-neon-blueberry'} ${!showMenu ? 'pointer-events-none' : ''}`}>
-            <a 
-              onClick={(e) => handleClick(e, '#about-me')}    
+          <li className={`font-interDisplayExtraLight md:text-base text-2xl tracking-widest pb-2 transition-colors duration-300 ${darkMode ? 'text-white hover:text-indigo-400' : 'text-gray-800 hover:text-indigo-600'} ${!showMenu ? 'pointer-events-none' : ''}`}>
+            <a
+              onClick={(e) => handleClick(e, '#about-me')}
               href="#about-me">About Me</a></li>
 
-          <li className={`font-interDisplayExtraLight md:text-base text-2xl tracking-widest  pb-2 ${darkMode ? 'text-white hover:text-green-300' : 'text-black hover:text-neon-blueberry'} ${  !showMenu ? 'pointer-events-none' : ''}`}>
-              <a 
+          <li className={`font-interDisplayExtraLight md:text-base text-2xl tracking-widest pb-2 transition-colors duration-300 ${darkMode ? 'text-white hover:text-indigo-400' : 'text-gray-800 hover:text-indigo-600'} ${!showMenu ? 'pointer-events-none' : ''}`}>
+              <a
               onClick={(e) => handleClick(e, '#my-projects')}
               href="#my-projects">My projects</a></li>
 
-          <li className={`font-interDisplayExtraLight md:text-base text-2xl tracking-widest pb-10 ${darkMode ? 'text-white hover:text-green-300' : 'text-black hover:text-neon-blueberry'} transition-colors duration-500 ${!showMenu ? 'pointer-events-none' : ''}`}>
+          <li className={`font-interDisplayExtraLight md:text-base text-2xl tracking-widest pb-10 transition-colors duration-300 ${darkMode ? 'text-white hover:text-indigo-400' : 'text-gray-800 hover:text-indigo-600'} ${!showMenu ? 'pointer-events-none' : ''}`}>
               <a href={resumeUrl} download="xpilasi_2025_cv.pdf">My Résumé</a></li>
 
-          <li className={`font-interDisplayExtraLight md:text-base text-2xl pb-5 ${!darkMode ? 'text-neon-blueberry' : 'text-green-300'} tracking-widest ${!showMenu ? 'pointer-events-none' : ''}`}>SAY HELLO</li>
-          
-          <li className={`font-interDisplayExtraLight md:text-base text-2xl pb-2 tracking-widest ${darkMode ? 'text-white hover:text-green-300' : 'text-black hover:text-neon-blueberry'} transition-colors duration-500 ${!showMenu ? 'pointer-events-none' : ''}`}>
+          <li className={`font-interDisplayExtraLight md:text-base text-2xl pb-5 tracking-widest ${darkMode ? 'text-indigo-400' : 'text-indigo-600'} ${!showMenu ? 'pointer-events-none' : ''}`}>SAY HELLO</li>
+
+          <li className={`font-interDisplayExtraLight md:text-base text-2xl pb-2 tracking-widest transition-colors duration-300 ${darkMode ? 'text-white hover:text-indigo-400' : 'text-gray-800 hover:text-indigo-600'} ${!showMenu ? 'pointer-events-none' : ''}`}>
               <a href={linkedInUrl} target="_blank">linkedin/xavier.pilasi</a></li>
 
-          <li className={`font-interDisplayExtraLight md:text-base text-2xl tracking-widest ${darkMode ? 'text-white hover:text-green-300' : 'text-black hover:text-neon-blueberry'} transition-colors duration-500 ${!showMenu ? 'pointer-events-none' : ''}`}>
-              <a 
+          <li className={`font-interDisplayExtraLight md:text-base text-2xl tracking-widest transition-colors duration-300 ${darkMode ? 'text-white hover:text-indigo-400' : 'text-gray-800 hover:text-indigo-600'} ${!showMenu ? 'pointer-events-none' : ''}`}>
+              <a
               onClick={(e) => handleClick(e, '#contact')}
               href='#contact' >hey@xpilasi.com</a></li>
            

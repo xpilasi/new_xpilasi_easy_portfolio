@@ -1,36 +1,23 @@
 import React, { useEffect, useState } from 'react'
 import gorillaGrabProject from '../../../public/img/projects_logos/app_design/Flying-iPhone-X-Mockups.png';
 import justListProject from '../../../public/img/projects_logos/app_design/cozy-justlist-mockup_resized.png';
+import activitierProject from '../../../public/img/final_webs/activitier.png';
 import Project from '../widgets/Project';
-import vintageGroomProject from '../../../public/img/final_webs/vintage-groom-front.png';
-import tonerelicsProject from '../../../public/img/projects_logos/web_design/tonerelics2.png';
-import xpilasiPortfolioWebDesign from '../../../public/img/projects_logos/web_design/xpilasiPortfolioWebDesign.png'
-import xpilasiPortfolioWebDesignL from '../../../public/img/projects_logos/web_design/front-xpilasi-portfolio-2.png';
-import blockWebDesign from '../../../public/img/projects_logos/web_design/blockWebDesign.png'
-import ejemplo from '../../../public/img/projects_logos/web_design/ejemplo.png'
 import SectionTitle from '../../../components/widgets/titles/SectionTitle';
 import SectionSubTitle from '../../../components/widgets/titles/SectionSubTitle';
 import ProjectsDesc from './sublevel/ProjectsDesc';
-import serieslabWebDesign from '../../../public/img/final_webs/serieslabportafolio.png'
-import useMenuStore from '@/store/menuStore.js';
+import serieslabWebDesign from '../../../public/img/final_webs/serieslabportafolio.png';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 
 
 
 const MyProjects = ({showProject, setShowProject}) => {
 
-  const { darkMode } = useMenuStore();
-
-  let xPilasiPortfolio = '';
-  const projectContainerStyle = 'grid-item bg-new-neon rounded-xl px-5 py-10';
   const [projectVisible, setProjectVisible] = useState(0);
-  const hoverScale110 = 'transform transition-transform hover:scale-95 cursor-pointer';
 
   useEffect(() => {
     setProjectVisible(0);
 }, []);
-  
-  darkMode ? xPilasiPortfolio = xpilasiPortfolioWebDesignL : xPilasiPortfolio = xpilasiPortfolioWebDesign ;
  
   let visibleProject = (projectKey) => {
 
@@ -38,6 +25,19 @@ const MyProjects = ({showProject, setShowProject}) => {
   }
 
   const projects = [
+    {
+      id: 2,
+      imageSrc: justListProject,
+      projectName: 'Just List',
+      designType: 'Mobile App'
+    },
+    
+    {
+      id: 3,
+      imageSrc: activitierProject,
+      projectName: 'Activitier',
+      designType: 'Web App'
+    },
     {
       id: 4,
       imageSrc: serieslabWebDesign,
@@ -50,81 +50,90 @@ const MyProjects = ({showProject, setShowProject}) => {
       projectName: 'Gorilla Grab',
       designType: 'Mobile App'
     },
-    {
-      id: 2,
-      imageSrc: justListProject,
-      projectName: 'Just List',
-      designType: 'Mobile App'
-    },
-    {
-      id: 3,
-      imageSrc: vintageGroomProject,
-      projectName: 'Vintage Groom',
-      designType: 'Web Design'
-    }
+    
+    
   ];
 
   return (
 
-    <section className='min-h-screen flex flex-col justify-center items-center   ' id='my-projects' >
+    <section className='min-h-screen flex flex-col justify-center items-center overflow-x-hidden' id='my-projects' >
 
       <article>
         <ProjectsDesc showProject={showProject} setShowProject={setShowProject} keyProject={projectVisible}></ProjectsDesc>
       
         
         </article>
-          <article className='flex flex-col justify-center items-center py-5'>
-        
-      
+          <article className='flex flex-col justify-center items-center py-5 w-full overflow-hidden'>
+
+
       <SectionTitle titleText='Work gallery'></SectionTitle>
       <SectionSubTitle titleText="These are some of the projects I've been developed since I started my software journey."></SectionSubTitle>
 
-      {/* Mobile Slider */}
-      {/* <div className="md:hidden py-10 w-full px-4">
+      {/* Modern Carousel */}
+      <div className="p-4 md:py-10 md:px-6 w-full max-w-full lg:max-w-7xl">
         <Splide
           options={{
-            perPage: 1,
-            gap: '0.5rem',
-            arrows: true,
-            pagination: true,
-            drag: true,
             type: 'loop',
-            width: '85%',
-            focus: 'center',
-            trimSpace: true,
-            autoWidth: false
+            perPage: 3,
+            perMove: 1,
+            gap: '2rem',
+            padding: 0,
+            focus: 0,
+            pagination: true,
+            arrows: true,
+            drag: true,
+            autoplay: false,
+            interval: 3500,
+            pauseOnHover: true,
+            pauseOnFocus: true,
+            resetProgress: false,
+            height: 'auto',
+            breakpoints: {
+              1280: {
+                perPage: 2,
+                gap: '1.5rem',
+                padding: 0,
+              },
+              1024: {
+                perPage: 2.5,
+                perMove: 1,
+                gap: '1.5rem',
+                padding: 0,
+                focus: 0,
+              },
+              768: {
+                perPage: 2.5,
+                perMove: 1,
+                gap: '1rem',
+                padding: 0,
+                focus: 0,
+                arrows: false,
+                drag: 'free',
+              },
+              640: {
+                perPage: 1.2,
+                perMove: 1,
+                gap: '0.8rem',
+                padding: 0,
+                focus: 0,
+                arrows: false,
+                drag: 'free',
+              }
+            }
           }}
-          className="mobile-splide"
+          className="projects-carousel"
         >
           {projects.map((project) => (
             <SplideSlide key={project.id}>
-              <div className="flex justify-center">
-                <span className={hoverScale110}>
-                  <Project
-                    onClick={() => {setShowProject(!showProject); visibleProject(project.id)}}
-                    imageSrc={project.imageSrc}
-                    projectName={project.projectName}
-                    designType={project.designType}
-                  />
-                </span>
-              </div>
+              <Project
+                onClick={() => {setShowProject(!showProject); visibleProject(project.id)}}
+                imageSrc={project.imageSrc}
+                projectName={project.projectName}
+                designType={project.designType}
+              />
             </SplideSlide>
           ))}
         </Splide>
-      </div> */}
-
-      {/* Desktop Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:w-2/3 lg:w-1/2">
-        {projects.map((project) => (
-          <span key={project.id} className={hoverScale110}>
-            <Project
-              onClick={() => {setShowProject(!showProject); visibleProject(project.id)}}
-              imageSrc={project.imageSrc}
-              projectName={project.projectName}
-              designType={project.designType}
-            />
-          </span>
-        ))}
       </div>
             
 

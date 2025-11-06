@@ -20,6 +20,7 @@ import {AiFillLinkedin,AiFillGithub} from 'react-icons/ai';
 import CustomSwiper from '../../widgets/CustomSwiper';
 import { Suspense } from 'react';
 import serieslabWeb from '../../../../public/img/final_webs/serieslabportafolio.png'
+import activitierWeb from '@/public/img/projects/activitier-inside.png'
 
 const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
 
@@ -72,20 +73,20 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
       {
         projectKey: 3,
         code: 'web',
-        name : 'Vintage Groom',
-        type: 'Web Design',
-        description: 'Vintage Groom is my first official Vue 3 project, made with basic components and a minimal design. The idea is that the user can find all the relevant information to book an appointment.',
-        year: 2024,
+        name : 'Activitier',
+        type: 'Web App',
+        description: 'Automate bookings, increase revenue, and enhance guest experiences with our comprehensive activity management platform designed specifically for hotels.',
+        year: 2025,
         designDesc: designDesc,
         cssLibrary: 'Design made with Tailwind CSS ',
         css: '-',
         framework: `Vue 3`,
         language: 'Javascript',
-        backend:'-',
-        imgSrc:vintageGroomDesign,
-        imgSwiper: [justlistAppDesign,gorillaGrabProject],
-        url:'https://vintagegroom.netlify.app',
-        repositoryUrl:'https://github.com/xpilasi/barbershop'
+        backend:'Supabase',
+        imgSrc:activitierWeb,
+        imgSwiper: [activitierWeb,activitierWeb],
+        url:'https://absmanager.netlify.app',
+        repositoryUrl:'https://github.com/xpilasi/'
       },
       {
         projectKey: 4,
@@ -176,45 +177,47 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
     return (
       
 
-    <section 
-    id='projectDesc' 
+    <section
+    id='projectDesc'
     className={
-        `min-h-screen bg-black w-full fixed left-0 top-0 px-5 transition-all duration-300 ease-in-out flex flex-col 
-            ${isVisible ? 'z-50 opacity-100 pointer-events-auto' : 'opacity-0 z-30 pointer-events-none'}`
+        `min-h-screen w-full fixed left-0 top-0 px-4 md:px-6 lg:px-10 py-8 overflow-y-auto transition-all duration-300 ease-in-out flex flex-col
+            ${isVisible ? 'z-50 opacity-100 pointer-events-auto dark:bg-gradient-to-r dark:from-gray-800 dark:to-black bg-gradient-to-r from-white to-gray-100' : 'opacity-0 z-30 pointer-events-none'}`
         }
     >
-      <div className=' '>
+      <div className='max-w-6xl mx-auto w-full'>
         <CloseRoadMap showRoadMap={showProject } setShowRoadMap={setShowProject} ></CloseRoadMap>
-        <RoadmapTopTitle titleText={topDesc}></RoadmapTopTitle>
-        <RoadmapTitle titleText={titleDesc}></RoadmapTitle>
+        <div className='mt-12 md:mt-16'>
+          <RoadmapTopTitle titleText={topDesc}></RoadmapTopTitle>
+          <RoadmapTitle titleText={titleDesc}></RoadmapTitle>
+        </div>
 
       </div>
-         
 
-      <div className='md:grid md:grid-cols-7 md:gap-10 grid grid-cols-1 mt-3     '>
-            <div className='md:col-span-4   w-full flex justify-center items-center  ' onClick={test}>
+
+      <div className='max-w-6xl mx-auto w-full md:grid md:grid-cols-7 md:gap-10 grid grid-cols-1 mt-6'>
+            <div className='md:col-span-4 w-full flex justify-center items-center' onClick={test}>
                 {/* <CustomSwiper photoMap={imgArray} /> */}
                 <Suspense fallback='LOADING...'>
                   <Image src={imgSrc} alt='' onClick={test} priority={true}></Image>
                 </Suspense>
             </div>
 
-            <div className='md:col-span-3 flex flex-col justify-between xl:justify-start p '>
+            <div className='md:col-span-3 flex flex-col justify-between xl:justify-start'>
 
-              
+
               <div>
-              <h3 className='text-zinc-500 font-interDisplayLight text-[14px] pb-2 pt-5 md:pt-0'>General features</h3>
+              <h3 className='text-gray-600 dark:text-gray-400 font-light text-sm md:text-base pb-2 pt-5 md:pt-0'>General features</h3>
               <GeneralFeatures generalFeatures={generalFeatures}></GeneralFeatures>
               <Bullet bulletsArray={bullets}></Bullet>
               <Features year={year} framework={framework} language={language} backend={backend}></Features>
               </div>
-             
-              
-              <div className=' grid grid-cols-2 md:grid-cols-1  gap-4'>
+
+
+              <div className='grid grid-cols-2 md:grid-cols-1 gap-4 mt-6'>
                 <ButtonGreenWhite buttonName={`${projectCode == 'mobile' ? 'APK' : 'Website'}`} url={urlProject}></ButtonGreenWhite>
                 <ButtonGreenWhite buttonName='Repository' url={urlRepository}></ButtonGreenWhite>
               </div>
-            
+
 
             </div>
 

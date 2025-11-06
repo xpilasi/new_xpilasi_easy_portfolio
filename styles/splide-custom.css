@@ -63,4 +63,470 @@
   .mobile-splide .splide__slide.is-active * {
     pointer-events: auto !important;
   }
-} 
+}
+
+/* Modern Carousel Styles */
+.projects-carousel {
+  padding: 2rem 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+.projects-carousel .splide__track {
+  padding: 2rem 0;
+  overflow: visible;
+}
+
+.projects-carousel .splide__list {
+  backface-visibility: hidden;
+}
+
+/* Slide Effects */
+.projects-carousel .splide__slide {
+  opacity: 0.6;
+  transform: scale(0.88);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform, opacity;
+}
+
+.projects-carousel .splide__slide.is-active {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 10;
+}
+
+.projects-carousel .splide__slide.is-visible {
+  opacity: 1;
+  transform: scale(0.94);
+}
+
+/* Fix para prevenir overflow en todos los tamaños */
+.projects-carousel .splide__slide > * {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Custom Arrows */
+.projects-carousel .splide__arrow {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.9), rgba(139, 92, 246, 0.9));
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  opacity: 0.9;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+  backdrop-filter: blur(10px);
+  border: none;
+}
+
+.projects-carousel .splide__arrow:hover {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 1), rgba(139, 92, 246, 1));
+  opacity: 1;
+  box-shadow: 0 6px 25px rgba(99, 102, 241, 0.5);
+}
+
+.projects-carousel .splide__arrow svg {
+  fill: white;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.projects-carousel .splide__arrow--prev {
+  left: 0;
+}
+
+.projects-carousel .splide__arrow--next {
+  right: 0;
+}
+
+.projects-carousel .splide__arrow:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* Custom Pagination */
+.projects-carousel .splide__pagination {
+  bottom: -2rem;
+  gap: 0.5rem;
+}
+
+.projects-carousel .splide__pagination__page {
+  width: 0.75rem;
+  height: 0.75rem;
+  background: rgba(148, 163, 184, 0.3);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.projects-carousel .splide__pagination__page:hover {
+  background: rgba(99, 102, 241, 0.5);
+  transform: scale(1.2);
+}
+
+.projects-carousel .splide__pagination__page.is-active {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  transform: scale(1.3);
+  width: 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 0 2px 10px rgba(99, 102, 241, 0.4);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .projects-carousel .splide__arrow {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .projects-carousel .splide__arrow svg {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .projects-carousel .splide__slide {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .projects-carousel .splide__slide.is-active {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .projects-carousel .splide__slide.is-visible {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-carousel {
+    padding: 1rem 0;
+    width: 100%;
+    max-width: 100vw;
+  }
+
+  .projects-carousel .splide__track {
+    padding: 1.5rem 0;
+    overflow: visible;
+  }
+
+  .projects-carousel .splide__list {
+    overflow: visible;
+  }
+
+  .projects-carousel .splide__arrow {
+    display: none !important;
+  }
+
+  .projects-carousel .splide__track {
+    touch-action: pan-x;
+  }
+
+  .projects-carousel .splide__list {
+    touch-action: pan-x;
+  }
+
+  .projects-carousel .splide__slide {
+    opacity: 1;
+    transform: scale(1) !important;
+    box-sizing: border-box;
+    touch-action: pan-x;
+    pointer-events: auto;
+  }
+
+  .projects-carousel .splide__slide.is-active,
+  .projects-carousel .splide__slide.is-visible {
+    transform: scale(1) !important;
+  }
+
+  .projects-carousel .splide__slide > * {
+    pointer-events: auto;
+  }
+
+  .projects-carousel .splide__pagination {
+    bottom: -1rem;
+    gap: 0.4rem;
+  }
+
+  .projects-carousel .splide__pagination__page {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+
+  .projects-carousel .splide__pagination__page.is-active {
+    width: 1.25rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .projects-carousel {
+    width: 100%;
+    max-width: 100vw;
+    padding: 0.5rem 0;
+  }
+
+  .projects-carousel .splide__track {
+    padding: 1rem 0;
+    overflow: visible;
+  }
+
+  .projects-carousel .splide__list {
+    overflow: visible;
+  }
+
+  .projects-carousel .splide__arrow {
+    display: none !important;
+  }
+
+  .projects-carousel .splide__track {
+    touch-action: pan-x;
+  }
+
+  .projects-carousel .splide__list {
+    touch-action: pan-x;
+  }
+
+  .projects-carousel .splide__slide {
+    opacity: 1;
+    transform: scale(1) !important;
+    box-sizing: border-box;
+    touch-action: pan-x;
+    pointer-events: auto;
+  }
+
+  .projects-carousel .splide__slide.is-active,
+  .projects-carousel .splide__slide.is-visible {
+    transform: scale(1) !important;
+  }
+
+  /* Asegurar que las tarjetas sean tocables */
+  .projects-carousel .splide__slide > * {
+    pointer-events: auto;
+  }
+
+  .projects-carousel .splide__pagination {
+    bottom: -0.75rem;
+    gap: 0.3rem;
+    z-index: 15;
+  }
+
+  .projects-carousel .splide__pagination__page {
+    width: 0.45rem;
+    height: 0.45rem;
+  }
+
+  .projects-carousel .splide__pagination__page.is-active {
+    width: 1rem;
+  }
+}
+
+/* Roadmap Carousel Styles */
+.roadmap-carousel {
+  padding: 2rem 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+.roadmap-carousel .splide__track {
+  padding: 2rem 0;
+  overflow: visible;
+}
+
+.roadmap-carousel .splide__list {
+  backface-visibility: hidden;
+}
+
+/* Slide Effects */
+.roadmap-carousel .splide__slide {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.roadmap-carousel .splide__slide.is-active {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 10;
+}
+
+/* Custom Arrows */
+.roadmap-carousel .splide__arrow {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.9), rgba(139, 92, 246, 0.9));
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  opacity: 0.9;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+  backdrop-filter: blur(10px);
+  border: none;
+}
+
+.roadmap-carousel .splide__arrow:hover {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 1), rgba(139, 92, 246, 1));
+  opacity: 1;
+  box-shadow: 0 6px 25px rgba(99, 102, 241, 0.5);
+}
+
+.roadmap-carousel .splide__arrow svg {
+  fill: white;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.roadmap-carousel .splide__arrow--prev {
+  left: 0;
+}
+
+.roadmap-carousel .splide__arrow--next {
+  right: 0;
+}
+
+.roadmap-carousel .splide__arrow:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* Custom Pagination */
+.roadmap-carousel .splide__pagination {
+  bottom: -2rem;
+  gap: 0.5rem;
+}
+
+.roadmap-carousel .splide__pagination__page {
+  width: 0.75rem;
+  height: 0.75rem;
+  background: rgba(148, 163, 184, 0.3);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.roadmap-carousel .splide__pagination__page:hover {
+  background: rgba(99, 102, 241, 0.5);
+  transform: scale(1.2);
+}
+
+.roadmap-carousel .splide__pagination__page.is-active {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  transform: scale(1.3);
+  width: 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 0 2px 10px rgba(99, 102, 241, 0.4);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .roadmap-carousel .splide__arrow {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .roadmap-carousel .splide__arrow svg {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .roadmap-carousel {
+    padding: 1rem 0;
+    width: 100%;
+    max-width: 100vw;
+  }
+
+  .roadmap-carousel .splide__track {
+    padding: 1.5rem 0;
+    overflow: visible;
+    touch-action: pan-x;
+  }
+
+  .roadmap-carousel .splide__list {
+    overflow: visible;
+    touch-action: pan-x;
+  }
+
+  .roadmap-carousel .splide__arrow {
+    display: none !important;
+  }
+
+  .roadmap-carousel .splide__slide {
+    opacity: 1;
+    transform: scale(1) !important;
+    box-sizing: border-box;
+    touch-action: pan-x;
+    pointer-events: auto;
+  }
+
+  .roadmap-carousel .splide__slide > * {
+    pointer-events: auto;
+  }
+
+  .roadmap-carousel .splide__pagination {
+    bottom: -1rem;
+    gap: 0.4rem;
+  }
+
+  .roadmap-carousel .splide__pagination__page {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+
+  .roadmap-carousel .splide__pagination__page.is-active {
+    width: 1.25rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .roadmap-carousel {
+    width: 100%;
+    max-width: 100vw;
+    padding: 0.5rem 0;
+  }
+
+  .roadmap-carousel .splide__track {
+    padding: 1rem 0;
+    overflow: visible;
+    touch-action: pan-x;
+  }
+
+  .roadmap-carousel .splide__list {
+    overflow: visible;
+    touch-action: pan-x;
+  }
+
+  .roadmap-carousel .splide__arrow {
+    display: none !important;
+  }
+
+  .roadmap-carousel .splide__slide {
+    opacity: 1;
+    transform: scale(1) !important;
+    box-sizing: border-box;
+    touch-action: pan-x;
+    pointer-events: auto;
+  }
+
+  .roadmap-carousel .splide__slide > * {
+    pointer-events: auto;
+  }
+
+  .roadmap-carousel .splide__pagination {
+    bottom: -0.75rem;
+    gap: 0.3rem;
+    z-index: 15;
+  }
+
+  .roadmap-carousel .splide__pagination__page {
+    width: 0.45rem;
+    height: 0.45rem;
+  }
+
+  .roadmap-carousel .splide__pagination__page.is-active {
+    width: 1rem;
+  }
+}

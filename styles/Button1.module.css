@@ -12,17 +12,17 @@
         display: inline-block;
         padding: 16px 24px;
         font-size: 16px;
-        /* font-weight: bold; */
         font-stretch: expanded;
         color: white;
-        background-color: #3DFA90; /* Color de fondo */
+        background: linear-gradient(135deg, #6366F1, #8B5CF6); /* Indigo to Purple gradient */
         border: none;
-        border-radius: 0px;
+        border-radius: 8px;
         overflow: hidden;
         cursor: pointer;
-        
+        box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+        transition: all 0.3s ease;
     }
-    
+
     .btnHover::before {
         content: '';
         position: absolute;
@@ -30,38 +30,41 @@
         left: 0;
         width: 0;
         height: 100%;
-        background-color: #000000; /* Color del relleno en hover */
+        background: linear-gradient(135deg, #4F46E5, #7C3AED); /* Darker gradient on hover */
         transition: width 0.5s ease;
-        z-index: 0; 
-        /* Asegura que esté detrás del contenido del botón */
+        z-index: 0;
     }
-    
+
+    .btnHover:hover {
+        box-shadow: 0 6px 25px rgba(99, 102, 241, 0.5);
+        transform: translateY(-2px);
+    }
+
     .btnHover:hover::before {
         width: 100%;
     }
-    
+
     .btnHover span {
         position: relative;
-        z-index: 1; /* Asegura que el texto esté por encima del pseudo-elemento */
+        z-index: 1;
         color: white;
-        /* letter-spacing: 0.4px; */
-        font-family: 'inter-display'; /* Color del texto */
+        font-family: 'inter-display';
     }
        .btnHoverW {
         position: relative;
         display: inline-block;
         padding: 16px 24px;
         font-size: 16px;
-        /* font-weight: 600; */
-        color: black;
-        background-color: #4b478d; /* Color de fondo */
+        color: white;
+        background: linear-gradient(135deg, #8B5CF6, #6366F1); /* Purple to Indigo gradient */
         border: none;
-        border-radius: 0px;
+        border-radius: 8px;
         overflow: hidden;
         cursor: pointer;
-        
+        box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+        transition: all 0.3s ease;
     }
-    
+
     .btnHoverW::before {
         content: '';
         position: absolute;
@@ -69,24 +72,25 @@
         left: 0;
         width: 0;
         height: 100%;
-        background-color: #3DFA90; /* Color del relleno en hover */
+        background: linear-gradient(135deg, #7C3AED, #4F46E5); /* Darker gradient on hover */
         transition: width 0.5s ease;
-        z-index: 0; 
-        color: #000000;
-        /* Asegura que esté detrás del contenido del botón */
+        z-index: 0;
     }
-    
+
+    .btnHoverW:hover {
+        box-shadow: 0 6px 25px rgba(139, 92, 246, 0.5);
+        transform: translateY(-2px);
+    }
+
     .btnHoverW:hover::before {
         width: 100%;
     }
-    
+
     .btnHoverW span {
         position: relative;
-        z-index: 1; /* Asegura que el texto esté por encima del pseudo-elemento */
-        color: black;
-        /* letter-spacing: 0.4px; */
+        z-index: 1;
+        color: white;
         font-family: 'inter-display';
-        
     }
     
     .btnHoverWB {
@@ -94,25 +98,25 @@
         display: inline-block;
         padding: 16px 24px;
         font-size: 16px;
-        /* color: white; */
-        background-color: #4b478d; /* Default purple */
+        background: linear-gradient(135deg, #6366F1, #8B5CF6);
         border: none;
-        border-radius: 0px;
+        border-radius: 8px;
         overflow: hidden;
         cursor: pointer;
         font-family: 'inter-display';
-        transition: all 0.5s ease;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
     }
-    
+
     [data-theme='dark'] .btnHoverWB {
-        background-color: #3DFA90;
-        /* color: black; Green for dark mode */
+        background: linear-gradient(135deg, #6366F1, #8B5CF6);
+        box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
     }
     [data-theme='light'] .btnHoverWB {
-        background-color: #4b478d;
-        color: white; 
+        background: linear-gradient(135deg, #4F46E5, #7C3AED);
+        box-shadow: 0 4px 15px rgba(79, 70, 229, 0.3);
     }
-    
+
     .btnHoverWB::after {
         content: '';
         position: absolute;
@@ -120,41 +124,44 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: #000000; /* Color del relleno en hover */
-        transform: scaleX(0); /* Inicialmente no visible */
-        transform-origin: left; /* Expande desde la izquierda */
+        background: linear-gradient(135deg, #4F46E5, #7C3AED);
+        transform: scaleX(0);
+        transform-origin: left;
         transition: all 0.5s ease;
-        z-index: 0; /* Asegura que esté detrás del texto */
+        z-index: 0;
     }
-    
+
+    .btnHoverWB:hover {
+        box-shadow: 0 6px 25px rgba(99, 102, 241, 0.5);
+        transform: translateY(-2px);
+    }
+
     .btnHoverWB:hover::after {
-        transform: scaleX(1); 
-        /* -moz-transform: scaleX(0.99);
-        -webkit-transform: scaleX(0.99); */
-        /* Expande a 100% en hover */
+        transform: scaleX(1);
     }
-    
+
     .btnHoverWB span {
         position: relative;
         z-index: 1;
         transition: all 0.5s ease;
         font-family: 'inter-display';
+        color: white;
     }
-    
+
     [data-theme='dark'] .btnHoverWB span {
-        color: black;
+        color: white;
     }
-    
+
     [data-theme='light'] .btnHoverWB span {
         color: white;
     }
-    
+
     .btnHoverWB:hover span {
-        color: white; 
-        font-family: 'inter-display';/* Cambia el color del texto a blanco en hover */
+        color: white;
+        font-family: 'inter-display';
     }
     
-    /* Green to white changing text color from black to white*/
+    /* White button with gradient hover */
 
     .btnHoverGW {
         width: 100%;
@@ -162,16 +169,17 @@
         display: inline-block;
         padding: 16px 24px;
         font-size: 16px;
-        color: rgb(0, 0, 0); /* Color inicial del texto */
-        background-color: #FFFFFF; /* Color de fondo del botón */
+        color: #6366F1;
+        background-color: #FFFFFF;
         border: none;
-        border-radius: 0px;
+        border-radius: 8px;
         overflow: hidden;
         cursor: pointer;
         font-family: 'inter-display';
-        transition: all 0.5s ease; /* Transición del color del texto */
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     }
-    
+
     .btnHoverGW::after {
         content: '';
         position: absolute;
@@ -179,29 +187,33 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color:#3DFA90 ; /* Color del relleno en hover */
-        transform: scaleX(0); /* Inicialmente no visible */
-        transform-origin: left; /* Expande desde la izquierda */
+        background: linear-gradient(135deg, #6366F1, #8B5CF6);
+        transform: scaleX(0);
+        transform-origin: left;
         transition: all 0.5s ease;
-        z-index: 0; /* Asegura que esté detrás del texto */
+        z-index: 0;
     }
-    
+
+    .btnHoverGW:hover {
+        box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+        transform: translateY(-2px);
+    }
+
     .btnHoverGW:hover::after {
-        transform: scaleX(1); 
-        
+        transform: scaleX(1);
     }
-    
+
     .btnHoverGW span {
         position: relative;
-        z-index: 1; /* Asegura que el texto esté por encima del pseudo-elemento */
-        color: rgb(0, 0, 0); /* Color inicial del texto */
+        z-index: 1;
+        color: #6366F1;
         transition: all 0.5s ease;
-        font-family: 'inter-display'; /* Transición del color del texto */
+        font-family: 'inter-display';
     }
-    
+
     .btnHoverGW:hover span {
-        color: black; 
-        font-family: 'inter-display';/* Cambia el color del texto a blanco en hover */
+        color: white;
+        font-family: 'inter-display';
     }
 
     /* Light mode button */
@@ -212,15 +224,16 @@
         padding: 16px 24px;
         font-size: 16px;
         color: rgb(255, 255, 255);
-        background-color: #4B478E;
+        background: linear-gradient(135deg, #4F46E5, #7C3AED);
         border: none;
-        border-radius: 0px;
+        border-radius: 8px;
         overflow: hidden;
         cursor: pointer;
         font-family: 'inter-display';
-        transition: all 0.5s ease;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(79, 70, 229, 0.3);
     }
-    
+
     .btnHoverGWLightMode::after {
         content: '';
         position: absolute;
@@ -228,26 +241,32 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color:#27272A ;
+        background: linear-gradient(135deg, #3730A3, #5B21B6);
         transform: scaleX(0);
         transform-origin: left;
         transition: all 0.5s ease;
         z-index: 0;
     }
-    
-    .btnHoverGWLightMode:hover::after {
-        transform: scaleX(1); 
+
+    .btnHoverGWLightMode:hover {
+        box-shadow: 0 6px 25px rgba(79, 70, 229, 0.5);
+        transform: translateY(-2px);
     }
-    
+
+    .btnHoverGWLightMode:hover::after {
+        transform: scaleX(1);
+    }
+
     .btnHoverGWLightMode span {
         position: relative;
         z-index: 1;
         transition: all 0.5s ease;
         font-family: 'inter-display';
+        color: white;
     }
-    
+
     .btnHoverGWLightMode:hover span {
-        color: rgb(255, 255, 255); 
+        color: rgb(255, 255, 255);
         font-family: 'inter-display';
     }
     

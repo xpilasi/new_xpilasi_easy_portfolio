@@ -6,16 +6,16 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-  --button-bg: #4b478d; 
+  --button-bg: #6366F1; /* Indigo gradient */
 }
 [data-theme='dark'] {
-  --button-bg: #3DFA90; /* Green in dark mode */
+  --button-bg: #8B5CF6; /* Purple in dark mode */
 }
 .my-popup-class {
-  @apply bg-neon-grey bg-opacity-80  text-white font-exo ;
+  @apply bg-slate-900 bg-opacity-90 text-white font-exo backdrop-blur-sm;
 }
 .my-confirm-button-class {
-  @apply bg-neon-pink text-white;
+  @apply bg-gradient-to-r from-indigo-600 to-purple-600 text-white hover:from-indigo-500 hover:to-purple-500 transition-all duration-300;
 }
 .my-modal {
   
@@ -74,26 +74,33 @@ body {
 }
 
 .custom-input {
-  @apply 
-  rounded-none border-b  dark:focus:border-green-400  focus:border-purple-900 w-full py-5 md:py-2 mb-10 bg-transparent focus:outline-none font-interDisplayLight placeholder:font-interDisplayLight placeholder:text-gray-700 placeholder:text-sm;
+  @apply
+  rounded-lg border-none w-full py-5 md:py-3 mb-10 bg-transparent focus:outline-none font-interDisplayLight placeholder:font-interDisplayLight placeholder:text-gray-700 placeholder:text-sm transition-all duration-300;
 }
 .custom-input::placeholder{
-  @apply dark:text-gray-600 text-gray-300;
+  @apply dark:text-gray-600 text-gray-400;
 }
 
 .custom-input:focus::placeholder {
-  @apply text-transparent transition-opacity duration-300 ease-in-out  ;
+  @apply text-transparent transition-opacity duration-300 ease-in-out;
 }
+
+.custom-input:focus {
+  @apply shadow-lg dark:shadow-indigo-500/20 shadow-indigo-600/20;
+}
+
 .custom-textarea {
-  @apply 
-  rounded-none resize-none border-b dark:focus:border-green-400 focus:border-purple-900 w-full py-2 mb-5  bg-transparent focus:outline-none font-interDisplayLight placeholder:font-interDisplayLight placeholder:text-gray-700 placeholder:text-sm;
+  @apply
+  rounded-lg resize-none border-none w-full py-3 mb-5 bg-transparent focus:outline-none font-interDisplayLight placeholder:font-interDisplayLight placeholder:text-gray-700 placeholder:text-sm transition-all duration-300;
 }
 
 .custom-textarea::placeholder{
-  @apply dark:text-gray-600 text-gray-300;
+  @apply dark:text-gray-600 text-gray-400;
 }
 
-
+.custom-textarea:focus {
+  @apply shadow-lg dark:shadow-indigo-500/20 shadow-indigo-600/20;
+}
 
 textarea:focus::placeholder {
   @apply text-transparent;
@@ -101,7 +108,7 @@ textarea:focus::placeholder {
 
 /* Estilo para todos los labels */
 label {
-  @apply block dark:text-slate-100 text-gray-800 pb-0 text-sm md:text-xs font-interDisplayLight;
+  @apply block dark:text-indigo-300 text-indigo-600 pb-2 text-sm md:text-xs font-interDisplayLight font-medium tracking-wide;
 }
 
 /* Estilo para el contenedor del label y el input */
@@ -111,6 +118,6 @@ label {
 
 /* Estilo para los labels cuando el input dentro del contenedor está en foco */
 .input-container:focus-within label {
-  @apply dark:text-green-300 text-purple-900 text-sm md:text-xs font-interDisplayLight;
+  @apply dark:text-indigo-400 text-indigo-700 text-sm md:text-xs font-interDisplayLight;
 }
 

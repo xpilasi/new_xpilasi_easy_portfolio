@@ -9,22 +9,18 @@ const CloseRoadMap = ({ darkMode, setDarkMode,showRoadMap, setShowRoadMap }) => 
 
 
     return (
-     
-      <div className={`fixed lg:top-14 top-5 lg:right-14 right-5 z-40`}>
-      <div 
-          className="flex flex-col items-center justify-center w-8 h-8 cursor-pointer "
-          
-      >
-          <IoCloseSharp 
-            onClick={() => setShowRoadMap(!showRoadMap)} 
-            className='text-white text-4xl hover:rotate-90 transition ease-in-out'>
 
-            </IoCloseSharp>
-         
+      <div className='fixed top-6 right-6 md:top-8 md:right-8 z-50'>
+        <button
+          onClick={() => setShowRoadMap(!showRoadMap)}
+          className='flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-indigo-500 to-purple-500 dark:from-indigo-600 dark:to-purple-600 shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 cursor-pointer'
+        >
+          <IoCloseSharp
+            className='text-white text-2xl transition-transform duration-300 hover:rotate-90'
+          />
+        </button>
       </div>
-    </div>
-      
-        
+
     );
 };
 

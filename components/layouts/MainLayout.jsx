@@ -17,7 +17,7 @@ const MainLayout = ({ children }) => {
   // Let's try rendering just one component at a time
   return (
     <div className={darkMode ? 'dark' : ''}>
-      <div className="min-h-screen dark:bg-gradient-to-r dark:from-gray-800 dark:to-black bg-gradient-to-r from-white to-gray-100 text-gray-800 dark:text-white px-10">
+      <div className="min-h-screen dark:bg-gradient-to-r dark:from-gray-800 dark:to-black bg-gradient-to-r from-white to-gray-100 text-gray-800 dark:text-white px-4 md:px-10">
         {isClient && (
           <>
             <DarkModeToggle />

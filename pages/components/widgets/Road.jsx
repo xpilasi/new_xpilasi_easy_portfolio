@@ -1,39 +1,22 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 
-
-const Road = ({
-    
-    year,
-    yearDesc
-}) => {
-
-    
-
-    let rounded = false;
-    let roundedCss = 'rounded-sm';
-    let roundedCssCard = 'rounded-b-sm ';
-
-
-    rounded ? roundedCss = 'rounded-md' : roundedCss = '';
-    rounded ? roundedCssCard = 'rounded-b-sm ' : roundedCssCard = ''
+const Road = ({ year, yearDesc }) => {
 
     return(
-            <article className={`grid-item  ${roundedCss} px-0 overflow-hidden h-auto`} >
-              
-              <div className={ `py-3  mb-0 ${roundedCssCard}`}>
-                <p className=' text-slate-500 font-interDisplayLight text-[10px] lg:text-[15px] lg:pb-3 '>{year}</p>
-                <p className='text-white font-interDisplayLight text-[10px] lg:text-[15px]'>{yearDesc}</p>
-              </div>
-            </article>
+        <article className='group relative h-72 bg-white dark:bg-slate-900 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 '>
 
+            {/* Year Badge */}
+            <div className='inline-block mb-4 px-4 py-2 bg-gradient-to-r from-indigo-500 to-purple-500 dark:from-indigo-600 dark:to-purple-600 rounded-full'>
+                <p className='text-white font-semibold text-sm md:text-base tracking-wide'>{year}</p>
+            </div>
+
+            {/* Description */}
+            <div className='text-gray-700 dark:text-gray-300 font-light text-sm md:text-base leading-relaxed'>
+                {yearDesc}
+            </div>
+
+        </article>
     )
-        
-        
-       
-
-    
-
-   
 
 };
 
