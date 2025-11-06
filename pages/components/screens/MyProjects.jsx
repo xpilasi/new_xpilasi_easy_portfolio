@@ -80,7 +80,7 @@ const MyProjects = ({showProject, setShowProject}) => {
             padding: 0,
             focus: 0,
             pagination: true,
-            arrows: true,
+            arrows: false,
             drag: true,
             autoplay: false,
             interval: 3500,
