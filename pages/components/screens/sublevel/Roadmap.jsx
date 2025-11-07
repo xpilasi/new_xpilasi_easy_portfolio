@@ -38,7 +38,7 @@ const Roadmap = ({showRoadMap, setShowRoadMap}) => {
             year: '2016',
             yearDesc: (
                 <>
-                  After gaining several years of experience in <span className='text-indigo-400 dark:text-indigo-300 font-semibold'>Team leadership</span>, negotiation, and project launches, I assumed the role of <span className='text-indigo-400 dark:text-indigo-300 font-semibold'>Business Development Manager</span> at a renowned company in Latin America.
+                  After gaining several years of experience in <span className='text-indigo-400 dark:text-indigo-300 font-semibold'>Team leadership</span>, negotiation, and project launches, I assumed the role of <span className='text-indigo-400 dark:text-indigo-300 font-semibold'>Product Manager</span> at a renowned company in Latin America.
                 </>
             )
         },
@@ -74,7 +74,7 @@ const Roadmap = ({showRoadMap, setShowRoadMap}) => {
             year: '2025',
             yearDesc: (
                 <>
-                  After launching a few personal projects, I began doing <span className='text-indigo-400 dark:text-indigo-300 font-semibold'>freelance</span> work for <span className='text-indigo-400 dark:text-indigo-300 font-semibold'>Gluecharm</span>, a company diversified across multiple business units. I contributed to several commercial websites as well as to the development of a full management <span className='text-indigo-400 dark:text-indigo-300 font-semibold'>SaaS for campgrounds</span>. I learned to boost my productivity using <span className='text-indigo-400 dark:text-indigo-300 font-semibold'>artificial intelligence</span> tools and to integrate different workflows with complex systems such as <span className='text-indigo-400 dark:text-indigo-300 font-semibold'>MCPs</span>, <span className='text-indigo-400 dark:text-indigo-300 font-semibold'>Supabase</span>, <span className='text-indigo-400 dark:text-indigo-300 font-semibold'>payment platforms</span>, among others.
+                  After launching a few personal projects, I began doing <span className='text-indigo-400 dark:text-indigo-300 font-semibold'>freelance</span> work for <span className='text-indigo-400 dark:text-indigo-300 font-semibold'>Gluecharm</span>, a company diversified across multiple business units. I contributed to several commercial websites as well as to the development of a full management <span className='text-indigo-400 dark:text-indigo-300 font-semibold'>SaaS for campgrounds</span>. I learned to boost my productivity using <span className='text-indigo-400 dark:text-indigo-300 font-semibold'>AI</span> tools and to integrate different workflows with complex systems such as <span className='text-indigo-400 dark:text-indigo-300 font-semibold'>MCPs</span>, <span className='text-indigo-400 dark:text-indigo-300 font-semibold'>Supabase</span>, <span className='text-indigo-400 dark:text-indigo-300 font-semibold'>payment platforms</span>, among others.
                 </>
             )
         }

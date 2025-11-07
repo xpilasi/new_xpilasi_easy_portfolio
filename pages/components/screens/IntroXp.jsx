@@ -16,11 +16,15 @@ const gradientText = 'bg-gradient-to-r from-neon-orange  via-neon-blueberry to-n
 const linkedInUrl = 'https://www.linkedin.com/in/xavierpilasi/';
 const gitHubUrl = 'https://github.com/xpilasi';
 
-const hoverScale110 = 'transform transition-transform hover:scale-110';
+const hoverScale110 = 'transform transition-all hover:scale-110';
 
 const textAltDark = 'text-neon-green';
 const textAltLight= 'text-dark-neon-fade';
 let textAlt = ``;
+
+const iconHoverClasses = darkMode
+  ? 'hover:text-neon-green'
+  : 'hover:text-dark-neon-fade';
 
 darkMode ? textAlt = textAltDark :textAlt = textAltLight ;
     
@@ -51,17 +55,17 @@ darkMode ? textAlt = textAltDark :textAlt = textAltLight ;
               <a href={linkedInUrl}
                 target="_blank"
                 rel="noopener noreferrer">
-                  <AiFillLinkedin className={`${hoverScale110} cursor-pointer`}/></a>
+                  <AiFillLinkedin className={`${hoverScale110} ${iconHoverClasses} cursor-pointer`}/></a>
               <a href={gitHubUrl}
                 target="_blank"
                 rel="noopener noreferrer">
-                  <AiFillGithub className={`${hoverScale110} cursor-pointer`}/></a>
+                  <AiFillGithub className={`${hoverScale110} ${iconHoverClasses} cursor-pointer`}/></a>
               <a href='https://gitlab.com/xpilasi'
                 target="_blank"
                 rel="noopener noreferrer">
-                  <PiGitlabLogoSimpleThin className={`${hoverScale110} cursor-pointer`}/></a>
-              
-              
+                  <PiGitlabLogoSimpleThin className={`${hoverScale110} ${iconHoverClasses} cursor-pointer`}/></a>
+
+
           </div>
 
         </div>
