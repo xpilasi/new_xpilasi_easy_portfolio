@@ -4,12 +4,16 @@ import RoadmapTitle from '../../../../components/widgets/titles/RoadmapTitle';
 import RoadmapSubTitle from '../../../../components/widgets/titles/RoadmapSubTitle';
 import RoadmapTopTitle from '../../../../components/widgets/titles/RoadmapTopTitle';
 import CloseRoadMap from '../../widgets/menu/CloseRoadMap';
-import { Splide, SplideSlide } from '@splidejs/react-splide';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 
 const Roadmap = ({showRoadMap, setShowRoadMap}) => {
 
     const [isVisible, setIsVisible] = useState(showRoadMap);
+    const [isDragging, setIsDragging] = useState(false);
 
   useEffect(() => {
     setIsVisible(showRoadMap);
@@ -91,53 +95,55 @@ const Roadmap = ({showRoadMap, setShowRoadMap}) => {
             <RoadmapSubTitle titleText={subtitleDesc}></RoadmapSubTitle>
 
             {/* Roadmap Carousel */}
-            <div className="mt-8 lg:mt-12 w-full max-w-full px-4 md:px-6 lg:px-0">
-                <Splide
-                    options={{
-                        type: 'loop',
-                        perPage: 2,
-                        perMove: 1,
-                        gap: '2rem',
-                        padding: 0,
-                        focus: 0,
-                        pagination: true,
-                        arrows: false,
-                        drag: true,
-                        autoplay: false,
-                        start: 5,
-                        breakpoints: {
-                            1024: {
-                                perPage: 1.5,
-                                gap: '1.5rem',
-                                padding: 0,
-                                focus: 0,
-                            },
-                            768: {
-                                perPage: 1,
-                                gap: '1rem',
-                                padding: 0,
-                                focus: 0,
-                                arrows: false,
-                                drag: 'free',
-                            },
-                            640: {
-                                perPage: 1,
-                                gap: '0.8rem',
-                                padding: 0,
-                                focus: 0,
-                                arrows: false,
-                                drag: 'free',
-                            }
+            <div className="mt-8 lg:mt-12 w-full max-w-full">
+                <Swiper
+                    modules={[Pagination]}
+                    slidesPerView={2}
+                    spaceBetween={32}
+                    loop={false}
+                    grabCursor={true}
+                    initialSlide={0}
+                    watchSlidesProgress={true}
+                    pagination={{
+                        clickable: true,
+                        dynamicBullets: false,
+                    }}
+                    navigation={false}
+                    onSliderMove={() => setIsDragging(true)}
+                    onTouchEnd={() => setTimeout(() => setIsDragging(false), 50)}
+                    onSliderFirstMove={() => setIsDragging(true)}
+                    breakpoints={{
+                        320: {
+                            slidesPerView: 1.15,
+                            spaceBetween: 12,
+                            centeredSlides: false,
+                        },
+                        640: {
+                            slidesPerView: 1.15,
+                            spaceBetween: 12,
+                            centeredSlides: false,
+                        },
+                        768: {
+                            slidesPerView: 1,
+                            spaceBetween: 16,
+                        },
+                        1024: {
+                            slidesPerView: 1.5,
+                            spaceBetween: 24,
+                        },
+                        1280: {
+                            slidesPerView: 2,
+                            spaceBetween: 32,
                         }
                     }}
-                    className="roadmap-carousel"
+                    className="roadmap-swiper"
                 >
                     {roadmapItems.map((item) => (
-                        <SplideSlide key={item.id}>
+                        <SwiperSlide key={item.id}>
                             <Road year={item.year} yearDesc={item.yearDesc} />
-                        </SplideSlide>
+                        </SwiperSlide>
                     ))}
-                </Splide>
+                </Swiper>
             </div>
         </div>
 

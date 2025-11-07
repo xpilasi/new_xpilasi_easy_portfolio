@@ -17,7 +17,7 @@ const Presentation = ({showRoadMap, setShowRoadMap}) => {
     const productManagerDesc = 'I am a professional with a forward-thinking vision and proactive attitude who combines technical, strategic, and relational skills. I am passionate about creating innovative products and services that have a positive impact on the world.';
 
     return (
-    <section id='about-me' className='h-screen flex flex-col items-center justify-center px-4'>
+    <section id='about-me' className='h-screen flex flex-col items-center justify-center '>
 
         <div className='relative max-w-5xl w-full bg-gradient-to-br from-white to-slate-50 dark:from-slate-900 dark:to-slate-800 rounded-2xl shadow-xl overflow-hidden backdrop-blur-sm'>
 

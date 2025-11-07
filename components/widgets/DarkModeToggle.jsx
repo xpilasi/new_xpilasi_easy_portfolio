@@ -5,7 +5,7 @@ const DarkModeToggle = () => {
   const { darkMode, toggleDarkMode } = useMenuStore();
 
   return (
-    <div className="fixed  lg:top-14 lg:left-14 z-40 top-10 left-10">
+    <div className="fixed top-6 left-4 md:left-10 z-40">
       <button
         onClick={toggleDarkMode}
         className={`w-12 h-6 rounded-full p-1 transition-colors duration-300 ease-in-out

@@ -13,7 +13,7 @@ const Swiper = dynamic(() => import('swiper/react').then(mod => mod.Swiper), { s
 const SwiperSlide = dynamic(() => import('swiper/react').then(mod => mod.SwiperSlide), { ssr: false });
 
 // Importamos las funcionalidades adicionales de Swiper
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 
 // Un componente de Swiper en React
 const CustomSwiper = ({ photoMap = [] }) => {

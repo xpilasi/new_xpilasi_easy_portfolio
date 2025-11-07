@@ -1,0 +1,171 @@
+/* Swiper Custom Styles for Portfolio */
+
+/* Projects Carousel Styles */
+.projects-swiper {
+  padding: 2rem 0;
+  width: 100%;
+  overflow: visible;
+}
+
+.projects-swiper .swiper-slide {
+  height: auto;
+  transition: all 0.3s ease;
+}
+
+/* Custom Pagination */
+.projects-swiper .swiper-pagination {
+  bottom: -3.5rem;
+  position: relative;
+  margin-top: 2rem;
+}
+
+.projects-swiper .swiper-pagination-bullet {
+  width: 0.75rem;
+  height: 0.75rem;
+  background: rgba(148, 163, 184, 0.3);
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.projects-swiper .swiper-pagination-bullet:hover {
+  background: rgba(99, 102, 241, 0.5);
+  transform: scale(1.2);
+}
+
+.projects-swiper .swiper-pagination-bullet-active {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  width: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 10px rgba(99, 102, 241, 0.4);
+}
+
+/* Roadmap Carousel Styles */
+.roadmap-swiper {
+  padding: 2rem 0;
+  width: 100%;
+  overflow: visible;
+}
+
+.roadmap-swiper .swiper-slide {
+  height: auto;
+}
+
+/* Custom Pagination for Roadmap */
+.roadmap-swiper .swiper-pagination {
+  bottom: -3.5rem;
+  position: relative;
+  margin-top: 2rem;
+}
+
+.roadmap-swiper .swiper-pagination-bullet {
+  width: 0.75rem;
+  height: 0.75rem;
+  background: rgba(148, 163, 184, 0.3);
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.roadmap-swiper .swiper-pagination-bullet:hover {
+  background: rgba(99, 102, 241, 0.5);
+  transform: scale(1.2);
+}
+
+.roadmap-swiper .swiper-pagination-bullet-active {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  width: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 10px rgba(99, 102, 241, 0.4);
+}
+
+/* Mobile Responsive adjustments */
+@media (max-width: 768px) {
+  .projects-swiper {
+    padding: 1.5rem 0;
+  }
+
+  .projects-swiper .swiper-slide {
+    min-height: 320px;
+  }
+
+  .projects-swiper .swiper-pagination {
+    bottom: -3rem;
+    margin-top: 2.5rem;
+  }
+
+  .projects-swiper .swiper-pagination-bullet {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+
+  .projects-swiper .swiper-pagination-bullet-active {
+    width: 1.25rem;
+  }
+
+  .roadmap-swiper {
+    padding: 1.5rem 0;
+  }
+
+  .roadmap-swiper .swiper-slide {
+    min-height: 320px;
+  }
+
+  .roadmap-swiper .swiper-pagination {
+    bottom: -3rem;
+    margin-top: 2.5rem;
+  }
+
+  .roadmap-swiper .swiper-pagination-bullet {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+
+  .roadmap-swiper .swiper-pagination-bullet-active {
+    width: 1.25rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .projects-swiper {
+    padding: 1rem 0;
+  }
+
+  .projects-swiper .swiper-slide {
+    min-height: 350px;
+  }
+
+  .projects-swiper .swiper-pagination {
+    bottom: -2.5rem;
+    margin-top: 2rem;
+  }
+
+  .projects-swiper .swiper-pagination-bullet {
+    width: 0.45rem;
+    height: 0.45rem;
+  }
+
+  .projects-swiper .swiper-pagination-bullet-active {
+    width: 1rem;
+  }
+
+  .roadmap-swiper {
+    padding: 1rem 0;
+  }
+
+  .roadmap-swiper .swiper-slide {
+    min-height: 350px;
+  }
+
+  .roadmap-swiper .swiper-pagination {
+    bottom: -2.5rem;
+    margin-top: 2rem;
+  }
+
+  .roadmap-swiper .swiper-pagination-bullet {
+    width: 0.45rem;
+    height: 0.45rem;
+  }
+
+  .roadmap-swiper .swiper-pagination-bullet-active {
+    width: 1rem;
+  }
+}

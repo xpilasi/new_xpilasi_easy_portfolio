@@ -1,6 +1,5 @@
 import '@/styles/globals.css'
-import '@splidejs/react-splide/css';
-import '@/styles/splide-custom.css';
+import '@/styles/swiper-custom.css';
 import Script from 'next/script';
 
 
