@@ -24,7 +24,7 @@ const Menu = () => {
       className={`transition-opacity duration-500 ease-in-out fixed left-0 right-0 top-0 bottom-0 md:w-80 bg-opacity-100 md:rounded-2xl md:shadow-2xl backdrop-blur-md
       ${darkMode ? 'bg-gradient-to-br from-slate-900 to-slate-800' : 'bg-gradient-to-br from-white to-slate-50'}
       md:top-6 md:right-6 md:left-auto md:bottom-auto
-      ${showMenu ? 'opacity-100 z-30' : 'opacity-0'}`}>
+      ${showMenu ? 'opacity-100 z-30 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
 
       <nav 
         className=' mb-12 flex flex-col md:justify-start  md:items-start   md:pl-14 pb-10 md:pt-20  pt-40   '>

@@ -23,7 +23,7 @@
   opacity: 0;
   transition: opacity 0.3s ease;
   display: none;
-  pointer-events: none;
+  pointer-events: auto;
 }
 
 .mobile-splide .splide__slide.is-active,
@@ -222,19 +222,20 @@
   }
 
   .projects-carousel .splide__track {
-    touch-action: pan-x;
+    touch-action: auto;
   }
 
   .projects-carousel .splide__list {
-    touch-action: pan-x;
+    touch-action: auto;
   }
 
   .projects-carousel .splide__slide {
     opacity: 1;
     transform: scale(1) !important;
     box-sizing: border-box;
-    touch-action: pan-x;
+    touch-action: manipulation;
     pointer-events: auto;
+    user-select: none;
   }
 
   .projects-carousel .splide__slide.is-active,
@@ -282,19 +283,20 @@
   }
 
   .projects-carousel .splide__track {
-    touch-action: pan-x;
+    touch-action: auto;
   }
 
   .projects-carousel .splide__list {
-    touch-action: pan-x;
+    touch-action: auto;
   }
 
   .projects-carousel .splide__slide {
     opacity: 1;
     transform: scale(1) !important;
     box-sizing: border-box;
-    touch-action: pan-x;
+    touch-action: manipulation;
     pointer-events: auto;
+    user-select: none;
   }
 
   .projects-carousel .splide__slide.is-active,
@@ -442,12 +444,12 @@
   .roadmap-carousel .splide__track {
     padding: 1.5rem 0;
     overflow: visible;
-    touch-action: pan-x;
+    touch-action: auto;
   }
 
   .roadmap-carousel .splide__list {
     overflow: visible;
-    touch-action: pan-x;
+    touch-action: auto;
   }
 
   .roadmap-carousel .splide__arrow {
@@ -458,8 +460,9 @@
     opacity: 1;
     transform: scale(1) !important;
     box-sizing: border-box;
-    touch-action: pan-x;
+    touch-action: manipulation;
     pointer-events: auto;
+    user-select: none;
   }
 
   .roadmap-carousel .splide__slide > * {
@@ -491,12 +494,12 @@
   .roadmap-carousel .splide__track {
     padding: 1rem 0;
     overflow: visible;
-    touch-action: pan-x;
+    touch-action: auto;
   }
 
   .roadmap-carousel .splide__list {
     overflow: visible;
-    touch-action: pan-x;
+    touch-action: auto;
   }
 
   .roadmap-carousel .splide__arrow {
@@ -507,8 +510,9 @@
     opacity: 1;
     transform: scale(1) !important;
     box-sizing: border-box;
-    touch-action: pan-x;
+    touch-action: manipulation;
     pointer-events: auto;
+    user-select: none;
   }
 
   .roadmap-carousel .splide__slide > * {

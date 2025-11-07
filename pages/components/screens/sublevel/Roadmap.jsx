@@ -80,8 +80,7 @@ const Roadmap = ({showRoadMap, setShowRoadMap}) => {
     <section
     id='roadmap'
     className={
-        `min-h-screen w-full fixed left-0 top-0 px-4 md:px-6 lg:px-10 py-8 overflow-y-auto transition-all duration-300 ease-in-out
-            ${isVisible ? 'z-50 opacity-100 pointer-events-auto dark:bg-gradient-to-r dark:from-gray-800 dark:to-black bg-gradient-to-r from-white to-gray-100' : 'opacity-0 z-30 pointer-events-none'}`
+        `${isVisible ? 'fixed min-h-screen w-full left-0 top-0 px-4 md:px-6 lg:px-10 py-8 overflow-y-auto z-50 opacity-100 pointer-events-auto dark:bg-gradient-to-r dark:from-gray-800 dark:to-black bg-gradient-to-r from-white to-gray-100' : 'hidden'}`
         }
     >
         <CloseRoadMap showRoadMap={showRoadMap} setShowRoadMap={setShowRoadMap} ></CloseRoadMap>
