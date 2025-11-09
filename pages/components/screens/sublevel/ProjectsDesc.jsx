@@ -14,7 +14,7 @@ import justlistAppDesign from '../../../../public/img/projects_logos/web_design/
 import vintageGroomDesign from '../../../../public/img/final_webs/vintage-groom.png';
 import xpPortfolio from '../../../../public/img/final_webs/templatePortfolio-xp.png';
 import Bullet from '../../widgets/Bullet';
-import tonerelicsProject from '../../../../public/img/projects_logos/web_design/tonerelics2.png';
+import goodRootsScreens from '../../../../public/img/projects/good-roots.png';
 import { Wendy_One } from 'next/font/google';
 import {AiFillLinkedin,AiFillGithub} from 'react-icons/ai';
 import CustomSwiper from '../../widgets/CustomSwiper';
@@ -25,6 +25,7 @@ import activitierWeb from '@/public/img/projects/activitier-inside.png'
 const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
 
     const [isVisible, setIsVisible] = useState(showProject);
+    const [imageLoaded, setImageLoaded] = useState(false);
     const designDesc = 'Project and structure previously designed in Figma';
     const tailwindDesc = 'General structure made with Tailwind CSS';
     const cssDesc = 'Specific components made with CSS';
@@ -106,24 +107,24 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
         url:'https://theserieslab.netlify.app',
         repositoryUrl:'https://github.com/xpilasi/serieslab'
       },
-      // {
-      //   projectKey: 5,
-      //   code: 'web',
-      //   name : 'Tone Relics',
-      //   type: 'Ecommerce',
-      //   description: 'Tone Relics is a modern Ecommerce specialized in boutique Guitar/Bass instruments and accesories. All the Front-End is coded to achieve a clean and easy shopping experience.',
-      //   year: 2024,
-      //   designDesc: designDesc,
-      //   cssLibrary: 'General structure made with Tailwind CSS',
-      //   css: '-',
-      //   framework: `Next.Js / React`,
-      //   language: 'Typescript',
-      //   backend:' Wix Headless ',
-      //   imgSrc:tonerelicsProject,
-      //   imgSwiper: [tonerelicsProject,gorillaGrabProject,justlistAppDesign],
-      //   url:'https://tonerelics.netlify.app',
-      //   repositoryUrl:'https://github.com/xpilasi/guitar-boutique'
-      // },
+      {
+        projectKey: 5,
+        code: 'web',
+        name : 'Good Roots',
+        type: 'Web Design',
+        description: 'Modern, fully responsive Single-Page Application crafted for the restaurant chain Good Roots, seamlessly integrating tailored menu management and an inviting UX.',
+        year: 2025,
+        designDesc: designDesc,
+        cssLibrary: 'General structure made with Tailwind CSS',
+        css: '-',
+        framework: `Vue.js`,
+        language: 'Javascript',
+        backend:' - ',
+        imgSrc:goodRootsScreens,
+        imgSwiper: [],
+        url:'https://the-good-roots.netlify.app',
+        repositoryUrl:'https://github.com/xpilasi/good-roots'
+      },
     ]
 
   
@@ -146,7 +147,8 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
 
   useEffect(() => {
     setIsVisible(showProject);
-}, [showProject]);
+    setImageLoaded(false); // Reset image loaded state when project changes
+}, [showProject, keyProject]);
 
     const topDesc = currentProject(keyProject).type;
     const titleDesc = currentProject(keyProject).name;
@@ -194,11 +196,22 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
 
 
       <div className='max-w-6xl mx-auto w-full md:grid md:grid-cols-7 md:gap-10 grid grid-cols-1 mt-6'>
-            <div className='md:col-span-4 w-full flex justify-center items-center' onClick={test}>
-                {/* <CustomSwiper photoMap={imgArray} /> */}
-                <Suspense fallback='LOADING...'>
-                  <Image src={imgSrc} alt='' onClick={test} priority={true}></Image>
-                </Suspense>
+            <div className='md:col-span-4 w-full flex justify-center items-center relative' onClick={test}>
+                {/* Skeleton loader with pulse effect */}
+                {!imageLoaded && (
+                  <div className="w-full aspect-video bg-gray-200 dark:bg-gray-700 rounded-lg animate-pulse"></div>
+                )}
+
+                {/* Image */}
+                <div className={`${imageLoaded ? 'opacity-100' : 'opacity-0 absolute inset-0'} transition-opacity duration-300`}>
+                  <Image
+                    src={imgSrc}
+                    alt={titleDesc}
+                    onClick={test}
+                    priority={true}
+                    onLoad={() => setImageLoaded(true)}
+                  />
+                </div>
             </div>
 
             <div className='md:col-span-3 flex flex-col justify-between xl:justify-start'>

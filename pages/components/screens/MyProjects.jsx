@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import gorillaGrabProject from '../../../public/img/projects_logos/app_design/Flying-iPhone-X-Mockups.png';
 import justListProject from '../../../public/img/projects_logos/app_design/cozy-justlist-mockup_resized.png';
 import activitierProject from '../../../public/img/final_webs/activitier.png';
+import goodRootsWeb from '../../../public/img/final_webs/good-roots.png';
 import Project from '../widgets/Project';
 import SectionTitle from '../../../components/widgets/titles/SectionTitle';
 import SectionSubTitle from '../../../components/widgets/titles/SectionSubTitle';
@@ -39,6 +40,13 @@ const MyProjects = ({showProject, setShowProject}) => {
       projectName: 'Activitier',
       designType: 'Web App'
     },
+    {
+      id: 5,
+      imageSrc: goodRootsWeb,
+      projectName: 'Good Roots',
+      designType: 'Web Design'
+    },
+    
     {
       id: 4,
       imageSrc: serieslabWebDesign,
