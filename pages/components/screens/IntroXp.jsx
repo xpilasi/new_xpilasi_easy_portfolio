@@ -44,7 +44,7 @@ darkMode ? textAlt = textAltDark :textAlt = textAltLight ;
                 
                 <h2 className={`text-7xl font-interDisplayMedium font-bold  tracking-tighter  md:text-7xl lg:text-9xl `}>Hi, I'm Xavi.</h2>
                 
-                <h2 className={`text-4xl mt-0 tracking-tighter font-interDisplayLight ${textAlt}  md:text-6xl `}>A Tech Product Owner</h2>
+                <h2 className={`text-4xl mt-0 tracking-tighter font-interDisplayLight ${textAlt}  md:text-6xl `}>A Product Builder</h2>
                 
               </div>
 
