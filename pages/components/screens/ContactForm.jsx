@@ -1,7 +1,6 @@
 import React, { useRef, useState } from 'react'
 import emailjs from 'emailjs-com';
-import SectionSubTitle from '../../../components/widgets/titles/SectionSubTitle';
-import SectionTitle from '../../../components/widgets/titles/SectionTitle';
+import SectionHeader from '../../../components/widgets/SectionHeader';
 import ButtonGreenWhite from '../../../components/widgets/buttons/ButtonGreenWhite';
 
 const ContactForm = ({darkMode, showModal, setShowModal}) => {
@@ -99,10 +98,10 @@ const ContactForm = ({darkMode, showModal, setShowModal}) => {
     return (
       <section id='contact' className='h-screen flex flex-col justify-center items-center relative'>
         <article className='flex flex-col justify-center items-center py-5'>
-          <div className='text-center max-w-max mx-auto'>
-            <SectionTitle titleText={title}></SectionTitle>
-            <SectionSubTitle titleText={subtitle}></SectionSubTitle>
-          </div>
+          <SectionHeader
+            title={title}
+            subtitle={subtitle}
+          />
         
           <div className='w-full'>
             <form onSubmit={handleSubmit}>

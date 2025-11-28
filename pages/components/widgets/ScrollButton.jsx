@@ -14,16 +14,15 @@ const ScrollButton = () => {
       activeSectionRef.current = document.querySelector('.section.active');
     }
 
-    // const section0 = document.getElementById('menu-top');
     const section1 = document.getElementById('intro-xp');
-    const section2 = document.getElementById('about-me');
-    // const section3 = document.getElementById('my-story');
-    // const section4 = document.getElementById('my-skills');
+    const section2 = document.getElementById('how-i-work');
+    const section3 = document.getElementById('stack-tools');
+    const section4 = document.getElementById('about-me');
     const section5 = document.getElementById('my-projects');
     const section6 = document.getElementById('contact');
-    const sectionsPortfolio = [section1, section2,section5,section6];
-    
-    
+    const sectionsPortfolio = [section1, section2, section3, section4, section5, section6];
+
+
     let nextIndex = 0;
     const currentIndex = Array.from(sectionsPortfolio).findIndex((section) => section === activeSectionRef.current);
 
@@ -32,9 +31,9 @@ const ScrollButton = () => {
       case  0: nextIndex = 1;break;
       case  1: nextIndex = 2;break;
       case  2: nextIndex = 3;break;
-      case  3: nextIndex = 0;break;
-      // case  4: nextIndex = 5;break;
-      // case  5: nextIndex = 0;break;
+      case  3: nextIndex = 4;break;
+      case  4: nextIndex = 5;break;
+      case  5: nextIndex = 0;break;
     }
 
     const nextSection = sectionsPortfolio[nextIndex];
@@ -42,7 +41,7 @@ const ScrollButton = () => {
     if (nextSection) {
       nextSection.scrollIntoView({ behavior: 'smooth' });
       activeSectionRef.current = nextSection;
-      setIsLastSection(nextIndex === 3);
+      setIsLastSection(nextIndex === 5);
     }
   };
 

@@ -7,6 +7,8 @@ import ScrollButton from './components/widgets/ScrollButton';
 import Presentation from './components/screens/Presentation';
 import Roadmap from './components/screens/sublevel/Roadmap';
 import ModalConfirmation from './components/screens/sublevel/ModalConfirmation';
+import HowIWorkSection from './components/screens/HowIWorkSection';
+import StackAndToolsSection from './components/screens/StackAndToolsSection';
 import MainLayout from '../components/layouts/MainLayout.jsx';
 import { useEffect } from 'react';
 const inter = Inter({ subsets: ['latin'] })
@@ -25,6 +27,8 @@ export default function Home() {
       <ModalConfirmation showModal={showModal} setStateModal={setShowModal}/>
       <Roadmap showRoadMap={showRoadMap} setShowRoadMap={setShowRoadMap}></Roadmap>
       <IntroXp />
+      <HowIWorkSection />
+      <StackAndToolsSection />
       <Presentation showRoadMap={showRoadMap} setShowRoadMap={setShowRoadMap}/>
       <MyProjects showProject={showProject} setShowProject={setShowProject} />
       <ContactForm showModal={showModal} setShowModal={setShowModal}/>

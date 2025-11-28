@@ -4,8 +4,7 @@ import justListProject from '../../../public/img/projects_logos/app_design/cozy-
 import activitierProject from '../../../public/img/final_webs/activitier.png';
 import goodRootsWeb from '../../../public/img/final_webs/good-roots.png';
 import Project from '../widgets/Project';
-import SectionTitle from '../../../components/widgets/titles/SectionTitle';
-import SectionSubTitle from '../../../components/widgets/titles/SectionSubTitle';
+import SectionHeader from '../../../components/widgets/SectionHeader';
 import ProjectsDesc from './sublevel/ProjectsDesc';
 import serieslabWebDesign from '../../../public/img/final_webs/serieslabportafolio.png';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -81,9 +80,10 @@ const MyProjects = ({showProject, setShowProject}) => {
         </article>
           <article className='flex flex-col justify-center items-center py-5 w-full overflow-hidden'>
 
-
-      <SectionTitle titleText='Work gallery'></SectionTitle>
-      <SectionSubTitle titleText="These are some of the projects I've been developed since I started my software journey."></SectionSubTitle>
+      <SectionHeader
+        title="Work gallery"
+        subtitle="A selection of projects I’ve built so far."
+      />
 
       {/* Modern Carousel */}
       <div className="py-4 md:py-10 w-full max-w-full lg:max-w-7xl">

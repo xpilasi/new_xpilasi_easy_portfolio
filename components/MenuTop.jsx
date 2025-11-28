@@ -30,11 +30,21 @@ const Menu = () => {
         className=' mb-12 flex flex-col md:justify-start  md:items-start   md:pl-14 pb-10 md:pt-20  pt-40   '>
 
         <ul className=' flex flex-col md:items-start items-center z-50'>
-         
+
           <li className={`font-interDisplayExtraLight md:text-base text-2xl tracking-widest pb-2 transition-colors duration-300 ${darkMode ? 'text-white hover:text-indigo-400' : 'text-gray-800 hover:text-indigo-600'} ${!showMenu ? 'pointer-events-none' : ''}`}>
             <a
               onClick={(e) => handleClick(e, '#about-me')}
               href="#about-me">About Me</a></li>
+
+          <li className={`font-interDisplayExtraLight md:text-base text-2xl tracking-widest pb-2 transition-colors duration-300 ${darkMode ? 'text-white hover:text-indigo-400' : 'text-gray-800 hover:text-indigo-600'} ${!showMenu ? 'pointer-events-none' : ''}`}>
+            <a
+              onClick={(e) => handleClick(e, '#how-i-work')}
+              href="#how-i-work">How I Work</a></li>
+
+          <li className={`font-interDisplayExtraLight md:text-base text-2xl tracking-widest pb-2 transition-colors duration-300 ${darkMode ? 'text-white hover:text-indigo-400' : 'text-gray-800 hover:text-indigo-600'} ${!showMenu ? 'pointer-events-none' : ''}`}>
+            <a
+              onClick={(e) => handleClick(e, '#stack-tools')}
+              href="#stack-tools">Stack & Tools</a></li>
 
           <li className={`font-interDisplayExtraLight md:text-base text-2xl tracking-widest pb-2 transition-colors duration-300 ${darkMode ? 'text-white hover:text-indigo-400' : 'text-gray-800 hover:text-indigo-600'} ${!showMenu ? 'pointer-events-none' : ''}`}>
               <a

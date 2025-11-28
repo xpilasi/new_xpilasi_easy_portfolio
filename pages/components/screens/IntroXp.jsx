@@ -41,11 +41,18 @@ darkMode ? textAlt = textAltDark :textAlt = textAltLight ;
             <div className=' text-center neon-'>
 
               <div className=' '>
-                
+
                 <h2 className={`text-7xl font-interDisplayMedium font-bold  tracking-tighter  md:text-7xl lg:text-9xl `}>Hi, I'm Xavi.</h2>
-                
-                <h2 className={`text-4xl mt-0 tracking-tighter font-interDisplayLight ${textAlt}  md:text-6xl `}>A Product Builder</h2>
-                
+
+                <h2 className={`text-4xl mt-4 tracking-tight font-interDisplayLight ${textAlt} lg:max-w-4xl  md:text-4xl leading-snug `}>
+                  I <span className={gradientText}>design and deliver</span> production-ready digital products through {' '}
+                  <span className={`font-interDisplayMedium ${darkMode ? 'text-neon-water' : 'text-indigo-600'}`}>AI-augmented development</span>.
+                </h2>
+
+                <p className={`text-lg mt-6  tracking-tight font-interDisplayExtraLight ${darkMode ? 'text-gray-400' : 'text-gray-600'} lg:max-w-4xl md:text-xl leading-relaxed`}>
+                I move fluently between business needs and technical execution—ensuring clarity, speed, and high-quality outcomes with AI powering the heavy lifting.
+                </p>
+
               </div>
 
             </div>
