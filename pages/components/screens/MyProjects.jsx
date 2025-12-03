@@ -8,11 +8,11 @@ import SectionHeader from '../../../components/widgets/SectionHeader';
 import ProjectsDesc from './sublevel/ProjectsDesc';
 import serieslabWebDesign from '../../../public/img/final_webs/serieslabportafolio.png';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Navigation, EffectCoverflow } from 'swiper/modules';
+import { Pagination, Navigation } from 'swiper/modules';
+import rockVibesWeb from '@/public/img/final_webs/rockvibes.png'
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import 'swiper/css/effect-coverflow';
 
 
 
@@ -38,6 +38,12 @@ const MyProjects = ({showProject, setShowProject}) => {
       imageSrc: activitierProject,
       projectName: 'Activitier',
       designType: 'Web App'
+    },
+    {
+      id: 6,
+      imageSrc: rockVibesWeb,
+      projectName: 'Rock Vibes',
+      designType: 'Web Design'
     },
     {
       id: 5,
@@ -86,14 +92,13 @@ const MyProjects = ({showProject, setShowProject}) => {
       />
 
       {/* Modern Carousel */}
-      <div className="py-4 md:py-10 w-full max-w-full lg:max-w-7xl">
+      <div className="py-4 md:py-10 w-full max-w-full lg:max-w-7xl px-4">
         <Swiper
-          modules={[Pagination, Navigation, EffectCoverflow]}
-          effect="coverflow"
+          modules={[Pagination, Navigation]}
           grabCursor={true}
-          centeredSlides={true}
-          slidesPerView={3}
-          spaceBetween={32}
+          centeredSlides={false}
+          slidesPerView={4}
+          spaceBetween={24}
           loop={false}
           initialSlide={0}
           watchSlidesProgress={true}
@@ -105,64 +110,27 @@ const MyProjects = ({showProject, setShowProject}) => {
           onSliderMove={() => setIsDragging(true)}
           onTouchEnd={() => setTimeout(() => setIsDragging(false), 50)}
           onSliderFirstMove={() => setIsDragging(true)}
-          coverflowEffect={{
-            rotate: 0,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows: false,
-          }}
           breakpoints={{
             320: {
               slidesPerView: 1.1,
               spaceBetween: 12,
-              centeredSlides: false,
-              coverflowEffect: {
-                depth: 0,
-                modifier: 1,
-              },
             },
             640: {
-              slidesPerView: 1.1,
-              spaceBetween: 12,
-              centeredSlides: false,
-              coverflowEffect: {
-                depth: 0,
-                modifier: 1,
-              },
+              slidesPerView: 1.5,
+              spaceBetween: 16,
             },
             768: {
-              slidesPerView: 2.5,
-              spaceBetween: 16,
-              coverflowEffect: {
-                depth: 50,
-                modifier: 1,
-              },
+              slidesPerView: 2,
+              spaceBetween: 20,
             },
             1024: {
-              slidesPerView: 2.5,
+              slidesPerView: 3,
               spaceBetween: 24,
-              coverflowEffect: {
-                depth: 80,
-                modifier: 1,
-              },
             },
             1280: {
-              slidesPerView: 2,
+              slidesPerView: 4,
               spaceBetween: 24,
-              coverflowEffect: {
-                depth: 100,
-                modifier: 1,
-              },
             },
-            1536: {
-              slidesPerView: 3,
-              spaceBetween: 32,
-              coverflowEffect: {
-                depth: 100,
-                modifier: 1,
-              },
-            }
           }}
           className="projects-swiper"
         >

@@ -21,7 +21,7 @@ import CustomSwiper from '../../widgets/CustomSwiper';
 import { Suspense } from 'react';
 import serieslabWeb from '../../../../public/img/final_webs/serieslabportafolio.png'
 import activitierWeb from '@/public/img/projects/activitier-inside.png'
-
+import rockVibesWeb from '@/public/img/final_webs/rockvibes.png'
 const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
 
     const [isVisible, setIsVisible] = useState(showProject);
@@ -124,6 +124,24 @@ const ProjectsDesc = ({showProject, setShowProject, keyProject}) => {
         imgSwiper: [],
         url:'https://the-good-roots.netlify.app',
         repositoryUrl:'https://github.com/xpilasi/good-roots'
+      },
+      {
+        projectKey: 6,
+        code: 'web',
+        name : 'Rock Vibes',
+        type: 'Web Design',
+        description: 'Self-manageable website for a climbing gym. Administrators can easily manage and update content, routes, classes, and events through a Headless CMS, providing a dynamic and engaging experience for climbing enthusiasts.',
+        year: 2025,
+        designDesc: designDesc,
+        cssLibrary: 'General structure made with Tailwind CSS',
+        css: '-',
+        framework: `Vue.js`,
+        language: 'Javascript',
+        backend:' Strapi Headless CMS',
+        imgSrc:rockVibesWeb,
+        imgSwiper: [],
+        url:'https://rock-vibes.netlify.app',
+        repositoryUrl:'https://github.com/xpilasi/rock-vibes'
       },
     ]
 
