@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import useMenuStore from '@/store/menuStore'
 
+
 const Menu = () => {
   const { showMenu, setShowMenu, darkMode } = useMenuStore();
 
-  
+
   const linkedInUrl = 'https://www.linkedin.com/in/xavierpilasi/';
-  const resumeUrl = '/xpilasi_2025_cv.pdf';
+  const resumeUrl = '/docs/xpilasi-cv-pb-en.pdf';
 
   const handleClick = (e, id) => {
     e.preventDefault();
@@ -23,7 +24,7 @@ const Menu = () => {
       id='menu-top'
       className={` transition-opacity duration-500 md:top-0 md:rounded-tr-none md:right-0 ease-in-out fixed left-0 right-0 top-0 bottom-0 md:w-80 bg-opacity-100 md:rounded-2xl md:shadow-2xl backdrop-blur-md
       ${darkMode ? 'bg-gradient-to-br from-slate-900 to-slate-800' : 'bg-gradient-to-br from-white to-slate-50'}
-      md:top-6 md:right-6 md:left-auto md:bottom-auto
+      md:top-0 md:right-0 md:left-auto md:bottom-auto
       ${showMenu ? 'opacity-100 z-30 pointer-events-auto md:top-0 md:rounded-tr-none md:right-0 md:left-auto md:bottom-auto' : 'opacity-0 pointer-events-none'}`}>
 
       <nav 

@@ -1,5 +1,0 @@
-OK-Que funcione botón Next
--Que descargue Resume: aviso spanish o english
-OK-Lunita en Sol 
-OK-Que funcione el Form: que envíe un mail 
-OK-Que Aparezcaun mensaje de gracias por enviar el Form 
